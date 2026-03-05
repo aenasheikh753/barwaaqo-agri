@@ -1,0 +1,50 @@
+import React from "react";
+import Image from "next/image";
+
+interface ProjectCardProps {
+    title: string;
+    description: string;
+    image: string;
+    category: string;
+}
+
+export function ProjectCard({ title, description, image, category }: ProjectCardProps) {
+    return (
+        <div className="group flex flex-col rounded-3xl overflow-hidden bg-white shadow-[0_10px_40px_rgba(0,0,0,0.05)] hover:shadow-[0_25px_60px_rgba(0,0,0,0.12)] transition-all duration-500 transform hover:-translate-y-2">
+            <div className="h-64 relative overflow-hidden">
+                <Image
+                    src={image}
+                    alt={title}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-custom-primary/80 via-custom-primary/20 to-transparent opacity-80 group-hover:opacity-40 transition-opacity duration-500"></div>
+
+                <div className="absolute top-6 left-6">
+                    <span className="bg-white/90 backdrop-blur-md text-custom-primary px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">
+                        {category}
+                    </span>
+                </div>
+
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md border border-white/40 flex items-center justify-center translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path></svg>
+                    </div>
+                </div>
+            </div>
+
+            <div className="p-8">
+                <h3 className="text-2xl font-heading font-bold text-custom-primary mb-4 group-hover:text-custom-olive transition-colors duration-300">
+                    {title}
+                </h3>
+                <p className="text-custom-charcoal/70 font-body text-sm leading-relaxed mb-6 line-clamp-3">
+                    {description}
+                </p>
+                <div className="flex items-center text-custom-olive font-bold text-xs uppercase tracking-widest group-hover:gap-2 transition-all">
+                    <span>Explore Case Study</span>
+                    <svg className="w-4 h-4 ml-1 opacity-0 group-hover:opacity-100 group-hover:ml-2 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </div>
+            </div>
+        </div>
+    );
+}
