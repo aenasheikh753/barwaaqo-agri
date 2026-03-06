@@ -30,7 +30,7 @@ export function DetailedServicesSection() {
     ];
 
     return (
-        <section className="py-14 sm:py-16 md:py-24 bg-white">
+        <section className="py-14 sm:py-16 md:py-24 bg-white overflow-x-hidden">
             <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
                 <div className="space-y-12 sm:space-y-16 md:space-y-28 lg:space-y-32">
                     {services.map((service, index) => (
@@ -39,7 +39,7 @@ export function DetailedServicesSection() {
                             className={`flex flex-col lg:flex-row items-start lg:items-center gap-8 sm:gap-10 md:gap-16 xl:gap-24 ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}
                         >
                             <motion.div
-                                className="lg:w-1/2 relative h-[220px] xs:h-[240px] sm:h-[320px] md:h-[360px] lg:h-[420px] w-full rounded-2xl overflow-hidden shadow-2xl"
+                                className="lg:w-1/2 relative h-[220px] sm:h-[300px] md:h-[360px] lg:h-[420px] w-full rounded-2xl overflow-hidden shadow-2xl"
                                 initial={{ opacity: 0, scale: 0.95 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.6 }}
@@ -50,21 +50,21 @@ export function DetailedServicesSection() {
                             </motion.div>
 
                             <motion.div
-                                className="lg:w-1/2 space-y-4 md:space-y-6 w-full"
+                                className="lg:w-1/2 space-y-4 md:space-y-6 w-full overflow-hidden"
                                 initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.6 }}
                                 viewport={{ once: true }}
                             >
-                                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-custom-primary leading-snug">
+                                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-custom-primary leading-snug max-w-[22ch] break-words">
                                     {service.title}
                                 </h3>
-                                <p className="text-sm sm:text-base md:text-lg text-custom-charcoal/70 leading-relaxed font-body max-w-prose">
+                                <p className="text-sm sm:text-base md:text-lg text-custom-charcoal/70 leading-relaxed font-body max-w-prose break-words">
                                     {service.desc}
                                 </p>
                                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 md:gap-4">
                                     {service.items.map((item, i) => (
-                                        <li key={i} className="flex items-center text-custom-charcoal/80 text-sm">
+                                        <li key={i} className="flex items-center text-custom-charcoal/80 text-sm break-words">
                                             <span className="w-1.5 h-1.5 rounded-full bg-custom-olive mr-3" />
                                             {item}
                                         </li>
