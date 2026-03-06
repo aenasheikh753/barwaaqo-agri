@@ -31,7 +31,7 @@ export function HeroSection() {
                     Building Modern Agriculture in Somalia & East Africa
                 </h1>
 
-                <p className="text-lg md:text-xl text-slate-100/90 leading-relaxed max-w-3xl mb-8 drop-shadow-md font-normal">
+                <p className="text-lg md:text-xl text-slate-100/90 leading-relaxed max-w-3xl mb-6 drop-shadow-md font-normal">
                     Barwaaqo Agri Group provides high-quality seeds, agricultural inputs, irrigation development, and farm advisory services to support productive and resilient farming systems.
                 </p>
 
