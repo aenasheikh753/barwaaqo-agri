@@ -7,9 +7,9 @@ export default function ServicesPage() {
     return (
         <main className="bg-white">
             <ServicesHeroSection />
-            <CoreServicesSection />
-            <DetailedServicesSection />
-            <ProcessSection />
+            {/* <CoreServicesSection /> */}
+            {/* <DetailedServicesSection /> */}
+            {/* <ProcessSection /> */}
         </main>
     );
 }
