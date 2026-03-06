@@ -6,10 +6,10 @@ import { ProcessSection } from "./components/ProcessSection";
 export default function ServicesPage() {
     return (
         <main className="bg-white">
-            {/* <ServicesHeroSection /> */}
-            {/* <CoreServicesSection /> */}
+            <ServicesHeroSection />
+            <CoreServicesSection />
             <DetailedServicesSection />
-            {/* <ProcessSection /> */}
+            <ProcessSection />
         </main>
     );
 }
