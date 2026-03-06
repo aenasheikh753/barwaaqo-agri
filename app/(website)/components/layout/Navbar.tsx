@@ -9,6 +9,7 @@ import { Button } from "../../../components/ui/Button";
 export function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
     const pathname = usePathname();
 
     useEffect(() => {
@@ -17,6 +18,35 @@ export function Navbar() {
         };
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    useEffect(() => {
+        const originalOverflow = document.body.style.overflow;
+        if (isMobileMenuOpen) {
+            document.body.style.overflow = "hidden";
+            try {
+                window.scrollTo({ top: 0 });
+            } catch {
+                window.scrollTo(0, 0);
+            }
+        } else {
+            document.body.style.overflow = originalOverflow || "";
+        }
+        return () => {
+            document.body.style.overflow = originalOverflow;
+        };
+    }, [isMobileMenuOpen]);
+
+    useEffect(() => {
+        setIsMobileMenuOpen(false);
+    }, [pathname]);
+
+    useEffect(() => {
+        const onKeyDown = (e: KeyboardEvent) => {
+            if (e.key === "Escape") setIsMobileMenuOpen(false);
+        };
+        window.addEventListener("keydown", onKeyDown);
+        return () => window.removeEventListener("keydown", onKeyDown);
     }, []);
 
     const navLinks = [
@@ -39,7 +69,7 @@ export function Navbar() {
     ];
 
     return (
-        <nav className={`fixed w-full z-50 transition-all duration-500 ease-in-out ${isScrolled
+        <nav className={`fixed w-full z-[2000] transition-all duration-500 ease-in-out ${isScrolled
             ? "bg-white/95 backdrop-blur-xl shadow-lg py-3"
             : "bg-transparent py-5"
             }`}>
@@ -70,7 +100,12 @@ export function Navbar() {
                                                 : (isScrolled ? "text-custom-charcoal hover:text-custom-olive" : "text-white hover:text-custom-sand drop-shadow-md")
                                             }`}
                                     >
-                                        {link.name}
+                                        <span className="inline-flex items-center">
+                                            <span>{link.name}</span>
+                                            <svg className={`ml-1 w-3.5 h-3.5 transition-transform ${isScrolled ? "text-custom-charcoal" : "text-white"} group-hover/nav:rotate-180`} viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.25 8.29a.75.75 0 0 1-.02-1.08z" clipRule="evenodd" />
+                                            </svg>
+                                        </span>
                                         <span className={`absolute bottom-0 left-0 h-0.5 transition-all duration-500 ${isActive ? "w-full" : "w-0 group-hover/nav:w-full"} ${isScrolled ? "bg-custom-olive" : "bg-custom-sand"
                                             }`} />
                                     </div>
@@ -129,6 +164,8 @@ export function Navbar() {
                         }`}
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     aria-label="Toggle Menu"
+                    aria-expanded={isMobileMenuOpen}
+                    aria-controls="mobile-menu"
                 >
                     <div className="relative w-6 h-5">
                         <span className={`absolute block w-full h-0.5 bg-current transition-all duration-300 ${isMobileMenuOpen ? "top-2 rotate-45" : "top-0"}`} />
@@ -140,11 +177,11 @@ export function Navbar() {
             </div>
 
             {/* Mobile Menu Overlay */}
-            <div className={`xl:hidden fixed inset-0 z-[100] bg-white transition-all duration-500 ease-in-out ${isMobileMenuOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-full"
+            <div id="mobile-menu" className={`xl:hidden fixed inset-0 z-[2100] bg-white transition-all duration-500 ease-in-out ${isMobileMenuOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-full"
                 }`}>
-                <div className="h-full flex flex-col p-6 md:p-12">
-                    <div className="flex items-center justify-between mb-12">
-                        <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="relative h-10 w-40">
+                <div className="h-full flex flex-col">
+                    <div className="flex items-center justify-between pl-0 pr-6 md:pl-0 md:pr-12 pt-6 md:pt-12 pb-6">
+                        <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="relative h-9 w-36 md:h-10 md:w-40">
                             <Image src="/images/barwaaqo-logo.jpg" alt="Logo" fill className="object-contain" />
                         </Link>
                         <button className="p-3 text-custom-primary bg-custom-light-bg rounded-xl" onClick={() => setIsMobileMenuOpen(false)}>
@@ -152,7 +189,7 @@ export function Navbar() {
                         </button>
                     </div>
 
-                    <div className="flex-1 overflow-y-auto pr-2 custom-scrollbar">
+                    <div className="flex-1 overflow-y-auto pr-2 custom-scrollbar px-6 md:px-12">
                         <div className="space-y-6 pb-12">
                             {navLinks.map((link) => {
                                 const isActive = pathname === link.href || (link.dropdown && link.dropdown.some(sub => pathname === sub.href));
@@ -160,23 +197,36 @@ export function Navbar() {
                                 return (
                                     <div key={link.name} className="flex flex-col space-y-3">
                                         {link.dropdown ? (
-                                            <>
-                                                <span className={`text-xs font-bold uppercase tracking-[0.2em] ${isActive ? "text-custom-olive" : "text-custom-primary/40"}`}>
-                                                    {link.name}
-                                                </span>
-                                                <div className="grid grid-cols-1 gap-4 pl-4 border-l-2 border-custom-sand/30">
-                                                    {link.dropdown.map((sublink) => (
-                                                        <Link
-                                                            key={sublink.name}
-                                                            href={sublink.href}
-                                                            className={`text-xl font-bold transition-colors ${pathname === sublink.href ? "text-custom-olive" : "text-custom-charcoal hover:text-custom-olive"}`}
-                                                            onClick={() => setIsMobileMenuOpen(false)}
+                                            (() => {
+                                                const expanded = openMobileDropdown === link.name;
+                                                return (
+                                                    <>
+                                                        <button
+                                                            type="button"
+                                                            onClick={() => setOpenMobileDropdown(expanded ? null : link.name)}
+                                                            aria-expanded={expanded}
+                                                            className={`flex items-center justify-between text-left w-full px-0 text-2xl font-bold transition-colors ${expanded ? "text-custom-olive" : "text-custom-primary hover:text-custom-olive"}`}
                                                         >
-                                                            {sublink.name}
-                                                        </Link>
-                                                    ))}
-                                                </div>
-                                            </>
+                                                            <span>{link.name}</span>
+                                                            <svg className={`ml-2 w-4 h-4 transition-transform ${expanded ? "rotate-180" : ""}`} viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                                <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.25 8.29a.75.75 0 0 1-.02-1.08z" clipRule="evenodd" />
+                                                            </svg>
+                                                        </button>
+                                                        <div className={`grid grid-cols-1 gap-4 pl-4 border-l-2 border-custom-sand/30 transition-all duration-300 overflow-hidden ${expanded ? "max-h-[600px] opacity-100 mt-3" : "max-h-0 opacity-0 pointer-events-none"}`}>
+                                                            {link.dropdown.map((sublink) => (
+                                                                <Link
+                                                                    key={sublink.name}
+                                                                    href={sublink.href}
+                                                                    className={`text-xl font-bold transition-colors ${pathname === sublink.href ? "text-custom-olive" : "text-custom-charcoal hover:text-custom-olive"}`}
+                                                                    onClick={() => setIsMobileMenuOpen(false)}
+                                                                >
+                                                                    {sublink.name}
+                                                                </Link>
+                                                            ))}
+                                                        </div>
+                                                    </>
+                                                );
+                                            })()
                                         ) : (
                                             <Link
                                                 href={link.href}
@@ -192,7 +242,7 @@ export function Navbar() {
                         </div>
                     </div>
 
-                    <div className="pt-8 border-t border-custom-accent/10">
+                    <div className="pt-8 border-t border-custom-accent/10 px-6 md:px-12 pb-6">
                         <Link href="/partners" className="w-full" onClick={() => setIsMobileMenuOpen(false)}>
                             <Button className="w-full text-lg py-5 rounded-2xl shadow-xl shadow-custom-primary/10">Partner With Us</Button>
                         </Link>
