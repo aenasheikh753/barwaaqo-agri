@@ -30,13 +30,13 @@ export function DetailedServicesSection() {
     ];
 
     return (
-        <section className="py-24 bg-white">
+        <section className="py-16 md:py-24 bg-white">
             <div className="max-w-[1200px] mx-auto px-6">
-                <div className="space-y-32">
+                <div className="space-y-16 md:space-y-32">
                     {services.map((service, index) => (
-                        <div key={index} className={`flex flex-col lg:flex-row items-center gap-16 ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
+                        <div key={index} className={`flex flex-col lg:flex-row items-center gap-10 md:gap-16 ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
                             <motion.div
-                                className="lg:w-1/2 relative h-[400px] w-full rounded-2xl overflow-hidden shadow-2xl"
+                                className="lg:w-1/2 relative h-[260px] sm:h-[340px] lg:h-[400px] w-full rounded-2xl overflow-hidden shadow-2xl"
                                 initial={{ opacity: 0, scale: 0.95 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.6 }}
@@ -47,15 +47,15 @@ export function DetailedServicesSection() {
                             </motion.div>
 
                             <motion.div
-                                className="lg:w-1/2 space-y-6"
+                                className="lg:w-1/2 space-y-4 md:space-y-6"
                                 initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.6 }}
                                 viewport={{ once: true }}
                             >
-                                <h3 className="text-3xl font-heading font-bold text-custom-primary">{service.title}</h3>
-                                <p className="text-lg text-custom-charcoal/70 leading-relaxed font-body">{service.desc}</p>
-                                <ul className="grid grid-cols-2 gap-4">
+                                <h3 className="text-2xl md:text-3xl font-heading font-bold text-custom-primary">{service.title}</h3>
+                                <p className="text-base md:text-lg text-custom-charcoal/70 leading-relaxed font-body">{service.desc}</p>
+                                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
                                     {service.items.map((item, i) => (
                                         <li key={i} className="flex items-center text-custom-charcoal/80 text-sm">
                                             <span className="w-1.5 h-1.5 rounded-full bg-custom-olive mr-3" />
