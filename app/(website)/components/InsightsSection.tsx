@@ -1,11 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export function InsightsSection() {
     return (
         <section className="py-[120px] max-w-[1200px] mx-auto px-6">
-            <motion.div 
+            <motion.div
                 className="text-center mb-16"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -21,7 +22,7 @@ export function InsightsSection() {
                 </p>
             </motion.div>
 
-            <motion.div 
+            <motion.div
                 className="grid grid-cols-1 md:grid-cols-3 gap-8"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -31,40 +32,44 @@ export function InsightsSection() {
                 {[
                     {
                         title: "Best Seasons for Tomato Production in Somalia",
-                        description: "Comprehensive guide to optimal planting windows, climate considerations, and variety selection for maximum yield in Somali growing conditions."
+                        description: "Comprehensive guide to optimal planting windows, climate considerations, and variety selection for maximum yield in Somali growing conditions.",
+                        slug: "tomato-production-somalia"
                     },
                     {
                         title: "Benefits of Drip Irrigation for Vegetable Farming",
-                        description: "Analysis of water-saving technologies and their impact on crop productivity, with case studies from our irrigation pilot programs across East Africa."
+                        description: "Analysis of water-saving technologies and their impact on crop productivity, with case studies from our irrigation pilot programs across East Africa.",
+                        slug: "benefits-drip-irrigation"
                     },
                     {
                         title: "Soil Preparation Techniques for Smallholder Farms",
-                        description: "Evidence-based methods for soil health improvement, nutrient management, and sustainable practices adapted to local farming systems."
+                        description: "Evidence-based methods for soil health improvement, nutrient management, and sustainable practices adapted to local farming systems.",
+                        slug: "soil-preparation-techniques"
                     }
                 ].map((insight, i) => (
-                    <motion.article 
-                        key={i} 
-                        className="group cursor-pointer border border-custom-accent rounded-xl p-8 hover:shadow-xl hover:border-custom-olive transition-all duration-300"
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: i * 0.1 }}
-                        viewport={{ once: true }}
-                        whileHover={{ y: -5 }}
-                    >
-                        <span className="text-custom-olive font-body text-sm font-semibold tracking-wider uppercase mb-3 block">
-                            Agronomy Guide
-                        </span>
-                        <h3 className="text-2xl font-heading font-semibold text-custom-primary mb-4 group-hover:text-custom-olive transition-colors leading-snug">
-                            {insight.title}
-                        </h3>
-                        <p className="text-custom-charcoal/70 font-body leading-relaxed mb-6">
-                            {insight.description}
-                        </p>
-                        <span className="text-custom-primary font-medium hover:text-custom-olive flex items-center space-x-2 transition-colors">
-                            <span>Read Article</span>
-                            <span>→</span>
-                        </span>
-                    </motion.article>
+                    <Link key={i} href={`/insights/${insight.slug}`}>
+                        <motion.article
+                            className="group cursor-pointer border border-custom-accent rounded-xl p-8 hover:shadow-xl hover:border-custom-olive transition-all duration-300 h-full flex flex-col"
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: i * 0.1 }}
+                            viewport={{ once: true }}
+                            whileHover={{ y: -5 }}
+                        >
+                            <span className="text-custom-olive font-body text-sm font-semibold tracking-wider uppercase mb-3 block">
+                                Agronomy Guide
+                            </span>
+                            <h3 className="text-2xl font-heading font-semibold text-custom-primary mb-4 group-hover:text-custom-olive transition-colors leading-tight">
+                                {insight.title}
+                            </h3>
+                            <p className="text-custom-charcoal/70 font-body leading-relaxed mb-6 flex-grow">
+                                {insight.description}
+                            </p>
+                            <span className="text-custom-primary font-medium hover:text-custom-olive flex items-center space-x-2 transition-colors mt-auto">
+                                <span>Read Article</span>
+                                <span className="group-hover:translate-x-1 transition-transform">→</span>
+                            </span>
+                        </motion.article>
+                    </Link>
                 ))}
             </motion.div>
         </section>

@@ -3,6 +3,7 @@
 import { Button } from "../../components/ui/Button";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export function AboutSection() {
     return (
@@ -18,8 +19,8 @@ export function AboutSection() {
                 >
                     <div className="relative h-[550px] w-full rounded-2xl overflow-hidden shadow-2xl z-10">
                         <Image
-                            src="/images/about_agriculture.png"
-                            alt="Modern Agriculture in East Africa"
+                            src="/images/agri1.jpg"
+                            alt="Expansive agriculture and farming activity representing Barwaaqo's scale"
                             fill
                             className="object-cover hover:scale-105 transition-transform duration-700"
                         />
@@ -27,8 +28,13 @@ export function AboutSection() {
                     </div>
 
                     {/* Decorative Elements */}
-                    <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-custom-sand/20 rounded-2xl -z-0 blur-2xl" />
-                    <div className="absolute -top-6 -left-6 w-32 h-32 bg-custom-olive/10 rounded-full -z-0" />
+                    <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-custom-sand/20 rounded-2xl -z-0 blur-2xl animate-float" />
+                    <div className="absolute -top-6 -left-6 w-32 h-32 bg-custom-olive/10 rounded-full -z-0 animate-float-delayed" />
+
+                    {/* Floating Seed Icon */}
+                    <div className="absolute top-10 -right-12 w-20 h-20 text-custom-sand/20 animate-float-delayed pointer-events-none hidden md:block">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C7 2 4 7 4 12C4 17 7 22 12 22C17 22 20 17 20 12C20 7 17 22 12 22M12 20C8.7 20 6 17.3 6 14C6 10.7 8.7 8 12 8C15.3 8 18 10.7 18 14C18 17.3 15.3 20 12 20M12 10C10.3 10 9 11.3 9 13C9 14.7 10.3 16 12 16C13.7 16 15 14.7 15 13C15 11.3 13.7 10 12 10Z" /></svg>
+                    </div>
                 </motion.div>
 
                 {/* Content Side */}
@@ -40,18 +46,18 @@ export function AboutSection() {
                     viewport={{ once: true }}
                 >
                     <div className="space-y-4">
-                        <span className="text-custom-olive font-semibold tracking-wider text-sm uppercase">Our Story</span>
+                        <span className="text-custom-olive font-semibold tracking-wider text-sm uppercase">About Us</span>
                         <h2 className="text-4xl md:text-5xl font-heading font-bold text-custom-primary leading-tight">
-                            Pioneering Sustainable Agriculture in <span className="text-custom-olive">Somalia</span> & Beyond
+                            About Barwaaqo Agri Group
                         </h2>
                     </div>
 
                     <div className="space-y-6">
                         <p className="text-lg text-custom-charcoal/80 font-body leading-relaxed">
-                            Barwaaqo Agri Group is a leading agricultural development company specializing in modern farming solutions that bridge traditional practices with cutting-edge technology.
+                            Barwaaqo Agri Group is an agricultural development company supporting modern farming systems across Somalia and East Africa.
                         </p>
                         <p className="text-lg text-custom-charcoal/80 font-body leading-relaxed">
-                            We operate as a structured organization capable of partnering with international seed producers, irrigation specialists, and agricultural suppliers. Our expertise spans seed distribution, agronomic advisory, and farmer capacity building.
+                            Our work focuses on improving crop productivity, strengthening farmer support programs, and introducing reliable agricultural inputs and irrigation solutions adapted to local conditions.
                         </p>
                     </div>
 
@@ -67,9 +73,11 @@ export function AboutSection() {
                     </div>
 
                     <div className="pt-4">
-                        <Button variant="outline" className="px-10 py-4 hover:bg-custom-primary hover:text-white transition-all transform hover:-translate-y-1">
-                            Discover Our Mission
-                        </Button>
+                        <Link href="/about">
+                            <Button variant="outline" className="px-10 py-4 hover:bg-custom-primary hover:text-white transition-all">
+                                Learn More
+                            </Button>
+                        </Link>
                     </div>
                 </motion.div>
             </div>

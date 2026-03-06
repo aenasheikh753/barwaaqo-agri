@@ -1,19 +1,20 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "../../../components/ui/Button";
 
 export default function SeedInputsPage() {
     return (
         <main className="bg-white">
-            <section className="relative h-[50vh] flex items-center justify-center pt-20">
+            <section className="relative h-[65vh] flex items-center justify-center pt-24 overflow-hidden">
                 <div className="absolute inset-0">
-                    <Image src="/images/project-2.png" alt="Seeds and Inputs" fill className="object-cover" />
-                    <div className="absolute inset-0 bg-custom-primary/60" />
+                    <Image src="/images/agri1.jpg" alt="Seeds and Inputs" fill className="object-cover" />
+                    <div className="absolute inset-0 bg-black/60" />
                 </div>
                 <div className="relative z-10 text-center text-white px-6">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-4">Seed & Agricultural Inputs</h1>
-                    <p className="text-xl text-white/80 max-w-2xl mx-auto">Providing the foundation for high-yield harvests across East Africa.</p>
+                    <h1 className="text-5xl md:text-8xl font-heading font-bold mb-6 !text-white drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)]">Seed & <span className="text-custom-sand">Agricultural</span> Inputs</h1>
+                    <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto font-body drop-shadow-md">Providing the foundation for high-yield harvests across East Africa.</p>
                 </div>
             </section>
 
@@ -56,6 +57,15 @@ export default function SeedInputsPage() {
                             <Button className="w-full py-4 bg-custom-sand text-custom-primary hover:bg-white transition-colors">Submit Request</Button>
                         </form>
                     </div>
+                </div>
+
+                {/* View All Services Button */}
+                <div className="mt-24 pt-12 border-t border-custom-accent/20 text-center">
+                    <Link href="/services">
+                        <Button variant="outline" className="px-10 py-4 rounded-full border-2 hover:bg-custom-primary hover:text-white transition-all">
+                            View All Services
+                        </Button>
+                    </Link>
                 </div>
             </section>
         </main>

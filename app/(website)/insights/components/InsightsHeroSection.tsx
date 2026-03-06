@@ -9,8 +9,8 @@ export function InsightsHeroSection() {
             {/* Background Image & Overlay */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/project-2.png"
-                    alt="Agricultural Insights"
+                    src="/images/agri2.jpg"
+                    alt="Agricultural production and expertise in East Africa"
                     fill
                     className="object-cover"
                     priority

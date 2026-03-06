@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "../../../components/ui/Button";
 
 export default function ProgramsPage() {
@@ -9,11 +10,11 @@ export default function ProgramsPage() {
             <section className="relative h-[50vh] flex items-center justify-center pt-20">
                 <div className="absolute inset-0">
                     <Image src="/images/hero_agriculture.png" alt="Farmer Programs" fill className="object-cover" />
-                    <div className="absolute inset-0 bg-custom-primary/60" />
+                    <div className="absolute inset-0 bg-black/50" />
                 </div>
                 <div className="relative z-10 text-center text-white px-6">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-4">Farmer Capacity Programs</h1>
-                    <p className="text-xl text-white/80 max-w-2xl mx-auto">Building stronger agricultural communities through shared knowledge and growth.</p>
+                    <h1 className="text-4xl md:text-7xl font-heading font-bold mb-6 text-white drop-shadow-2xl">Farmer <span className="text-custom-sand">Capacity</span> Programs</h1>
+                    <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto font-body drop-shadow-lg">Building stronger agricultural communities through shared knowledge and growth.</p>
                 </div>
             </section>
 
@@ -44,6 +45,15 @@ export default function ProgramsPage() {
                 <div className="mt-20 pt-16 border-t border-custom-accent/30 text-center">
                     <h3 className="text-2xl font-bold text-custom-primary mb-8">Ready to grow with us?</h3>
                     <Button variant="primary" className="px-12 py-4">Register for Next Workshop</Button>
+                </div>
+
+                {/* View All Services Button */}
+                <div className="mt-24 pt-12 border-t border-custom-accent/20 text-center">
+                    <Link href="/services">
+                        <Button variant="outline" className="px-10 py-4 rounded-full border-2 hover:bg-custom-primary hover:text-white transition-all">
+                            View All Services
+                        </Button>
+                    </Link>
                 </div>
             </section>
         </main>

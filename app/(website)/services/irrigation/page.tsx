@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "../../../components/ui/Button";
 
 export default function IrrigationPage() {
@@ -9,11 +10,11 @@ export default function IrrigationPage() {
             <section className="relative h-[50vh] flex items-center justify-center pt-20">
                 <div className="absolute inset-0">
                     <Image src="/images/project-1.png" alt="Irrigation Systems" fill className="object-cover" />
-                    <div className="absolute inset-0 bg-custom-primary/60" />
+                    <div className="absolute inset-0 bg-black/50" />
                 </div>
                 <div className="relative z-10 text-center text-white px-6">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-4">Irrigation & Farm Resiliency</h1>
-                    <p className="text-xl text-white/80 max-w-2xl mx-auto">Reliable water management systems engineered for climate resilience.</p>
+                    <h1 className="text-4xl md:text-7xl font-heading font-bold mb-6 text-white drop-shadow-2xl">Irrigation & <span className="text-custom-sand">Farm Resiliency</span></h1>
+                    <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto font-body drop-shadow-lg">Reliable water management systems engineered for climate resilience.</p>
                 </div>
             </section>
 
@@ -43,6 +44,15 @@ export default function IrrigationPage() {
                             </p>
                             <Button variant="outline" className="px-10">Request a Consultation</Button>
                         </div>
+                    </div>
+
+                    {/* View All Services Button */}
+                    <div className="mt-24 pt-12 border-t border-custom-accent/20 text-center">
+                        <Link href="/services">
+                            <Button variant="outline" className="px-10 py-4 rounded-full border-2 hover:bg-custom-primary hover:text-white transition-all">
+                                View All Services
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </section>

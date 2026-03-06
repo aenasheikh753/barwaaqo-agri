@@ -14,32 +14,36 @@ export function VisionMissionSection() {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
                     >
-                        <span className="text-custom-olive font-semibold tracking-wider text-sm uppercase block mb-4">Our Purpose</span>
-                        <h2 className="text-4xl font-heading font-bold text-custom-primary mb-8 leading-tight">
-                            Cultivating a Sustainable Future for Somalia
+                        <span className="text-custom-olive font-semibold tracking-wider text-sm uppercase block mb-4">Strategic Purpose</span>
+                        <h2 className="text-4xl md:text-5xl font-heading font-bold text-custom-primary mb-8 leading-tight">
+                            Powering Regional <span className="text-custom-olive">Food Sovereignty</span>
                         </h2>
+
+                        <p className="text-lg text-custom-charcoal/80 mb-10 leading-relaxed font-body">
+                            Barwaaqo Agri Group stands at the intersection of local traditional knowledge and international agricultural innovation. We aren&apos;t just retailers; we are a strategic infrastructure partner dedicated to building a resilient agricultural economy in the Horn of Africa.
+                        </p>
 
                         <div className="space-y-8">
                             <div className="flex gap-6">
-                                <div className="flex-shrink-0 w-12 h-12 bg-custom-sand/20 rounded-xl flex items-center justify-center text-custom-primary">
-                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                <div className="flex-shrink-0 w-14 h-14 bg-custom-sand/20 rounded-2xl flex items-center justify-center text-custom-primary">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" className="w-7 h-7" strokeWidth="2"><path d="M12 2A10 10 0 1 0 22 12A10 10 0 0 0 12 2M12 11.5a3.5 3.5 0 1 1 3.5-3.5a3.5 3.5 0 0 1-3.5 3.5zM12 21a9 9 0 0 1-8-5.12" /></svg>
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-custom-primary mb-2">Our Vision</h3>
-                                    <p className="text-custom-charcoal/70 leading-relaxed">
-                                        To be the leading catalyst for agricultural transformation in East Africa, ensuring food security and prosperity through modern farming systems and strategic global partnerships.
+                                    <p className="text-custom-charcoal/60 leading-relaxed text-base">
+                                        To establish a self-sufficient agricultural corridor in East Africa where innovation meets productivity, securing the future of farming for generations to come.
                                     </p>
                                 </div>
                             </div>
 
                             <div className="flex gap-6">
-                                <div className="flex-shrink-0 w-12 h-12 bg-custom-olive/10 rounded-xl flex items-center justify-center text-custom-olive">
-                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                <div className="flex-shrink-0 w-14 h-14 bg-custom-olive/10 rounded-2xl flex items-center justify-center text-custom-olive">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" className="w-7 h-7" strokeWidth="2"><path d="M3 6l9 6l9-6M3 18l9-6l9 6M12 12V3" /></svg>
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-custom-primary mb-2">Our Mission</h3>
-                                    <p className="text-custom-charcoal/70 leading-relaxed">
-                                        Providing high-quality agricultural inputs, expert advisory, and resilient irrigation solutions that empower farmers and drive sustainable economic growth across the region.
+                                    <p className="text-custom-charcoal/60 leading-relaxed text-base">
+                                        By integrating advanced agronomy with world-class agricultural inputs, we empower large-scale producers and smallholders alike to achieve sustainable year-round yields.
                                     </p>
                                 </div>
                             </div>
@@ -47,22 +51,36 @@ export function VisionMissionSection() {
                     </motion.div>
 
                     <motion.div
-                        className="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl"
+                        className="relative h-[650px] rounded-[2.5rem] overflow-hidden shadow-[0_30px_60px_-15px_rgba(11,61,46,0.25)]"
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
                     >
                         <Image
-                            src="/images/about_agriculture.png"
-                            alt="Agricultural Excellence"
+                            src="/images/about_agriculture_professional.png"
+                            alt="Scaling Agriculture in East Africa"
                             fill
                             className="object-cover"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-custom-primary/40 to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-custom-primary/50 to-transparent" />
+
+                        {/* Impact Stats Overlay */}
+                        <div className="absolute bottom-10 left-10 right-10 grid grid-cols-2 gap-6 bg-white/10 backdrop-blur-xl p-8 rounded-3xl border border-white/20">
+                            <div>
+                                <div className="text-white text-3xl font-bold font-heading mb-1">98%</div>
+                                <div className="text-white/70 text-xs uppercase tracking-widest font-bold">Client Success Rate</div>
+                            </div>
+                            <div>
+                                <div className="text-white text-3xl font-bold font-heading mb-1">100k+</div>
+                                <div className="text-white/70 text-xs uppercase tracking-widest font-bold">Hectares Supported</div>
+                            </div>
+                        </div>
                     </motion.div>
                 </div>
             </div>
         </section>
     );
 }
+
+

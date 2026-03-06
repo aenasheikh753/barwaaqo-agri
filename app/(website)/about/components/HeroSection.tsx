@@ -17,12 +17,15 @@ export function HeroSection() {
 
             {/* Content Container */}
             <div className="relative z-10 max-w-6xl mx-auto px-6 w-full text-center flex flex-col items-center">
-                <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg mb-6 leading-tight tracking-tight">
-                    About Barwaaqo Agri Group
+                <span className="text-custom-sand font-bold tracking-[0.4em] text-xs md:text-sm uppercase mb-6 bg-white/10 backdrop-blur-md px-6 py-2 rounded-full border border-white/20">
+                    Corporate Profile
+                </span>
+                <h1 className="text-4xl md:text-7xl font-heading font-bold text-white drop-shadow-2xl mb-8 leading-tight tracking-tight uppercase">
+                    Our <span className="text-custom-sand italic">Foundations</span>
                 </h1>
 
-                <p className="text-lg md:text-xl text-slate-100/90 leading-relaxed max-w-3xl drop-shadow-md font-normal">
-                    Learn about our mission to transform agriculture in Somalia and East Africa through innovation and sustainable practices.
+                <p className="text-lg md:text-2xl text-white/90 leading-relaxed max-w-4xl font-body drop-shadow-lg">
+                    Strategically transforming Somali agriculture through global innovation and local excellence.
                 </p>
             </div>
         </section>

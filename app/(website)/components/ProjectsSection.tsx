@@ -10,19 +10,22 @@ export function ProjectsSection() {
             title: "Baidoa Irrigation Pilot",
             category: "Irrigation",
             image: "/images/project-1.png",
-            description: "A comprehensive irrigation initiative improving water efficiency for 500 hectares, demonstrating scalable solutions for Somali agriculture."
+            description: "A comprehensive irrigation initiative improving water efficiency for 500 hectares, demonstrating scalable solutions for Somali agriculture.",
+            href: "/services/irrigation"
         },
         {
             title: "Vegetable Seed Trials",
             category: "Seed Tech",
-            image: "/images/project-2.png",
-            description: "Evaluating high-yielding variety seedlings adapted to local soil, resulting in significant yield improvements for community farmers."
+            image: "/images/agri1.jpg",
+            description: "Evaluating high-yielding variety seedlings adapted to local soil, resulting in significant yield improvements for community farmers.",
+            href: "/services/seeds"
         },
         {
-            title: "Agri-Tech Capacity Program",
+            title: "Farmer Advisory Program",
             category: "Advisory",
-            image: "/images/about_agriculture.png",
-            description: "Structured training program empowering over 2,000 farmers in modern agronomic practices and sustainable farming techniques."
+            image: "/images/agri2.jpg",
+            description: "Agronomic training and crop planning support for smallholder farmers, enhancing productivity through shared expertise.",
+            href: "/services/advisory"
         }
     ];
 
@@ -41,14 +44,11 @@ export function ProjectsSection() {
                     viewport={{ once: true }}
                 >
                     <div className="max-w-2xl">
-                        <span className="text-custom-sand/60 font-semibold tracking-wider text-sm uppercase block mb-4">Our Impact</span>
+                        <span className="text-custom-sand/60 font-semibold tracking-wider text-sm uppercase block mb-4">Our Gallery</span>
                         <h2 className="text-4xl md:text-5xl font-heading font-bold text-white leading-tight">
-                            Transforming Landscape through <span className="text-custom-sand">Strategic Projects</span>
+                            Selected Projects
                         </h2>
                     </div>
-                    <Button variant="outline" className="px-10 py-4 !border-custom-sand/30 !text-custom-sand hover:!bg-custom-sand hover:!text-custom-primary backdrop-blur-sm transition-all shadow-xl">
-                        Explore Portfolio
-                    </Button>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">

@@ -15,6 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://barwaaqoagri.com"),
   title: "Barwaaqo Agri Group | Agricultural Development in Somalia & East Africa",
   description: "Barwaaqo Agri Group supports farmers across Somalia with high-quality seeds, irrigation development, agricultural inputs, and farm advisory services.",
   icons: {

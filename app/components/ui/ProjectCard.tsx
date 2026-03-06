@@ -1,16 +1,18 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ProjectCardProps {
     title: string;
     description: string;
     image: string;
     category: string;
+    href?: string;
 }
 
-export function ProjectCard({ title, description, image, category }: ProjectCardProps) {
+export function ProjectCard({ title, description, image, category, href = "/projects" }: ProjectCardProps) {
     return (
-        <div className="group flex flex-col rounded-3xl overflow-hidden bg-white shadow-[0_10px_40px_rgba(0,0,0,0.05)] hover:shadow-[0_25px_60px_rgba(0,0,0,0.12)] transition-all duration-500 transform hover:-translate-y-2">
+        <Link href={href} className="group flex flex-col rounded-3xl overflow-hidden bg-white shadow-[0_10px_40px_rgba(0,0,0,0.05)] hover:shadow-[0_25px_60px_rgba(0,0,0,0.12)] transition-all duration-500 transform hover:-translate-y-2 cursor-pointer h-full">
             <div className="h-64 relative overflow-hidden">
                 <Image
                     src={image}
@@ -33,7 +35,7 @@ export function ProjectCard({ title, description, image, category }: ProjectCard
                 </div>
             </div>
 
-            <div className="p-8">
+            <div className="p-8 flex flex-col">
                 <h3 className="text-2xl font-heading font-bold text-custom-primary mb-4 group-hover:text-custom-olive transition-colors duration-300">
                     {title}
                 </h3>
@@ -45,6 +47,6 @@ export function ProjectCard({ title, description, image, category }: ProjectCard
                     <svg className="w-4 h-4 ml-1 opacity-0 group-hover:opacity-100 group-hover:ml-2 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 }

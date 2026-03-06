@@ -9,8 +9,8 @@ export function ServicesHeroSection() {
             {/* Background Image & Overlay */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/hero_agriculture.png"
-                    alt="Agricultural Services"
+                    src="/images/agri2.jpg"
+                    alt="High-quality agricultural fields and production"
                     fill
                     className="object-cover"
                     priority

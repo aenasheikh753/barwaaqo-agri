@@ -10,7 +10,7 @@ export function DetailedServicesSection() {
             title: "Seed & Agricultural Inputs",
             desc: "We supply high-quality, climate-resilient seeds and essential agricultural inputs sourced from international partners. Our focus is on providing varieties that maximize yield in local Somali conditions.",
             items: ["Certified Vegetable Seeds", "High-Performance Fertilizers", "Safe Crop Protection", "Specialized Farming Tools"],
-            image: "/images/project-2.png",
+            image: "/images/agri1.jpg",
             link: "/services/seeds"
         },
         {
@@ -24,7 +24,7 @@ export function DetailedServicesSection() {
             title: "Agronomy & Advisory",
             desc: "Bridging the knowledge gap with professional agronomic services. Our team provides on-field support, soil analysis, and crop management strategies to boost farm efficiency.",
             items: ["Soil Health Analysis", "Pest & Disease Control", "Crop Rotation Planning", "Yield Optimization"],
-            image: "/images/about_agriculture.png",
+            image: "/images/agri2.jpg",
             link: "/services/advisory"
         }
     ];

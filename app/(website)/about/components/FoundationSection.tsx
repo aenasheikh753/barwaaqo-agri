@@ -5,48 +5,56 @@ import { motion } from "framer-motion";
 export function FoundationSection() {
     const values = [
         {
-            title: "Innovation",
-            desc: "Embracing cutting-edge agricultural technologies to solve local challenges.",
-            icon: "💡"
+            title: "Technological Leadership",
+            desc: "We prioritize the integration of AI-driven irrigation and climate-resilient seed technology into every project.",
+            icon: "🧬"
         },
         {
-            title: "Integrity",
-            desc: "Building trust through transparent partnerships and reliable quality inputs.",
-            icon: "🤝"
+            title: "Operational Integrity",
+            desc: "Transparency is our hallmark. From supply chain to field results, we maintain the highest ethical standards.",
+            icon: "🛡️"
         },
         {
-            title: "Resilience",
-            desc: "Developing systems that adapt to climate change and ensure year-round growth.",
-            icon: "🌱"
+            title: "Adaptive Resilience",
+            desc: "Our systems are built to withstand the unique climatic and logistical challenges of the East African region.",
+            icon: "🏗️"
         },
         {
-            title: "Community",
-            desc: "Empowering local farmers and contributing to regional food security.",
-            icon: "🌍"
+            title: "Inclusive Growth",
+            desc: "We ensure our large-scale success trickles down to smallholder communities through knowledge transfer.",
+            icon: "📈"
         }
     ];
 
     return (
-        <section className="py-24 bg-custom-light-bg">
-            <div className="max-w-[1200px] mx-auto px-6">
-                <div className="text-center mb-16">
-                    <span className="text-custom-olive font-semibold tracking-wider text-sm uppercase block mb-4">Core Principles</span>
-                    <h2 className="text-4xl font-heading font-bold text-custom-primary">The Pillars of Our Success</h2>
+        <section className="py-24 bg-custom-light-bg relative overflow-hidden">
+            {/* Background pattern */}
+            <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(var(--color-custom-primary) 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
+
+            <div className="max-w-[1200px] mx-auto px-6 relative z-10">
+                <div className="max-w-3xl mb-16">
+                    <span className="text-custom-olive font-semibold tracking-wider text-sm uppercase block mb-4">Our Values</span>
+                    <h2 className="text-4xl md:text-5xl font-heading font-bold text-custom-primary mb-6">The Foundations of Barwaaqo</h2>
+                    <p className="text-custom-charcoal/60 text-lg leading-relaxed font-body">
+                        Our growth is guided by a set of core principles that ensure every investment, partnership, and project contributes to the long-term stability of the region.
+                    </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {values.map((v, i) => (
                         <motion.div
                             key={i}
-                            className="bg-white p-10 rounded-2xl shadow-sm border border-custom-accent/30 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+                            className="bg-white p-10 rounded-[2rem] border border-custom-accent/30 hover:border-custom-olive/30 hover:shadow-[0_20px_50px_-12px_rgba(11,61,46,0.1)] transition-all duration-500 group"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: i * 0.1 }}
                             viewport={{ once: true }}
                         >
-                            <div className="text-4xl mb-6">{v.icon}</div>
-                            <h3 className="text-xl font-bold text-custom-primary mb-4">{v.title}</h3>
-                            <p className="text-custom-charcoal/70 leading-relaxed text-sm">{v.desc}</p>
+                            <div className="w-16 h-16 rounded-2xl bg-custom-light-bg flex items-center justify-center text-3xl mb-8 group-hover:bg-custom-olive group-hover:text-white transition-all duration-500 transform group-hover:rotate-6">
+                                {v.icon}
+                            </div>
+                            <h3 className="text-xl font-bold text-custom-primary mb-4 group-hover:text-custom-olive transition-colors">{v.title}</h3>
+                            <p className="text-custom-charcoal/60 leading-relaxed text-sm font-body">{v.desc}</p>
                         </motion.div>
                     ))}
                 </div>
@@ -54,3 +62,4 @@ export function FoundationSection() {
         </section>
     );
 }
+

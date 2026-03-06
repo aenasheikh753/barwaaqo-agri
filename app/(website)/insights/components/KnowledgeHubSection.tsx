@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
+import { Button } from "../../../components/ui/Button";
 
 export function KnowledgeHubSection() {
     return (
@@ -27,7 +29,7 @@ export function KnowledgeHubSection() {
                     <p className="text-lg text-custom-charcoal/80 leading-relaxed">
                         Dive into research, case studies, and data‑driven insights that empower modern farming across East Africa.
                     </p>
-                    <ul className="grid sm:grid-cols-2 gap-4 text-custom-charcoal/70">
+                    <ul className="grid sm:grid-cols-2 gap-4 text-custom-charcoal/70 !mb-8">
                         <li className="flex items-start space-x-2">
                             <span className="text-custom-olive font-bold">•</span>
                             <span>Latest agronomy research</span>
@@ -45,6 +47,11 @@ export function KnowledgeHubSection() {
                             <span>Expert webinars & workshops</span>
                         </li>
                     </ul>
+                    <div className="pt-4">
+                        <Link href="/contact">
+                            <Button variant="primary" className="px-10 rounded-full">Request Research Data</Button>
+                        </Link>
+                    </div>
                 </motion.div>
 
                 {/* Image / Visual */}
@@ -56,8 +63,8 @@ export function KnowledgeHubSection() {
                     className="relative h-80 rounded-2xl overflow-hidden shadow-xl"
                 >
                     <Image
-                        src="/images/insights_hub.jpg"
-                        alt="Knowledge Hub illustration"
+                        src="/images/agri1.jpg"
+                        alt="East African agricultural research field representing Barwaaqo Knowledge Hub"
                         fill
                         className="object-cover"
                         priority
