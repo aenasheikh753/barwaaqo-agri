@@ -20,7 +20,7 @@ export function DetailedProjectsSection() {
             location: "Afgooye & Jowhar Districts",
             impact: "40% Yield Increase",
             desc: "In collaboration with international seed producers, we conducted rigorous field trials to identify tomato and onion varieties best suited for local micro-climates. The successful varieties are now being distributed to thousands of farmers across the region.",
-            image: "/images/project-2.png",
+            image: "/images/agri1.jpg",
             tags: ["Seed Selection", "Food Security", "Yield Optimization"]
         },
         {
@@ -29,7 +29,7 @@ export function DetailedProjectsSection() {
             location: "Somalia & East Africa",
             impact: "2,000+ Farmers Enrolled",
             desc: "We bridge the gap between production and market. By providing high-quality inputs on credit and offering guaranteed buy-back programs, we have stabilized incomes for thousands of farming households while ensuring a steady supply of quality produce for urban markets.",
-            image: "/images/about_agriculture.png",
+            image: "/images/agri2.jpg",
             tags: ["Market Access", "Economic Growth", "Strategic Partnership"]
         }
     ];

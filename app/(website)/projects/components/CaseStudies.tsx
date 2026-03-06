@@ -40,7 +40,7 @@ export function CaseStudies() {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
                     >
-                        <Image src="/images/project-2.png" alt="Afgooye Case Study" fill className="object-cover" />
+                        <Image src="/images/hero_agriculture.png" alt="Afgooye Case Study" fill className="object-cover" />
                         <div className="absolute inset-0 bg-custom-primary/20" />
                     </motion.div>
                 </div>
