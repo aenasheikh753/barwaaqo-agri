@@ -11,7 +11,7 @@ interface ServiceCardProps {
 export function ServiceCard({ title, description, icon, href = "/services" }: ServiceCardProps) {
     return (
         <Link href={href} className="block group h-full cursor-pointer">
-            <div className="flex flex-col items-start p-10 rounded-2xl bg-white border border-custom-accent/50 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] transition-all duration-500 transform hover:-translate-y-2 relative overflow-hidden h-full">
+            <div className="flex flex-col items-start p-6 sm:p-8 md:p-10 rounded-2xl bg-white border border-custom-accent/50 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] transition-all duration-500 transform hover:-translate-y-2 relative overflow-hidden h-full">
                 {/* Hover Accent Background */}
                 <div className="absolute top-0 right-0 w-32 h-32 bg-custom-sand/5 rounded-bl-full -mr-16 -mt-16 group-hover:bg-custom-olive/10 transition-colors duration-500" />
 
@@ -19,11 +19,11 @@ export function ServiceCard({ title, description, icon, href = "/services" }: Se
                     {icon}
                 </div>
 
-                <h3 className="text-xl font-heading font-bold text-custom-primary mb-4 group-hover:text-custom-olive transition-colors duration-300">
+                <h3 className="text-lg md:text-xl font-heading font-bold text-custom-primary mb-3 md:mb-4 group-hover:text-custom-olive transition-colors duration-300">
                     {title}
                 </h3>
 
-                <p className="text-custom-charcoal/70 font-body leading-relaxed group-hover:text-custom-charcoal transition-colors duration-300">
+                <p className="text-sm md:text-base text-custom-charcoal/70 font-body leading-relaxed group-hover:text-custom-charcoal transition-colors duration-300">
                     {description}
                 </p>
 

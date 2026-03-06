@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export function ServicesHeroSection() {
   return (
-    <section className="relative h-[60vh] min-h-[380px] md:min-h-[450px] flex items-center justify-center pt-20 overflow-hidden">
+    <section className="relative h-[55vh] md:h-[60vh] min-h-[360px] md:min-h-[450px] flex items-center justify-center pt-20 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/agri2.jpg"
@@ -17,23 +17,23 @@ export function ServicesHeroSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-custom-primary/40" />
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 w-full text-center flex flex-col items-center">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 w-full text-center flex flex-col items-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <span className="text-custom-sand font-semibold tracking-wider text-sm uppercase block mb-4">Our Expertise</span>
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white drop-shadow-lg mb-4 sm:mb-6 leading-tight tracking-tight">
+          <span className="text-custom-sand font-semibold tracking-wider text-xs sm:text-sm uppercase block mb-3 sm:mb-4">Our Expertise</span>
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white drop-shadow-lg mb-3 sm:mb-6 leading-snug tracking-tight max-w-[20ch] break-words">
             Agricultural <span className="text-custom-sand">Solutions</span> & Services
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-slate-100/90 leading-relaxed max-w-3xl drop-shadow-md font-normal">
+          <p className="text-sm sm:text-base md:text-lg text-slate-100/90 leading-relaxed max-w-md sm:max-w-2xl drop-shadow-md font-normal">
             Empowering Somali farmers with world-class inputs, modern technology, and expert agronomic guidance for sustainable productivity.
           </p>
         </motion.div>
       </div>
 
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent z-10" />
+      <div className="absolute bottom-0 left-0 w-full h-16 md:h-24 bg-gradient-to-t from-white to-transparent z-10" />
     </section>
   );
 }
