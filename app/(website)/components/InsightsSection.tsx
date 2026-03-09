@@ -48,7 +48,7 @@ export function InsightsSection() {
                 ].map((insight, i) => (
                     <Link key={i} href={`/insights/${insight.slug}`}>
                         <motion.article
-                            className="group cursor-pointer border border-custom-accent rounded-xl p-8 hover:shadow-xl hover:border-custom-olive transition-all duration-300 h-full flex flex-col"
+                            className="group cursor-pointer bg-white border border-custom-accent/40 rounded-2xl p-6 md:p-8 shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] hover:border-custom-olive/50 transition-all duration-300 h-full flex flex-col"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: i * 0.1 }}
@@ -58,10 +58,10 @@ export function InsightsSection() {
                             <span className="text-custom-olive font-body text-sm font-semibold tracking-wider uppercase mb-3 block">
                                 Agronomy Guide
                             </span>
-                            <h3 className="text-2xl font-heading font-semibold text-custom-primary mb-4 group-hover:text-custom-olive transition-colors leading-tight">
+                            <h3 className="text-2xl font-heading font-semibold text-custom-primary mb-3 group-hover:text-custom-olive transition-colors leading-snug">
                                 {insight.title}
                             </h3>
-                            <p className="text-custom-charcoal/70 font-body leading-relaxed mb-6 flex-grow">
+                            <p className="text-custom-charcoal/70 font-body leading-relaxed mb-6 flex-grow max-w-prose">
                                 {insight.description}
                             </p>
                             <span className="text-custom-primary font-medium hover:text-custom-olive flex items-center space-x-2 transition-colors mt-auto">

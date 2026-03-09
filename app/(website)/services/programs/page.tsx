@@ -32,11 +32,11 @@ export default function ProgramsPage() {
                         { title: "Technical Training", desc: "Regular workshops on modern agronomy and irrigation maintenance." },
                         { title: "Input Access Programs", desc: "Bridging the gap to high-quality inputs for smallholder communities." }
                     ].map((item, idx) => (
-                        <div key={idx} className="flex flex-col md:flex-row gap-10 items-center p-12 border border-custom-accent/30 rounded-[40px] hover:bg-custom-light-bg/50 transition-colors">
-                            <div className="text-5xl font-black text-custom-sand/40">{idx + 1}</div>
-                            <div className="space-y-4">
-                                <h3 className="text-2xl font-bold text-custom-primary">{item.title}</h3>
-                                <p className="text-custom-charcoal/70 leading-relaxed">{item.desc}</p>
+                        <div key={idx} className="flex flex-col md:flex-row gap-8 items-center p-8 md:p-10 bg-white border border-gray-100 rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.12)] hover:-translate-y-1.5 transition-all duration-300 ease-out">
+                            <div className="text-5xl font-black text-custom-sand/30">{idx + 1}</div>
+                            <div className="space-y-2">
+                                <h3 className="text-xl md:text-2xl font-bold text-custom-primary">{item.title}</h3>
+                                <p className="text-custom-charcoal/70 leading-relaxed text-sm md:text-base">{item.desc}</p>
                             </div>
                         </div>
                     ))}

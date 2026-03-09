@@ -44,15 +44,15 @@ export function ExpertiseSection() {
                         {areas.map((a, i) => (
                             <motion.div
                                 key={i}
-                                className="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group"
+                                className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm shadow-[0_2px_12px_rgba(0,0,0,0.15)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.3)] hover:bg-white/10 hover:-translate-y-1.5 transition-all duration-300 ease-out group"
                                 initial={{ opacity: 0, x: 30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.6, delay: i * 0.15 }}
                                 viewport={{ once: true }}
                             >
-                                <div className="flex justify-between items-start mb-4">
-                                    <h3 className="text-xl font-bold text-custom-sand group-hover:text-white transition-colors">{a.title}</h3>
-                                    <div className="w-8 h-8 rounded-full border border-custom-sand/30 flex items-center justify-center text-custom-sand text-xs font-bold">0{i + 1}</div>
+                                <div className="flex justify-between items-start mb-2.5">
+                                    <h3 className="text-lg font-bold text-custom-sand group-hover:text-white transition-colors">{a.title}</h3>
+                                    <div className="w-7 h-7 rounded-full border border-custom-sand/30 flex items-center justify-center text-custom-sand text-xs font-bold">0{i + 1}</div>
                                 </div>
                                 <p className="text-white/60 leading-relaxed text-sm font-body">{a.desc}</p>
                             </motion.div>

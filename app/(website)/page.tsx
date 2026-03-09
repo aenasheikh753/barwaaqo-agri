@@ -1,4 +1,5 @@
 import { HeroSection } from "./components/HeroSection";
+import { TrustStripSection } from "./components/TrustStripSection";
 import { AboutSection } from "./components/AboutSection";
 import { CoreServicesSection } from "./components/CoreServicesSection";
 import { ProjectsSection } from "./components/ProjectsSection";
@@ -10,6 +11,7 @@ export default function Home() {
     return (
         <>
             <HeroSection />
+            {/* <TrustStripSection /> */}
             <AboutSection />
             <CoreServicesSection />
             <ProjectsSection />

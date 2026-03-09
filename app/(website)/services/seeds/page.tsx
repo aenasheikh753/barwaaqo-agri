@@ -35,13 +35,13 @@ export default function SeedInputsPage() {
                                 { title: "Specialized Fertilizers", desc: "Crop-specific blends to maximize nutrient uptake." },
                                 { title: "Crop Protection", desc: "Eco-friendly pest and disease management solutions." }
                             ].map((item, idx) => (
-                                <div key={idx} className="flex gap-6 p-6 rounded-2xl bg-custom-light-bg border border-custom-accent/30">
-                                    <div className="w-12 h-12 rounded-full bg-custom-olive/10 flex items-center justify-center text-custom-olive font-bold">
+                                <div key={idx} className="flex gap-5 p-5 rounded-2xl bg-white border border-gray-100 shadow-[0_2px_12px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.12)] hover:-translate-y-1.5 transition-all duration-300 ease-out">
+                                    <div className="w-11 h-11 rounded-full bg-custom-olive/10 flex items-center justify-center text-custom-olive font-bold shrink-0">
                                         {idx + 1}
                                     </div>
                                     <div>
-                                        <h3 className="font-bold text-custom-primary mb-1">{item.title}</h3>
-                                        <p className="text-custom-charcoal/60 text-sm">{item.desc}</p>
+                                        <h3 className="font-bold text-custom-primary mb-0.5">{item.title}</h3>
+                                        <p className="text-custom-charcoal/60 text-sm leading-relaxed">{item.desc}</p>
                                     </div>
                                 </div>
                             ))}

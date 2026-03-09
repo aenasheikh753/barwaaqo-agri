@@ -38,16 +38,16 @@ export function PartnershipBenefitsSection() {
                     {benefits.map((benefit, i) => (
                         <motion.div
                             key={i}
-                            className="p-10 rounded-2xl bg-custom-light-bg border border-custom-accent/30 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group"
+                            className="p-6 sm:p-7 rounded-2xl bg-white border border-gray-100 shadow-[0_2px_12px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.12)] transition-all duration-300 ease-out transform hover:-translate-y-2 group"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: i * 0.1 }}
                             viewport={{ once: true }}
                         >
-                            <div className="w-16 h-16 rounded-2xl bg-white text-custom-primary flex items-center justify-center mb-6 shadow-sm group-hover:bg-custom-primary group-hover:text-white transition-colors duration-500">
+                            <div className="w-14 h-14 rounded-xl bg-custom-light-bg text-custom-primary flex items-center justify-center mb-4 shadow-sm group-hover:bg-custom-primary group-hover:text-white transition-colors duration-300">
                                 {benefit.icon}
                             </div>
-                            <h3 className="text-xl font-bold text-custom-primary mb-3">{benefit.title}</h3>
+                            <h3 className="text-lg font-bold text-custom-primary mb-1.5">{benefit.title}</h3>
                             <p className="text-custom-charcoal/70 leading-relaxed text-sm">{benefit.desc}</p>
                         </motion.div>
                     ))}

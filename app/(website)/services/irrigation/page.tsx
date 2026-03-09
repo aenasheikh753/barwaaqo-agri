@@ -26,9 +26,9 @@ export default function IrrigationPage() {
                             { title: "Solar Pumping", desc: "Sustainable power solutions for remote farming locations." },
                             { title: "Irrigation Design", desc: "Customized hydraulic plans for farms of all scales." }
                         ].map((card, i) => (
-                            <div key={i} className="bg-white p-12 rounded-[40px] shadow-sm border border-custom-accent/30 hover:shadow-xl transition-shadow">
-                                <h3 className="text-2xl font-bold text-custom-primary mb-4">{card.title}</h3>
-                                <p className="text-custom-charcoal/60 leading-relaxed">{card.desc}</p>
+                            <div key={i} className="bg-white p-8 rounded-2xl border border-gray-100 shadow-[0_2px_12px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-300 ease-out">
+                                <h3 className="text-xl font-bold text-custom-primary mb-2">{card.title}</h3>
+                                <p className="text-custom-charcoal/60 leading-relaxed text-sm">{card.desc}</p>
                             </div>
                         ))}
                     </div>

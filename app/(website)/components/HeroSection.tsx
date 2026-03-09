@@ -14,7 +14,7 @@ export function HeroSection() {
                     className="object-cover"
                     priority
                 />
-                <div className="absolute inset-0 bg-black/50" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/50" />
 
                 {/* Decorative Floating Elements */}
                 <div className="absolute top-1/4 left-10 w-16 h-16 text-white/10 animate-float pointer-events-none hidden md:block">
@@ -31,7 +31,7 @@ export function HeroSection() {
                     Building Modern Agriculture in Somalia & East Africa
                 </h1>
 
-                <p className="text-lg md:text-xl text-slate-100/90 leading-relaxed max-w-3xl mb-6 drop-shadow-md font-normal">
+                <p className="text-lg md:text-xl text-slate-100/95 leading-9 md:leading-10 max-w-xl md:max-w-2xl mb-8 drop-shadow-md font-normal">
                     Barwaaqo Agri Group provides high-quality seeds, agricultural inputs, irrigation development, and farm advisory services to support productive and resilient farming systems.
                 </p>
 
@@ -53,6 +53,7 @@ export function HeroSection() {
                         </Button>
                     </Link>
                 </div>
+                
             </div>
         </section>
     );
