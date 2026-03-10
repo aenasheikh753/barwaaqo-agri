@@ -39,7 +39,7 @@ export function HeroSection() {
                     <Link href="/services">
                         <Button
                             variant="primary"
-                            className="shadow-[0_10px_30px_rgba(0,0,0,0.3)] px-12 py-4 rounded-full text-lg hover:-translate-y-1 transition-all active:scale-95"
+                            className="shadow-[0_10px_30px_rgba(0,0,0,0.3)] px-12 py-4.5 rounded-full text-lg hover:-translate-y-1 transition-all active:scale-95"
                         >
                             Explore Our Services
                         </Button>
