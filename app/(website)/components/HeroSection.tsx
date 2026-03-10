@@ -26,7 +26,7 @@ export function HeroSection() {
             </div>
 
             {/* Content Container */}
-            <div className="relative z-10 max-w-6xl mx-auto px-6 w-full text-center flex flex-col items-center">
+            <div className="relative z-10 max-w-6xl mx-auto px-6 w-full text-center flex flex-col items-center lg:pt-10 md:pt-10 pt-24">
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-lg lg:mb-6 sm:mb-4 leading-tight max-w-4xl tracking-tight">
                     Building Modern Agriculture in Somalia & East Africa
                 </h1>
