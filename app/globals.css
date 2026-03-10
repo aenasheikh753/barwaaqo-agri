@@ -68,3 +68,16 @@
 .animate-float-delayed {
   animation: float-delayed 12s ease-in-out infinite;
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}

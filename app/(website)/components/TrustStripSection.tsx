@@ -2,26 +2,39 @@ import Link from "next/link";
 
 export function TrustStripSection() {
   const items = [
-    { label: "Seed & Agricultural Inputs", href: "/services/seeds" },
-    { label: "Farm Advisory & Agronomy", href: "/services/advisory" },
-    { label: "Irrigation Development", href: "/services/irrigation" },
-    { label: "Farmer Programs", href: "/services/programs" },
+    "🌱 Seed & Agricultural Inputs",
+    "🌾 Farm Advisory & Agronomy",
+    "💧 Irrigation Development",
+    "👨‍🌾 Farmer Programs",
   ];
 
   return (
-    <section className="bg-white border-t border-custom-accent/20">
-      <div className="max-w-[1200px] mx-auto px-6 py-4 sm:py-6">
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6">
-          {items.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-center px-4 py-2 rounded-full bg-custom-light-bg hover:bg-custom-sand/40 border border-custom-accent/30 text-custom-primary text-xs font-bold uppercase tracking-widest transition-colors"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </div>
+    <section className="border-t bg-custom-sand border-custom-accent/20 overflow-hidden">
+
+      <div className="text-center pt-10 px-4">
+        <span className="inline-block bg-custom-accent/10 text-custom-primary px-4 py-1 rounded-full text-base font-bold uppercase tracking-widest">
+          10+ Years of Field Excellence
+        </span>
+        <h2 className="text-custom-primary text-4xl md:text-5xl font-heading font-bold leading-tight">
+          The Foundation of Trusted Farming
+        </h2>
+        <p className="text-custom-olive text-xs  md:text-sm uppercase tracking-widest mt-2">
+          From Seed to Harvest — We Support Every Step
+        </p>
+      </div>
+
+      <div className="whitespace-nowrap animate-scroll flex gap-6 lg:py-10 py-4 items-center">
+        {items.concat(items).map((item, i) => (
+          <Link
+            key={i}
+            href="/services"
+            className="text-custom-primary font-semibold uppercase tracking-wider text-[12px] md:text-sm 
+                       border border-custom-olive px-4 py-2 rounded-full 
+                       hover:bg-custom-accent/10 hover:border-custom-accent transition-all duration-300"
+          >
+            {item}
+          </Link>
+        ))}
       </div>
     </section>
   );
