@@ -76,7 +76,7 @@ export function Navbar() {
             <div className="w-full max-w-[1600px] mx-auto px-6 md:px-10 lg:px-14 flex items-center justify-between">
 
                 {/* Logo */}
-                <Link href="/" className="relative h-10 w-28 md:h-12 md:w-44 lg:h-14 lg:w-48 group transition-all duration-300">
+                <Link href="/" className="relative h-10 w-18 md:h-12 lg:h-14 group transition-all duration-300 overflow-hidden">
                     <Image
                         src="/images/barwaaqo-logo.jpg"
                         alt="Barwaaqo Agri Group Logo"
@@ -181,8 +181,8 @@ export function Navbar() {
                 }`}>
                 <div className="h-full flex flex-col">
                     <div className="flex items-center justify-between pl-0 pr-6 md:pl-0 md:pr-12 pt-6 md:pt-12 pb-6">
-                        <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="relative h-9 w-36 md:h-10 md:w-40">
-                            <Image src="/images/barwaaqo-logo.jpg" alt="Logo" fill className="object-contain" />
+                        <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="relative h-9 w-36 md:h-10 overflow-hidden">
+                            <Image src="/images/barwaaqo-logo.jpg" alt="Logo" fill className="object-contain rounded-2xl" />
                         </Link>
                         <button className="p-3 text-custom-primary bg-custom-light-bg rounded-xl" onClick={() => setIsMobileMenuOpen(false)}>
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" /></svg>
