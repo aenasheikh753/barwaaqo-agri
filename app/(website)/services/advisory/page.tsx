@@ -18,8 +18,8 @@ export default function AdvisoryPage() {
                 </div>
             </section>
 
-            <section className="py-24 max-w-6xl mx-auto px-6 font-body text-custom-charcoal/70">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-24">
+            <section className="py-16 max-w-6xl mx-auto px-6 font-body text-custom-charcoal/70">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-16">
                     <div className="space-y-6">
                         <h2 className="text-4xl font-heading font-bold text-custom-primary leading-tight">Expert Guidance for <span className="text-custom-olive">Profitable Farming</span></h2>
                         <p className="text-lg leading-relaxed">
@@ -48,7 +48,7 @@ export default function AdvisoryPage() {
                 </div>
 
                 {/* View All Services Button */}
-                <div className="mt-24 pt-12 border-t border-custom-accent/20 text-center">
+                <div className="pt-12 border-t border-custom-accent/20 text-center">
                     <Link href="/services">
                         <Button variant="outline" className="px-10 py-4 rounded-full border-2 hover:bg-custom-primary hover:text-white transition-all">
                             View All Services

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function PartnershipsSection() {
     return (
-        <section className="py-[100px] bg-custom-sand/10 border-y border-custom-accent/50 relative overflow-hidden">
+        <section className="py-16 bg-custom-sand/10 border-y border-custom-accent/50 relative overflow-hidden">
             {/* Background Animations */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-custom-olive/5 rounded-full blur-3xl animate-pulse" />
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-custom-sand/10 rounded-full blur-3xl animate-pulse delay-700" />

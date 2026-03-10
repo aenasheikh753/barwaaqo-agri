@@ -32,7 +32,7 @@ export function CoreServicesSection() {
     ];
 
     return (
-        <section className="py-16 md:py-[120px] bg-custom-accent/30 relative overflow-hidden">
+        <section className="py-16 bg-custom-accent/30 relative overflow-hidden">
             <div className="max-w-[1200px] mx-auto px-6 relative z-10">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8 text-center md:text-left">
                     <motion.div
