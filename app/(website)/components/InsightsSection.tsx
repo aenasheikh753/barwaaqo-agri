@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function InsightsSection() {
     return (
-        <section className="py-[120px] max-w-[1200px] mx-auto px-6">
+        <section className="py-16 max-w-[1200px] mx-auto px-6">
             <motion.div
                 className="text-center mb-16"
                 initial={{ opacity: 0, y: 30 }}

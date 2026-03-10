@@ -30,7 +30,7 @@ export function ProjectsSection() {
     ];
 
     return (
-        <section className="py-[120px] bg-[#082a20] relative overflow-hidden">
+        <section className="py-16 bg-custom-primary relative overflow-hidden">
             {/* Ambient Background Glows */}
             <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-custom-olive/10 blur-[120px] rounded-full -translate-x-1/2 -translate-y-1/2" />
             <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-custom-sand/5 blur-[150px] rounded-full translate-x-1/3 translate-y-1/3" />
