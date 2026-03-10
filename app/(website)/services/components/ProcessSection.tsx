@@ -27,11 +27,11 @@ export function ProcessSection() {
     ];
 
     return (
-        <section className="py-24 bg-custom-primary text-white overflow-hidden">
+        <section className="py-16 bg-custom-primary text-white overflow-hidden">
             <div className="max-w-[1200px] mx-auto px-6">
                 <div className="text-center mb-20">
                     <span className="text-custom-sand font-semibold tracking-wider text-sm uppercase block mb-4">Our Methodology</span>
-                    <h2 className="text-4xl font-heading font-bold mb-6">How We Work</h2>
+                    <h2 className="text-4xl text-custom-accent font-heading font-bold mb-6">How We Work</h2>
                     <div className="w-24 h-1 bg-custom-olive mx-auto rounded"></div>
                 </div>
 

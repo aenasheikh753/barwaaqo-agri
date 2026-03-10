@@ -27,7 +27,7 @@ export function FoundationSection() {
     ];
 
     return (
-        <section className="py-24 bg-custom-light-bg relative overflow-hidden">
+        <section className="py-16 bg-custom-light-bg relative overflow-hidden">
             {/* Background pattern */}
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(var(--color-custom-primary) 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
 

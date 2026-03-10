@@ -7,7 +7,7 @@ import { Button } from "../../../components/ui/Button";
 export default function SeedInputsPage() {
     return (
         <main className="bg-white">
-            <section className="relative h-[65vh] flex items-center justify-center pt-24 overflow-hidden">
+            <section className="relative h-[65vh] flex items-center justify-center pt-16 overflow-hidden">
                 <div className="absolute inset-0">
                     <Image src="/images/agri1.jpg" alt="Seeds and Inputs" fill className="object-cover" />
                     <div className="absolute inset-0 bg-black/60" />
@@ -18,7 +18,7 @@ export default function SeedInputsPage() {
                 </div>
             </section>
 
-            <section className="py-24 max-w-6xl mx-auto px-6">
+            <section className="py-16 max-w-6xl mx-auto px-6">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                     <div className="space-y-8">
                         <div>
@@ -60,7 +60,7 @@ export default function SeedInputsPage() {
                 </div>
 
                 {/* View All Services Button */}
-                <div className="mt-24 pt-12 border-t border-custom-accent/20 text-center">
+                <div className="pt-12 border-t border-custom-accent/20 text-center">
                     <Link href="/services">
                         <Button variant="outline" className="px-10 py-4 rounded-full border-2 hover:bg-custom-primary hover:text-white transition-all">
                             View All Services

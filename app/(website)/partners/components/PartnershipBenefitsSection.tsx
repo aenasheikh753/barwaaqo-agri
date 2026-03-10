@@ -27,7 +27,7 @@ export function PartnershipBenefitsSection() {
     ];
 
     return (
-        <section className="py-24 bg-white relative overflow-hidden">
+        <section className="py-16 bg-white relative overflow-hidden">
             <div className="max-w-[1200px] mx-auto px-6 relative z-10">
                 <div className="text-center mb-16">
                     <span className="text-custom-olive font-bold uppercase tracking-widest text-sm mb-4 block">Why Partner With Us?</span>

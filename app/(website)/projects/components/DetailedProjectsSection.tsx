@@ -35,14 +35,14 @@ export function DetailedProjectsSection() {
     ];
 
     return (
-        <section className="py-24 bg-white">
+        <section className="py-16 bg-white">
             <div className="max-w-[1200px] mx-auto px-6">
                 <div className="space-y-40">
                     {projects.map((project, index) => (
                         <div key={index} className={`flex flex-col lg:flex-row gap-20 items-center ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
                             {/* Project Image */}
                             <motion.div
-                                className="lg:w-1/2 relative h-[500px] w-full rounded-[40px] overflow-hidden shadow-2xl group"
+                                className="lg:w-1/2 relative h-[300px] w-full rounded-[40px] overflow-hidden shadow-2xl group"
                                 initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.8 }}

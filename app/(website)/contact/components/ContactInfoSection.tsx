@@ -28,7 +28,7 @@ export function ContactInfoSection() {
     ];
 
     return (
-        <section className="py-[120px] bg-custom-primary text-custom-light-bg">
+        <section className="py-16 bg-custom-primary text-custom-light-bg">
             <div className="max-w-[1200px] mx-auto px-6">
                 <motion.div 
                     className="text-center mb-16"

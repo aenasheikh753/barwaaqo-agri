@@ -11,7 +11,7 @@ export function TrustStripSection() {
   return (
     <section className="border-t bg-custom-sand border-custom-accent/20 overflow-hidden">
 
-      <div className="text-center pt-10 px-4">
+      <div className="text-center pt-16 px-4">
         <span className="inline-block bg-custom-accent/10 text-custom-primary px-4 py-1 rounded-full text-base font-bold uppercase tracking-widest">
           10+ Years of Field Excellence
         </span>
@@ -23,7 +23,7 @@ export function TrustStripSection() {
         </p>
       </div>
 
-      <div className="whitespace-nowrap animate-scroll flex gap-6 pt-4 pb-10 sm:pb-10 items-center">
+      <div className="whitespace-nowrap animate-scroll flex gap-6 pt-10 pb-16 sm:pb-16 items-center">
         {items.concat(items).map((item, i) => (
           <Link
             key={i}

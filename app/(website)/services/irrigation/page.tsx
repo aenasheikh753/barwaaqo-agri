@@ -18,7 +18,7 @@ export default function IrrigationPage() {
                 </div>
             </section>
 
-            <section className="py-24 bg-[#fafaf8]">
+            <section className="py-16 bg-[#fafaf8]">
                 <div className="max-w-6xl mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                         {[
@@ -33,21 +33,20 @@ export default function IrrigationPage() {
                         ))}
                     </div>
 
-                    <div className="mt-24 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-                        <div className="relative h-[400px] rounded-[30px] overflow-hidden">
+                        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                        <div className="relative flex justify-center items-center rounded-[30px] overflow-hidden h-72">
                             <Image src="/images/project-1.png" alt="System Install" fill className="object-cover" />
                         </div>
                         <div className="space-y-8">
                             <h2 className="text-4xl font-heading font-bold text-custom-primary">Transforming Arid Landscapes</h2>
                             <p className="font-body text-custom-charcoal/70 leading-relaxed">
-                                Our irrigation solutions are designed to unlock the full potential of your land. From site survey to final commissioning, we ensure every drop is used efficiently to drive productivity and farm sustainability.
+                            Our irrigation solutions are designed to unlock the full potential of your land. From site survey to final commissioning, we ensure every drop is used efficiently to drive productivity and farm sustainability.
                             </p>
                             <Button variant="outline" className="px-10">Request a Consultation</Button>
                         </div>
-                    </div>
-
+                        </div>
                     {/* View All Services Button */}
-                    <div className="mt-24 pt-12 border-t border-custom-accent/20 text-center">
+                    <div className="mt-16 pt-12 border-t border-custom-accent/20 text-center">
                         <Link href="/services">
                             <Button variant="outline" className="px-10 py-4 rounded-full border-2 hover:bg-custom-primary hover:text-white transition-all">
                                 View All Services

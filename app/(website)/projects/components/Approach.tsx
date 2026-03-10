@@ -19,7 +19,7 @@ export function Approach() {
     ];
 
     return (
-        <section className="py-24 bg-custom-light-bg">
+        <section className="py-16 bg-custom-light-bg">
             <div className="max-w-[1200px] mx-auto px-6 text-center">
                 <span className="text-custom-olive font-bold uppercase tracking-widest text-sm mb-4 block">Our Methodology</span>
                 <h2 className="text-4xl font-heading font-bold text-custom-primary mb-16">The Barwaaqo Approach</h2>

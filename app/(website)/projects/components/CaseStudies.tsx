@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export function CaseStudies() {
     return (
-        <section className="py-24 bg-white overflow-hidden">
+        <section className="py-16 bg-white overflow-hidden">
             <div className="max-w-[1200px] mx-auto px-6">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                     <motion.div
@@ -34,7 +34,7 @@ export function CaseStudies() {
                     </motion.div>
 
                     <motion.div
-                        className="relative h-[600px] rounded-[50px] overflow-hidden shadow-2xl skew-y-3"
+                        className="relative h-[300px] rounded-[50px] overflow-hidden shadow-2xl skew-y-3"
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8 }}

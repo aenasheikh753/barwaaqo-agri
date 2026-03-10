@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export function VisionMissionSection() {
     return (
-        <section className="py-24 bg-white overflow-hidden">
+        <section className="py-16 bg-white overflow-hidden">
             <div className="max-w-[1200px] mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                     <motion.div
@@ -51,7 +51,7 @@ export function VisionMissionSection() {
                     </motion.div>
 
                     <motion.div
-                        className="relative h-[650px] rounded-[2.5rem] overflow-hidden shadow-[0_30px_60px_-15px_rgba(11,61,46,0.25)]"
+                        className="relative lg:h-[400px] h-96 rounded-[2.5rem] overflow-hidden shadow-[0_30px_60px_-15px_rgba(11,61,46,0.25)]"
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}

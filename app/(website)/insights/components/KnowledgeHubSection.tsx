@@ -7,7 +7,7 @@ import { Button } from "../../../components/ui/Button";
 
 export function KnowledgeHubSection() {
     return (
-        <section className="relative py-24 bg-gradient-to-b from-custom-light-bg to-white overflow-hidden">
+        <section className="relative py-16 bg-gradient-to-b from-custom-light-bg to-white overflow-hidden">
             {/* Decorative Background */}
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute -top-40 -right-40 w-96 h-96 bg-custom-olive/10 rounded-full blur-3xl" />
@@ -60,7 +60,7 @@ export function KnowledgeHubSection() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                     viewport={{ once: true }}
-                    className="relative h-80 rounded-2xl overflow-hidden shadow-xl"
+                    className="relative lg:h-80 h-64 rounded-2xl overflow-hidden shadow-xl"
                 >
                     <Image
                         src="/images/agri1.jpg"

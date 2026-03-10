@@ -19,7 +19,7 @@ export function ExpertiseSection() {
     ];
 
     return (
-        <section className="py-24 bg-custom-primary text-white overflow-hidden relative">
+        <section className="py-16 bg-custom-primary text-white overflow-hidden relative">
             {/* Background elements */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2" />
 

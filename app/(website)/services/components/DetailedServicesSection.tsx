@@ -30,7 +30,7 @@ export function DetailedServicesSection() {
     ];
 
     return (
-        <section className="py-14 sm:py-16 md:py-24 bg-white overflow-x-hidden">
+        <section className="py-16 bg-white overflow-x-hidden">
             <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
                 <div className="space-y-12 sm:space-y-16 md:space-y-28 lg:space-y-32">
                     {services.map((service, index) => (

@@ -29,7 +29,7 @@ export function ProjectsHeroSection() {
                     <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg mb-6 leading-tight tracking-tight">
                         Transforming Landscapes through <span className="text-custom-sand">Strategic Projects</span>
                     </h1>
-                    <p className="text-lg md:text-xl text-slate-100/90 leading-relaxed max-w-3xl drop-shadow-md font-normal">
+                    <p className="text-lg md:text-xl text-slate-100/90 leading-relaxed max-w-3xl mx-auto drop-shadow-md font-normal">
                         From pilot irrigation systems to cross-regional seed trials, witness our commitment to building resilient agricultural systems in East Africa.
                     </p>
                 </motion.div>
