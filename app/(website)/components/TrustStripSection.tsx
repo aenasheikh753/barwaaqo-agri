@@ -23,7 +23,7 @@ export function TrustStripSection() {
         </p>
       </div>
 
-      <div className="whitespace-nowrap animate-scroll flex gap-6 lg:py-10 lg:py-4 sm:pb-10 items-center">
+      <div className="whitespace-nowrap animate-scroll flex gap-6 pt-4 pb-10 sm:pb-10 items-center">
         {items.concat(items).map((item, i) => (
           <Link
             key={i}

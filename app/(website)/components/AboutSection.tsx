@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export function AboutSection() {
     return (
-        <section className="py-[120px] max-w-[1200px] mx-auto px-6 overflow-hidden">
+        <section className="py-16 max-w-[1200px] mx-auto px-6 overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
 
                 {/* Image Side — height auto-matches content column */}
