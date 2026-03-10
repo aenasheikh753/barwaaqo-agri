@@ -23,7 +23,7 @@ export function AboutSection() {
                             src="/images/abot-img.avif"
                             alt="Organized commercial crop rows representing Barwaaqo Agri Group's scale and professionalism"
                             fill
-                            unoptimizedm 
+                            unoptimized
                             className="object-cover hover:scale-105 transition-transform duration-700"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-custom-primary/30 to-transparent" />
