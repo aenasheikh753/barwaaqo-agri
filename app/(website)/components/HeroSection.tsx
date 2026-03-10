@@ -47,7 +47,7 @@ export function HeroSection() {
                     <Link href="/partners">
                         <Button
                             variant="outline"
-                            className="shadow-[0_10px_30px_rgba(0,0,0,0.2)] px-12 py-4 rounded-full text-lg border-white/40 text-white hover:bg-white/10 hover:-translate-y-1 transition-all active:scale-95"
+                            className="shadow-[0_10px_30px_rgba(0,0,0,0.2)] px-12 py-4 rounded-full text-lg border-white/40 text-white hover:bg-white/10 hover:-translate-y-1 transition-all active:scale-95 pb-10 sm:pb-0"
                         >
                             Partner With Us
                         </Button>
