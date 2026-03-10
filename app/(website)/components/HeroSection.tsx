@@ -35,7 +35,7 @@ export function HeroSection() {
                     Barwaaqo Agri Group provides high-quality seeds, agricultural inputs, irrigation development, and farm advisory services to support productive and resilient farming systems.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4 mt-4">
+                <div className="flex flex-col sm:flex-row gap-4 mt-4 pb-10">
                     <Link href="/services">
                         <Button
                             variant="primary"
