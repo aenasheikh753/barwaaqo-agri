@@ -19,25 +19,39 @@ export default function AdvisoryPage() {
             </section>
 
             <section className="py-16 max-w-6xl mx-auto px-6 font-body text-custom-charcoal/70">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-16">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-16">
+                    {/* Left Content */}
                     <div className="space-y-6">
-                        <h2 className="text-4xl font-heading font-bold text-custom-primary leading-tight">Expert Guidance for <span className="text-custom-olive">Profitable Farming</span></h2>
-                        <p className="text-lg leading-relaxed">
+                        <h2 className="text-4xl font-heading font-bold text-custom-primary leading-tight">
+                            Expert Guidance for <span className="text-custom-olive">Profitable Farming</span>
+                        </h2>
+                        <p className="text-lg leading-relaxed text-gray-700">
                             Our team of professional agronomists provides hands-on support to help you achieve the best possible results from your farming operations. We translate complex data into actionable field strategies.
                         </p>
+                        
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-6 text-custom-primary">
-                            <div className="space-y-2">
-                                <div className="text-2xl font-bold">Soil Analysis</div>
-                                <p className="text-sm">Detailed testing to determine nutrient requirements.</p>
+                            <div className="space-y-2 border-l-2 border-custom-accent/20 pl-4">
+                                <div className="text-xl font-bold">Soil Analysis</div>
+                                <p className="text-sm opacity-80">Detailed testing to determine nutrient requirements.</p>
                             </div>
-                            <div className="space-y-2">
-                                <div className="text-2xl font-bold">Crop Planning</div>
-                                <p className="text-sm">Strategic calendars for year-round production.</p>
+                            <div className="space-y-2 border-l-2 border-custom-accent/20 pl-4">
+                                <div className="text-xl font-bold">Crop Planning</div>
+                                <p className="text-sm opacity-80">Strategic calendars for year-round production.</p>
                             </div>
                         </div>
                     </div>
-                    <div className="relative h-[500px] rounded-[40px] overflow-hidden shadow-2xl">
-                        <Image src="/images/about_agriculture.png" alt="Agronomy Expert" fill className="object-cover" />
+
+                    {/* Right Image - Height Adjusted & Centered */}
+                    <div className="flex items-center justify-center lg:justify-end">
+                        <div className="relative w-full max-w-[400px] aspect-square lg:aspect-[5/6] max-h-[200px] rounded-[30px] overflow-hidden shadow-xl">
+                            <Image
+                                src="/images/agronomy-img.jpg"
+                                alt="Agronomy Expert"
+                                fill
+                                className="object-cover"
+                                priority
+                            />
+                        </div>
                     </div>
                 </div>
 
