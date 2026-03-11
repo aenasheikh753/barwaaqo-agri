@@ -118,8 +118,12 @@ export async function generateStaticParams() {
     }));
 }
 
-export default function ArticlePage({ params }: { params: { slug: string } }) {
-    const slug = params.slug;
+export default async function ArticlePage({
+    params
+}: {
+    params: Promise<{ slug: string }>;
+}) {
+    const { slug } = await params;
     const article = articles[slug as keyof typeof articles];
 
     if (!article) {
