@@ -11,7 +11,7 @@ export function Footer() {
 
     return (
         <footer className="bg-custom-primary text-custom-light-bg py-12 md:py-20 border-t border-white/5">
-            <div className="max-w-[1400px] mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+            <div className="max-w-[1600px] mx-auto px-6 md:px-10 lg:px-14 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
 
                 {/* Column 1: Brand */}
                 <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-6">
@@ -64,7 +64,7 @@ export function Footer() {
 
             </div>
 
-            <div className="max-w-[1400px] mx-auto px-6 mt-16 pt-8 border-t border-white/10 text-center md:text-left">
+            <div className="max-w-[1600px] mx-auto px-6 md:px-10 lg:px-14 mt-16 pt-8 border-t border-white/10 text-center md:text-left">
                 <p className="text-xs font-body text-custom-light-bg/30">&copy; {new Date().getFullYear()} Barwaaqo Agri Group. {t("footer.allRightsReserved")}</p>
             </div>
         </footer>

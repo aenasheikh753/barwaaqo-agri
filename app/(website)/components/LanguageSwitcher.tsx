@@ -30,7 +30,7 @@ export function LanguageSwitcher({ variant = "header", isScrolled }: { variant?:
           onClick={() => setOpen(!open)}
           className={`xl:flex hidden items-center justify-center w-10 h-10 rounded-full transition-all duration-300 ${isScrolled ? "bg-custom-light-bg text-custom-primary hover:bg-custom-sand/20" : "bg-white/20 text-white backdrop-blur-lg hover:bg-white/30 border border-white/30"}`}
           aria-label={t("language")}
-          aria-expanded={open}
+          aria-expanded={open ? "true" : "false"}
         >
           <Globe className={`w-5 h-5 ${iconColor}`} strokeWidth={2} />
         </button>
@@ -49,8 +49,8 @@ export function LanguageSwitcher({ variant = "header", isScrolled }: { variant?:
                 }}
                 className={`w-full flex items-center gap-3 px-4 py-3 text-left text-sm font-semibold transition-colors ${locale === code ? "bg-custom-sand/20 text-custom-primary" : "text-custom-charcoal hover:bg-custom-sand/10"}`}
               >
-                <span className="text-xl leading-none">{flag}</span>
-                <span>{name}</span>
+                <span className="w-8 shrink-0 flex items-center justify-center text-xl leading-none">{flag}</span>
+                <span className="leading-none">{name}</span>
               </button>
             ))}
           </div>
@@ -67,7 +67,7 @@ export function LanguageSwitcher({ variant = "header", isScrolled }: { variant?:
           onClick={() => setOpen(!open)}
           className="flex items-center justify-between w-full min-h-[44px] text-left text-2xl font-bold transition-colors text-custom-primary hover:text-custom-olive"
           aria-label={t("language")}
-          aria-expanded={open}
+          aria-expanded={open ? "true" : "false"}
         >
           <span className="inline-flex items-center gap-3 min-w-0">
             <Globe className="w-5 h-5 shrink-0" strokeWidth={2} />
@@ -100,8 +100,8 @@ export function LanguageSwitcher({ variant = "header", isScrolled }: { variant?:
                 }}
                 className={`w-full flex items-center gap-3 px-4 py-3 text-left text-base font-semibold transition-colors ${locale === code ? "bg-custom-sand/30 text-custom-primary" : "text-custom-charcoal hover:bg-custom-sand/10"}`}
               >
-                <span className="text-xl leading-none">{flag}</span>
-                <span>{name}</span>
+                <span className="w-8 shrink-0 flex items-center justify-center text-xl leading-none">{flag}</span>
+                <span className="leading-none">{name}</span>
               </button>
             ))}
           </div>
@@ -121,10 +121,10 @@ export function LanguageSwitcher({ variant = "header", isScrolled }: { variant?:
         onClick={() => setOpen(!open)}
         className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors text-left w-full max-w-[200px]"
         aria-label={t("language")}
-        aria-expanded={open}
+        aria-expanded={open ? "true" : "false"}
       >
-        <span className="text-2xl leading-none">{currentFlag}</span>
-        <span className="text-custom-light-bg font-body font-medium">{current?.name ?? locale}</span>
+        <span className="w-8 shrink-0 flex items-center justify-center text-2xl leading-none">{currentFlag}</span>
+        <span className="text-custom-light-bg font-body font-medium leading-none">{current?.name ?? locale}</span>
         <svg className={`w-4 h-4 ml-auto text-custom-sand transition-transform ${open ? "rotate-180" : ""}`} viewBox="0 0 20 20" fill="currentColor">
           <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.25 8.29a.75.75 0 0 1-.02-1.08z" clipRule="evenodd" />
         </svg>
@@ -141,8 +141,8 @@ export function LanguageSwitcher({ variant = "header", isScrolled }: { variant?:
               }}
               className={`w-full flex items-center gap-3 px-4 py-3 text-left text-sm font-semibold transition-colors ${locale === code ? "bg-custom-sand/30 text-custom-sand" : "text-custom-light-bg/90 hover:bg-white/10"}`}
             >
-              <span className="text-xl leading-none">{flag}</span>
-              <span>{name}</span>
+              <span className="w-8 shrink-0 flex items-center justify-center text-xl leading-none">{flag}</span>
+              <span className="leading-none">{name}</span>
             </button>
           ))}
         </div>
