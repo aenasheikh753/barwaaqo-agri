@@ -205,7 +205,11 @@ export function Navbar() {
                         <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="relative h-9 w-36 md:h-10 overflow-hidden">
                             <Image src="/images/barwaaqo-logo.jpg" alt="Logo" fill className="object-contain rounded-2xl" />
                         </Link>
-                        <button className="p-3 text-custom-primary bg-custom-light-bg rounded-xl" onClick={() => setIsMobileMenuOpen(false)}>
+                        <button
+                            className="p-3 text-custom-primary bg-custom-light-bg rounded-xl"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            aria-label="Close menu"
+                        >
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" /></svg>
                         </button>
                     </div>
@@ -257,6 +261,13 @@ export function Navbar() {
                                                 {navLinkKeys[link.name] ? t(navLinkKeys[link.name]) : link.name}
                                             </Link>
                                         )}
+
+                                        {/* Mobile/Tablet language switcher directly under Contact */}
+                                        {link.name === "Contact" && (
+                                            <div className="pt-2">
+                                                <LanguageSwitcher variant="mobileNav" />
+                                            </div>
+                                        )}
                                     </div>
                                 );
                             })}
@@ -264,9 +275,6 @@ export function Navbar() {
                     </div>
 
                     <div className="pt-8 border-t border-custom-accent/10 px-6 md:px-12 pb-6 flex flex-col gap-4">
-                        <div className="xl:hidden">
-                            <LanguageSwitcher variant="footer" />
-                        </div>
                         <Link href="/partners" className="w-full" onClick={() => setIsMobileMenuOpen(false)}>
                             <Button className="w-full text-lg py-5 rounded-2xl shadow-xl shadow-custom-primary/10">{t("nav.partnerWithUs")}</Button>
                         </Link>

@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Globe } from "lucide-react";
 import { useLanguage, LOCALES, type LocaleCode } from "../../context/LanguageContext";
 
-type Variant = "header" | "footer";
+type Variant = "header" | "footer" | "mobileNav";
 
 export function LanguageSwitcher({ variant = "header", isScrolled }: { variant?: Variant; isScrolled?: boolean }) {
   const { locale, setLocale, t, currentFlag } = useLanguage();
@@ -30,7 +30,7 @@ export function LanguageSwitcher({ variant = "header", isScrolled }: { variant?:
           onClick={() => setOpen(!open)}
           className={`xl:flex hidden items-center justify-center w-10 h-10 rounded-full transition-all duration-300 ${isScrolled ? "bg-custom-light-bg text-custom-primary hover:bg-custom-sand/20" : "bg-white/20 text-white backdrop-blur-lg hover:bg-white/30 border border-white/30"}`}
           aria-label={t("language")}
-          aria-expanded={open ? "true" : "false"}
+          aria-expanded={open}
         >
           <Globe className={`w-5 h-5 ${iconColor}`} strokeWidth={2} />
         </button>
@@ -59,6 +59,57 @@ export function LanguageSwitcher({ variant = "header", isScrolled }: { variant?:
     );
   }
 
+  if (variant === "mobileNav") {
+    return (
+      <div className="relative" ref={ref}>
+        <button
+          type="button"
+          onClick={() => setOpen(!open)}
+          className="flex items-center justify-between w-full text-left text-2xl font-bold transition-colors text-custom-primary hover:text-custom-olive"
+          aria-label={t("language")}
+          aria-expanded={open}
+        >
+          <span className="inline-flex items-center gap-3">
+            <Globe className="w-5 h-5" strokeWidth={2} />
+            <span>{t("language")}</span>
+          </span>
+
+          <svg
+            className={`w-4 h-4 transition-transform ${open ? "rotate-180" : ""}`}
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              fillRule="evenodd"
+              d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.25 8.29a.75.75 0 0 1-.02-1.08z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </button>
+
+        {open && (
+          <div className="mt-3 w-full bg-custom-light-bg rounded-2xl border border-custom-accent/20 overflow-hidden">
+            {LOCALES.map(({ code, name, flag }) => (
+              <button
+                key={code}
+                type="button"
+                onClick={() => {
+                  setLocale(code as LocaleCode);
+                  setOpen(false);
+                }}
+                className={`w-full flex items-center gap-3 px-4 py-3 text-left text-base font-semibold transition-colors ${locale === code ? "bg-custom-sand/30 text-custom-primary" : "text-custom-charcoal hover:bg-custom-sand/10"}`}
+              >
+                <span className="text-xl leading-none">{flag}</span>
+                <span>{name}</span>
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  }
+
   // Footer variant: show current flag + label, same dropdown
   return (
     <div className="relative flex flex-col items-center md:items-start" ref={ref}>
@@ -70,7 +121,7 @@ export function LanguageSwitcher({ variant = "header", isScrolled }: { variant?:
         onClick={() => setOpen(!open)}
         className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors text-left w-full max-w-[200px]"
         aria-label={t("language")}
-        aria-expanded={open ? "true" : "false"}
+        aria-expanded={open}
       >
         <span className="text-2xl leading-none">{currentFlag}</span>
         <span className="text-custom-light-bg font-body font-medium">{current?.name ?? locale}</span>
