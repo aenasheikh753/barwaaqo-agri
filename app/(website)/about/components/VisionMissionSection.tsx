@@ -2,8 +2,12 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
+
+const FALLBACK_IMAGE = "/images/agri2.jpg";
 
 export function VisionMissionSection() {
+    const [imgSrc, setImgSrc] = useState("/images/about_agriculture_professional.png");
     return (
         <section className="py-16 bg-white overflow-hidden">
             <div className="max-w-[1200px] mx-auto px-6">
@@ -51,18 +55,20 @@ export function VisionMissionSection() {
                     </motion.div>
 
                     <motion.div
-                        className="relative w-full min-h-[280px] h-64 sm:h-80 md:h-96 lg:h-[400px] rounded-[2.5rem] overflow-hidden shadow-[0_30px_60px_-15px_rgba(11,61,46,0.25)]"
+                        className="relative w-full aspect-[4/3] min-h-[280px] sm:aspect-[3/2] sm:min-h-0 md:aspect-auto md:h-96 lg:h-[400px] rounded-[2.5rem] overflow-hidden shadow-[0_30px_60px_-15px_rgba(11,61,46,0.25)]"
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
                     >
                         <Image
-                            src="/images/about_agriculture_professional.png"
+                            src={imgSrc}
                             alt="Scaling Agriculture in East Africa"
                             fill
                             className="object-cover"
                             sizes="(max-width: 768px) 100vw, 50vw"
+                            onError={() => setImgSrc(FALLBACK_IMAGE)}
+                            priority
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-custom-primary/50 to-transparent" />
 
