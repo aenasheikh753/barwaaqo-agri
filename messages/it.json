@@ -272,9 +272,32 @@
       "titleHighlight": "intelligenza agricola",
       "subtitle": "Esplorare il futuro dell'agricoltura in Africa orientale attraverso dati, ricerca e strategie testate sul campo."
     },
+    "publishedLabel": "Pubblicato",
+    "authorName": "Team di agronomia Barwaaqo",
+    "authorRole": "Specialisti sul campo",
     "backToInsights": "Torna agli approfondimenti",
     "articleNotFound": "Articolo non trovato",
     "articleNotFoundDesc": "L'articolo che cerchi non esiste o è stato spostato."
+  },
+  "articles": {
+    "tomatoProductionSomalia": {
+      "title": "Migliori stagioni per la produzione di pomodoro in Somalia",
+      "category": "Guida agronomica",
+      "date": "15 marzo 2026",
+      "content": "<p class=\"mb-6\">La produzione di pomodoro è fondamentale, ma il successo dipende dal momento giusto. Comprendere clima e stagioni aiuta a ottenere rese più alte.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Finestre di semina</h3><p class=\"mb-6\">In molte aree la semina è ideale nella transizione tra Gu (aprile–giugno) e Dayr (ottobre–dicembre).</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Clima e malattie</h3><p class=\"mb-6\">Caldo e umidità aumentano i rischi. Ombreggiatura leggera e frangivento migliorano il microclima.</p>"
+    },
+    "benefitsDripIrrigation": {
+      "title": "Benefici dell'irrigazione a goccia per gli ortaggi",
+      "category": "Tecnologia irrigua",
+      "date": "10 marzo 2026",
+      "content": "<p class=\"mb-6\">L'irrigazione a goccia porta l'acqua direttamente alle radici e riduce gli sprechi, aumentando l'efficienza.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Risparmio idrico</h3><p class=\"mb-6\">Meno evaporazione e ruscellamento: più produzione con la stessa acqua.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Resa e qualità</h3><p class=\"mb-6\">Umidità costante riduce lo stress e migliora la qualità del prodotto.</p>"
+    },
+    "soilPreparationTechniques": {
+      "title": "Tecniche di preparazione del suolo per piccole aziende",
+      "category": "Sostenibilità",
+      "date": "5 marzo 2026",
+      "content": "<p class=\"mb-6\">Un buon raccolto parte dal suolo. Per i piccoli agricoltori, preparare il terreno è il modo più efficace per aumentare la produttività.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Test del suolo</h3><p class=\"mb-6\">Misurare pH e nutrienti guida l'uso preciso di fertilizzanti.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Aggiunta di sostanza organica</h3><p class=\"mb-6\">Compost e letame migliorano struttura e ritenzione idrica.</p>"
+    }
   },
   "partners": {
     "hero": {

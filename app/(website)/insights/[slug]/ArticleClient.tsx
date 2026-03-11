@@ -44,7 +44,7 @@ export function ArticleClient({ article }: { article: Article }) {
                             {article.title}
                         </h1>
                         <p className="text-white/80 font-body uppercase tracking-widest text-sm font-bold">
-                            Published: {article.date}
+                            {t("insights.publishedLabel")}: {article.date}
                         </p>
                     </motion.div>
                 </div>
@@ -64,8 +64,8 @@ export function ArticleClient({ article }: { article: Article }) {
                     <div className="flex items-center space-x-4">
                         <div className="w-12 h-12 rounded-full bg-custom-primary flex items-center justify-center text-white font-bold text-xl">B</div>
                         <div>
-                            <p className="font-bold text-custom-primary">Barwaaqo Agronomy Team</p>
-                            <p className="text-sm text-custom-charcoal/50">Field Specialists</p>
+                            <p className="font-bold text-custom-primary">{t("insights.authorName")}</p>
+                            <p className="text-sm text-custom-charcoal/50">{t("insights.authorRole")}</p>
                         </div>
                     </div>
 

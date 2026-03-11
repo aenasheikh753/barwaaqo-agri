@@ -272,9 +272,32 @@
       "titleHighlight": "Kilimo",
       "subtitle": "Kuchunguza mustakabali wa kilimo Afrika Mashariki kupitia data, utafiti na mbinu zilizojaribiwa shambani."
     },
+    "publishedLabel": "Imechapishwa",
+    "authorName": "Timu ya Agronomia ya Barwaaqo",
+    "authorRole": "Wataalamu wa Shambani",
     "backToInsights": "Rudi kwa Maoni",
     "articleNotFound": "Makala Haipatikani",
     "articleNotFoundDesc": "Makala unaoutafuta haipo au imehamishwa."
+  },
+  "articles": {
+    "tomatoProductionSomalia": {
+      "title": "Misimu Bora ya Uzalishaji wa Nyanya Somalia",
+      "category": "Mwongozo wa Agronomia",
+      "date": "15 Machi 2026",
+      "content": "<p class=\"mb-6\">Uzalishaji wa nyanya ni muhimu kwa uchumi wa kilimo Somalia, lakini mafanikio hutegemea sana muda. Kuelewa hali ya hewa na mabadiliko ya misimu ni hatua ya kwanza ya mavuno bora.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Madirisha Bora ya Kupanda</h3><p class=\"mb-6\">Kwa maeneo mengi, muda bora wa kupanda ni wakati wa mpito kati ya Gu (Aprili–Juni) na Dayr (Oktoba–Desemba). Hii huweka mizizi imara na hupunguza shinikizo la magonjwa.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Hali ya Hewa</h3><p class=\"mb-6\">Joto kali na unyevunyevu mkubwa vinaweza kupunguza kuweka matunda na kuongeza magonjwa ya fangasi. Kivuli chepesi na vizuizi vya upepo husaidia kuboresha mazingira ya mmea.</p>"
+    },
+    "benefitsDripIrrigation": {
+      "title": "Faida za Umwagiliaji wa Matone kwa Kilimo cha Mboga",
+      "category": "Teknolojia ya Umwagiliaji",
+      "date": "10 Machi 2026",
+      "content": "<p class=\"mb-6\">Maji ni rasilimali adimu. Umwagiliaji wa matone hupeleka maji moja kwa moja kwenye mzizi na huongeza tija kwa matumizi madogo ya maji.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Ufanisi wa Maji</h3><p class=\"mb-6\">Kupunguza uvukizi na mtiririko wa maji huokoa maji na huongeza uthabiti wa mavuno katika misimu mikavu.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Ubora na Mavuno</h3><p class=\"mb-6\">Unyevu thabiti hupunguza msongo wa mmea na kuboresha ubora wa mazao. Pia huruhusu fertigation kwa usahihi.</p>"
+    },
+    "soilPreparationTechniques": {
+      "title": "Mbinu za Maandalizi ya Udongo kwa Mashamba Madogo",
+      "category": "Uendelevu",
+      "date": "05 Machi 2026",
+      "content": "<p class=\"mb-6\">Mavuno bora huanzia chini ya ardhi. Kwa wakulima wadogo, maandalizi sahihi ya udongo ni njia nafuu ya kuongeza tija ya muda mrefu.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Kupima Udongo</h3><p class=\"mb-6\">Pima pH na virutubisho ili kutumia mbolea kwa usahihi—huokoa gharama na kulinda mazingira.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Kuongeza Mabaki Hai</h3><p class=\"mb-6\">Kutumia mboji au samadi iliyooza huboresha muundo wa udongo na uwezo wa kushika maji.</p>"
+    }
   },
   "partners": {
     "hero": {

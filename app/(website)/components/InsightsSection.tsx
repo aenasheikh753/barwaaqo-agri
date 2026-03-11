@@ -48,10 +48,10 @@ export function InsightsSection() {
                             <span className="text-custom-olive font-body text-sm font-semibold tracking-wider uppercase mb-3 block">
                                 {t("common.agronomyGuide")}
                             </span>
-                            <h3 className="text-2xl font-heading font-semibold text-custom-primary mb-3 group-hover:text-custom-olive transition-colors leading-snug">
+                            <h3 className="text-2xl font-heading font-semibold text-custom-primary mb-3 group-hover:text-custom-olive transition-colors leading-snug wrap-anywhere hyphens-auto">
                                 {t(insight.titleKey)}
                             </h3>
-                            <p className="text-custom-charcoal/70 font-body leading-relaxed mb-6 flex-grow max-w-prose">
+                            <p className="text-custom-charcoal/70 font-body leading-relaxed mb-6 grow max-w-prose wrap-anywhere hyphens-auto">
                                 {t(insight.descKey)}
                             </p>
                             <span className="text-custom-primary font-medium hover:text-custom-olive flex items-center space-x-2 transition-colors mt-auto">

@@ -272,9 +272,32 @@
       "titleHighlight": "intelligentie",
       "subtitle": "De toekomst van landbouw in Oost-Afrika verkennen via data, onderzoek en veldgeteste strategieën."
     },
+    "publishedLabel": "Gepubliceerd",
+    "authorName": "Barwaaqo Agronomy Team",
+    "authorRole": "Veldspecialisten",
     "backToInsights": "Terug naar inzichten",
     "articleNotFound": "Artikel niet gevonden",
     "articleNotFoundDesc": "Het artikel dat u zoekt bestaat niet of is verplaatst."
+  },
+  "articles": {
+    "tomatoProductionSomalia": {
+      "title": "Beste seizoenen voor tomatenteelt in Somalië",
+      "category": "Agronomie-gids",
+      "date": "15 maart 2026",
+      "content": "<p class=\"mb-6\">Tomatenteelt is belangrijk voor de Somalische landbouw, maar succes hangt sterk af van timing. Door het lokale klimaat en seizoenswisselingen te begrijpen, kunnen boeren hogere en stabielere opbrengsten behalen.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Optimale plantperiodes</h3><p class=\"mb-6\">In veel gebieden is planten ideaal rond de overgang tussen Gu (april–juni) en Dayr (oktober–december). Zo ontwikkelen planten sterke wortels bij voldoende vocht, terwijl de vruchtvorming in koelere, drogere periodes plaatsvindt.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Klimaat en ziekterisico</h3><p class=\"mb-6\">Temperaturen boven 35°C en hoge luchtvochtigheid verhogen stress en ziektedruk. Schaduwdoek, windbrekers en goed luchtige teelt verminderen problemen zoals bladvlekken en meeldauw.</p>"
+    },
+    "benefitsDripIrrigation": {
+      "title": "Voordelen van druppelirrigatie voor groenteteelt",
+      "category": "Irrigatietechniek",
+      "date": "10 maart 2026",
+      "content": "<p class=\"mb-6\">Water is een van de meest waardevolle middelen in Oost-Afrika. Druppelirrigatie levert water direct bij de wortelzone en helpt boeren om met minder water meer te produceren.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Waterbesparing</h3><p class=\"mb-6\">Door verdamping en afstroming te beperken kan het waterverbruik sterk dalen. Dit maakt teelt betrouwbaarder in droge seizoenen.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Hogere opbrengst en kwaliteit</h3><p class=\"mb-6\">Constante bodemvochtigheid vermindert stress en verhoogt uniformiteit. Met ferti-irrigatie kunnen voedingsstoffen nauwkeurig worden toegediend.</p>"
+    },
+    "soilPreparationTechniques": {
+      "title": "Bodemvoorbereidingstechnieken voor kleine bedrijven",
+      "category": "Duurzaamheid",
+      "date": "5 maart 2026",
+      "content": "<p class=\"mb-6\">Een gezonde oogst begint in de bodem. Voor kleinschalige boeren is bodemvoorbereiding een van de meest kosteneffectieve manieren om de productiviteit te verbeteren.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Bodemtesten</h3><p class=\"mb-6\">Test pH en nutriënten om meststoffen gericht toe te passen. Dat bespaart kosten en beschermt het milieu.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Organische stof toevoegen</h3><p class=\"mb-6\">Compost of goed verteerde mest verbetert structuur en waterbergend vermogen en geeft langzaam voedingsstoffen vrij.</p>"
+    }
   },
   "partners": {
     "hero": {

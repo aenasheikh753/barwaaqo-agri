@@ -272,9 +272,32 @@
       "titleHighlight": "intelligence agricole",
       "subtitle": "Explorer l'avenir de l'agriculture en Afrique de l'Est grâce aux données, à la recherche et aux stratégies éprouvées sur le terrain."
     },
+    "publishedLabel": "Publié",
+    "authorName": "Équipe d'agronomie Barwaaqo",
+    "authorRole": "Spécialistes terrain",
     "backToInsights": "Retour aux analyses",
     "articleNotFound": "Article introuvable",
     "articleNotFoundDesc": "L'article que vous recherchez n'existe pas ou a été déplacé."
+  },
+  "articles": {
+    "tomatoProductionSomalia": {
+      "title": "Meilleures saisons pour produire la tomate en Somalie",
+      "category": "Guide d'agronomie",
+      "date": "15 mars 2026",
+      "content": "<p class=\"mb-6\">La tomate est essentielle pour l'agriculture somalienne, mais la réussite dépend du bon calendrier. Comprendre le climat local est la première étape vers de meilleurs rendements.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Fenêtres de plantation</h3><p class=\"mb-6\">Dans de nombreuses régions, la période idéale se situe autour de la transition entre Gu (avril–juin) et Dayr (octobre–décembre).</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Climat et maladies</h3><p class=\"mb-6\">La chaleur et l'humidité augmentent la pression des maladies. Une ombrière légère et des brise-vents améliorent le microclimat.</p>"
+    },
+    "benefitsDripIrrigation": {
+      "title": "Avantages du goutte-à-goutte pour les légumes",
+      "category": "Tech d'irrigation",
+      "date": "10 mars 2026",
+      "content": "<p class=\"mb-6\">L'eau est une ressource clé. Le goutte-à-goutte apporte l'eau directement aux racines et améliore l'efficacité.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Économie d'eau</h3><p class=\"mb-6\">Moins d'évaporation et de ruissellement signifie plus de production avec la même quantité d'eau.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Rendement et qualité</h3><p class=\"mb-6\">Une humidité régulière réduit le stress des plantes et améliore la qualité des récoltes.</p>"
+    },
+    "soilPreparationTechniques": {
+      "title": "Techniques de préparation du sol pour petites exploitations",
+      "category": "Durabilité",
+      "date": "5 mars 2026",
+      "content": "<p class=\"mb-6\">Une bonne récolte commence dans le sol. Pour les petits producteurs, la préparation du sol est l'un des meilleurs investissements.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Analyse du sol</h3><p class=\"mb-6\">Mesurer le pH et les nutriments aide à appliquer les intrants avec précision.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Matière organique</h3><p class=\"mb-6\">Compost et fumier améliorent la structure et la capacité de rétention d'eau.</p>"
+    }
   },
   "partners": {
     "hero": {

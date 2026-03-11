@@ -65,17 +65,17 @@ export function LanguageSwitcher({ variant = "header", isScrolled }: { variant?:
         <button
           type="button"
           onClick={() => setOpen(!open)}
-          className="flex items-center justify-between w-full text-left text-2xl font-bold transition-colors text-custom-primary hover:text-custom-olive"
+          className="flex items-center justify-between w-full min-h-[44px] text-left text-2xl font-bold transition-colors text-custom-primary hover:text-custom-olive"
           aria-label={t("language")}
           aria-expanded={open}
         >
-          <span className="inline-flex items-center gap-3">
-            <Globe className="w-5 h-5" strokeWidth={2} />
-            <span>{t("language")}</span>
+          <span className="inline-flex items-center gap-3 min-w-0">
+            <Globe className="w-5 h-5 shrink-0" strokeWidth={2} />
+            <span className="leading-none truncate">{t("language")}</span>
           </span>
 
           <svg
-            className={`w-4 h-4 transition-transform ${open ? "rotate-180" : ""}`}
+            className={`w-4 h-4 shrink-0 transition-transform ${open ? "rotate-180" : ""}`}
             viewBox="0 0 20 20"
             fill="currentColor"
             aria-hidden="true"

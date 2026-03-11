@@ -1,15 +1,7 @@
 "use client";
 
-import React, { createContext, useContext, useState, useEffect, useCallback } from "react";
+import React, { createContext, useContext, useState, useEffect, useCallback, useMemo } from "react";
 import en from "../../messages/en.json";
-import so from "../../messages/so.json";
-import sw from "../../messages/sw.json";
-import ar from "../../messages/ar.json";
-import fr from "../../messages/fr.json";
-import it from "../../messages/it.json";
-import nl from "../../messages/nl.json";
-
-const messages: Record<string, Record<string, unknown>> = { en, so, sw, ar, fr, it, nl };
 
 export const LOCALES = [
   { code: "en", name: "English", flag: "🇬🇧" },
@@ -24,6 +16,43 @@ export const LOCALES = [
 export type LocaleCode = (typeof LOCALES)[number]["code"];
 
 const STORAGE_KEY = "barwaaqo-locale";
+type MessagesDict = Record<string, unknown>;
+
+const cache: Partial<Record<LocaleCode, MessagesDict>> = {
+  en: en as unknown as MessagesDict,
+};
+
+async function loadMessages(code: LocaleCode): Promise<MessagesDict> {
+  if (cache[code]) return cache[code]!;
+  // Explicit imports keep each locale in its own chunk.
+  let mod: { default: MessagesDict };
+  switch (code) {
+    case "so":
+      mod = await import("../../messages/so.json");
+      break;
+    case "sw":
+      mod = await import("../../messages/sw.json");
+      break;
+    case "ar":
+      mod = await import("../../messages/ar.json");
+      break;
+    case "fr":
+      mod = await import("../../messages/fr.json");
+      break;
+    case "it":
+      mod = await import("../../messages/it.json");
+      break;
+    case "nl":
+      mod = await import("../../messages/nl.json");
+      break;
+    case "en":
+    default:
+      mod = { default: en as unknown as MessagesDict };
+      break;
+  }
+  cache[code] = mod.default;
+  return mod.default;
+}
 
 function getValue(obj: Record<string, unknown>, path: string): string | undefined {
   const keys = path.split(".");
@@ -49,17 +78,36 @@ const LanguageContext = createContext<LanguageContextType | null>(null);
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [locale, setLocaleState] = useState<LocaleCode>(defaultLocale);
-  const [mounted, setMounted] = useState(false);
+  const [dict, setDict] = useState<MessagesDict>(cache.en!);
 
   useEffect(() => {
+    let cancelled = false;
     try {
       const stored = localStorage.getItem(STORAGE_KEY) as LocaleCode | null;
-      if (stored && messages[stored]) setLocaleState(stored);
+      const valid = stored && LOCALES.some((l) => l.code === stored);
+      if (valid) setLocaleState(stored as LocaleCode);
     } catch {
       // ignore
     }
-    setMounted(true);
+
+    return () => {
+      cancelled = true;
+    };
   }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    loadMessages(locale)
+      .then((m) => {
+        if (!cancelled) setDict(m);
+      })
+      .catch(() => {
+        if (!cancelled) setDict(cache.en!);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [locale]);
 
   const setLocale = useCallback((code: LocaleCode) => {
     setLocaleState(code);
@@ -72,16 +120,14 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   const t = useCallback(
     (key: string): string => {
-      if (!mounted) return key;
-      const msg = messages[locale];
-      const fallback = messages.en;
-      return getValue(msg as Record<string, unknown>, key) ?? getValue(fallback as Record<string, unknown>, key) ?? key;
+      const fallback = cache.en!;
+      return getValue(dict as Record<string, unknown>, key) ?? getValue(fallback as Record<string, unknown>, key) ?? key;
     },
-    [locale, mounted]
+    [dict]
   );
 
-  const currentFlag = LOCALES.find((l) => l.code === locale)?.flag ?? "🇬🇧";
-  const isRtl = locale === "ar";
+  const currentFlag = useMemo(() => LOCALES.find((l) => l.code === locale)?.flag ?? "🇬🇧", [locale]);
+  const isRtl = useMemo(() => locale === "ar", [locale]);
 
   return (
     <LanguageContext.Provider value={{ locale, setLocale, t, isRtl, currentFlag }}>

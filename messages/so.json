@@ -272,9 +272,32 @@
       "titleHighlight": "Beeraha",
       "subtitle": "Sahaminta mustaqbalka beeraha Bariga Afrika ee xogta, cilmi-baariska, iyo stratejiyada duurka la tijaabiyay."
     },
+    "publishedLabel": "La Daabacay",
+    "authorName": "Kooxda Agronomy ee Barwaaqo",
+    "authorRole": "Khubarada Duurka",
     "backToInsights": "Dib ugu noqo Faahfaahinta",
     "articleNotFound": "Maqalka Lama Helin",
     "articleNotFoundDesc": "Maqalka aad raadinayso ma jiro ama waa la wareegay."
+  },
+  "articles": {
+    "tomatoProductionSomalia": {
+      "title": "Xilliyada Ugu Fiican ee Tamaandhada Soomaaliya",
+      "category": "Hagaha Agronomy",
+      "date": "15 Maarso 2026",
+      "content": "<p class=\"mb-6\">Beerista tamaandhada Soomaaliya waa muhiim, balse guushu waxay ku xirantahay waqtiga. Fahamka cimilada iyo isbeddelka xilliyada ayaa ah tallaabada koowaad ee goosasho badan.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Waqtiga Beerista</h3><p class=\"mb-6\">Meelo badan, waqtiga ugu fiican waa inta u dhexeysa Gu (Abriil–Juun) iyo Dayr (Oktoobar–Diseembar). Tani waxay ka caawisaa xidid adag iyo hoos u dhigidda cudurrada.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Cimilo & Cuduro</h3><p class=\"mb-6\">Kul iyo huur sare waxay kordhiyaan dhibaatooyinka. Hoos yar iyo dabayl-joojin waxay wanaajiyaan microclimate-ka geedka.</p>"
+    },
+    "benefitsDripIrrigation": {
+      "title": "Faa'iidooyinka Biyo-Mareenka Drip ee Khudradda",
+      "category": "Tignoolajiyada Biyo-Mareenka",
+      "date": "10 Maarso 2026",
+      "content": "<p class=\"mb-6\">Biyaha waa khayraad qaali ah. Drip wuxuu biyo gaarsiiyaa xididka si toos ah, wuxuuna yareeyaa khasaaraha.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Badbaadinta Biyaha</h3><p class=\"mb-6\">Yaraynta uumi-baxa iyo daadashada waxay kordhisaa wax soo saarka xilliyada qalalan.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Tayo & Wax-soo-saar</h3><p class=\"mb-6\">Qoyaanka joogtada ah wuxuu yareeyaa stress-ka, wuxuuna hagaajiyaa tayada. Fertigation-kuna wuxuu noqdaa mid sax ah.</p>"
+    },
+    "soilPreparationTechniques": {
+      "title": "Hababka Diyaarinta Carrada ee Beeraleyda Yaryar",
+      "category": "Waaraansho",
+      "date": "05 Maarso 2026",
+      "content": "<p class=\"mb-6\">Goosasho caafimaad qabta waxay ka bilaabataa carrada. Diyaarinta carrada si fiican waa hab raqiis ah oo kor loogu qaado wax-soo-saarka.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Tijaabada Carrada</h3><p class=\"mb-6\">Ogow pH iyo nafaqooyinka si bacriminta loogu sameeyo si sax ah.</p><h3 class=\"text-2xl font-bold text-custom-primary mb-4\">Ku darista Organic</h3><p class=\"mb-6\">Kompost ama digada bisil waxay hagaajisaa qaab-dhismeedka carrada iyo kaydinta biyaha.</p>"
+    }
   },
   "partners": {
     "hero": {
