@@ -44,7 +44,9 @@ export default function ProgramsPage() {
 
                 <div className="pt-16 border-t border-custom-accent/30 text-center">
                     <h3 className="text-2xl font-bold text-custom-primary mb-8">Ready to grow with us?</h3>
+                    <Link href="/contact">
                     <Button variant="primary" className="px-12 py-4">Register for Next Workshop</Button>
+                </Link>
                 </div>
 
                 {/* View All Services Button */}

@@ -51,7 +51,7 @@ export function VisionMissionSection() {
                     </motion.div>
 
                     <motion.div
-                        className="relative lg:h-[400px] h-96 rounded-[2.5rem] overflow-hidden shadow-[0_30px_60px_-15px_rgba(11,61,46,0.25)]"
+                        className="relative w-full min-h-[280px] h-64 sm:h-80 md:h-96 lg:h-[400px] rounded-[2.5rem] overflow-hidden shadow-[0_30px_60px_-15px_rgba(11,61,46,0.25)]"
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
@@ -62,6 +62,7 @@ export function VisionMissionSection() {
                             alt="Scaling Agriculture in East Africa"
                             fill
                             className="object-cover"
+                            sizes="(max-width: 768px) 100vw, 50vw"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-custom-primary/50 to-transparent" />
 

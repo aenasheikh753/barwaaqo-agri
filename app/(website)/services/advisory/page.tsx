@@ -58,7 +58,9 @@ export default function AdvisoryPage() {
                 <div className="bg-custom-light-bg rounded-[40px] p-16 text-center space-y-8 border border-custom-accent/30">
                     <h3 className="text-3xl font-heading font-bold text-custom-primary">Partner with Our Experts</h3>
                     <p className="max-w-2xl mx-auto">Scale your production and minimize losses with data-driven advisory services tailored to your specific micro-climate.</p>
-                    <Button variant="primary" className="px-12 py-4">Book a Field Visit</Button>
+                    <Link href="/contact">
+                        <Button variant="primary" className="px-12 py-4">Book a Field Visit</Button>
+                    </Link>
                 </div>
 
                 {/* View All Services Button */}

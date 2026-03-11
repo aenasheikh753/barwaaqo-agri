@@ -2,10 +2,12 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export function DetailedProjectsSection() {
     const projects = [
         {
+            slug: "baidoa-irrigation",
             title: "Baidoa Irrigation Pilot Program",
             category: "Irrigation System Design",
             location: "Baidoa, Somalia",
@@ -15,6 +17,7 @@ export function DetailedProjectsSection() {
             tags: ["Water Efficiency", "Sustainability", "Capacity Building"]
         },
         {
+            slug: "regional-seed-trials",
             title: "Regional Vegetable Seed Trials",
             category: "Agronomy & Seed Tech",
             location: "Afgooye & Jowhar Districts",
@@ -24,6 +27,7 @@ export function DetailedProjectsSection() {
             tags: ["Seed Selection", "Food Security", "Yield Optimization"]
         },
         {
+            slug: "farmer-to-market",
             title: "Farmer-to-Market Integration",
             category: "Value Chain Development",
             location: "Somalia & East Africa",
@@ -37,9 +41,9 @@ export function DetailedProjectsSection() {
     return (
         <section className="py-16 bg-white">
             <div className="max-w-[1200px] mx-auto px-6">
-                <div className="space-y-40">
+                <div className="space-y-16 md:space-y-20">
                     {projects.map((project, index) => (
-                        <div key={index} className={`flex flex-col lg:flex-row gap-20 items-center ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
+                        <div key={index} className={`flex flex-col lg:flex-row gap-10 lg:gap-14 items-center ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
                             {/* Project Image */}
                             <motion.div
                                 className="lg:w-1/2 relative h-[300px] w-full rounded-[40px] overflow-hidden shadow-2xl group"
@@ -89,10 +93,10 @@ export function DetailedProjectsSection() {
                                 </div>
 
                                 <div className="pt-4">
-                                    <button className="flex items-center group text-custom-primary font-bold uppercase tracking-widest text-sm">
+                                    <Link href={`/projects/case-study/${project.slug}`} className="inline-flex items-center group text-custom-primary font-bold uppercase tracking-widest text-sm">
                                         <span className="border-b-2 border-custom-sand pb-1 group-hover:border-custom-olive transition-colors">View Case Study</span>
                                         <svg className="w-5 h-5 ml-3 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                                    </button>
+                                    </Link>
                                 </div>
                             </motion.div>
                         </div>

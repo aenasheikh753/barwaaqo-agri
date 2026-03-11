@@ -49,7 +49,7 @@ export default function SeedInputsPage() {
                     </div>
 
                     <div className="bg-custom-primary text-white p-12 rounded-[40px] shadow-2xl space-y-8 sticky top-32">
-                        <h3 className="text-2xl font-bold">Request a Catalog</h3>
+                        <h3 className="text-2xl font-bold text-custom-sand">Request a Catalog</h3>
                         <p className="text-white/70">Connect with our specialists for a full list of available seeds and inputs for your region.</p>
                         <form className="space-y-4">
                             <input type="text" placeholder="Your Name" className="w-full bg-white/10 border border-white/20 rounded-xl px-6 py-4 outline-none focus:border-custom-sand transition-colors" />

@@ -42,7 +42,9 @@ export default function IrrigationPage() {
                             <p className="font-body text-custom-charcoal/70 leading-relaxed">
                             Our irrigation solutions are designed to unlock the full potential of your land. From site survey to final commissioning, we ensure every drop is used efficiently to drive productivity and farm sustainability.
                             </p>
-                            <Button variant="outline" className="px-10">Request a Consultation</Button>
+                            <Link href="/contact">
+                                <Button variant="outline" className="px-10">Request a Consultation</Button>
+                            </Link>
                         </div>
                         </div>
                     {/* View All Services Button */}
