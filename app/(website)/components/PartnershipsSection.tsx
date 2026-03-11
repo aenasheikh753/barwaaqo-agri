@@ -1,8 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLanguage } from "../../context/LanguageContext";
 
 export function PartnershipsSection() {
+    const { t } = useLanguage();
     return (
         <section className="py-16 bg-custom-sand/10 border-y border-custom-accent/50 relative overflow-hidden">
             {/* Background Animations */}
@@ -21,10 +23,10 @@ export function PartnershipsSection() {
                     viewport={{ once: true }}
                 >
                     <h2 className="text-3xl md:text-4xl font-heading font-bold text-custom-primary mb-6">
-                        Partnerships & Collaboration
+                        {t("home.partnershipsSection.title")}
                     </h2>
                     <p className="text-lg text-custom-charcoal/80 font-body max-w-3xl mx-auto mb-16 leading-relaxed">
-                        Barwaaqo Agri Group collaborates with seed producers, agronomy specialists, agricultural suppliers, and development partners supporting sustainable agriculture across East Africa.
+                        {t("home.partnershipsSection.subtitle")}
                     </p>
                 </motion.div>
 
@@ -36,17 +38,17 @@ export function PartnershipsSection() {
                     viewport={{ once: true }}
                 >
                     {[
-                        { name: "Seed Pro", icon: "🌱" },
-                        { name: "Aqua Systems", icon: "💧" },
-                        { name: "Agro Tech", icon: "🔬" },
-                        { name: "East Africa Dev", icon: "🌍" }
+                        { nameKey: "home.partnershipsSection.seedPro", icon: "🌱" },
+                        { nameKey: "home.partnershipsSection.aquaSystems", icon: "💧" },
+                        { nameKey: "home.partnershipsSection.agroTech", icon: "🔬" },
+                        { nameKey: "home.partnershipsSection.eastAfricaDev", icon: "🌍" }
                     ].map((partner, i) => (
                         <div key={i} className="group flex flex-col items-center justify-center p-8 bg-white/50 backdrop-blur-sm border border-custom-accent/30 rounded-2xl hover:bg-white hover:shadow-xl hover:border-custom-olive/30 transition-all duration-300">
                             <div className="text-4xl mb-3 grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-110">
                                 {partner.icon}
                             </div>
                             <div className="text-sm font-heading font-bold text-custom-primary/40 group-hover:text-custom-primary transition-colors uppercase tracking-widest text-center">
-                                {partner.name}
+                                {t(partner.nameKey)}
                             </div>
                         </div>
                     ))}

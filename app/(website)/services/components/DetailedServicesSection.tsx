@@ -3,27 +3,29 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguage } from "../../../context/LanguageContext";
 
 export function DetailedServicesSection() {
+    const { t } = useLanguage();
     const services = [
         {
-            title: "Seed & Agricultural Inputs",
-            desc: "We supply high-quality, climate-resilient seeds and essential agricultural inputs sourced from international partners. Our focus is on providing varieties that maximize yield in local Somali conditions.",
-            items: ["Certified Vegetable Seeds", "High-Performance Fertilizers", "Safe Crop Protection", "Specialized Farming Tools"],
+            titleKey: "services.detailed.seedTitle",
+            descKey: "services.detailed.seedDesc",
+            itemKeys: ["services.detailed.seedItem1", "services.detailed.seedItem2", "services.detailed.seedItem3", "services.detailed.seedItem4"],
             image: "/images/agri1.jpg",
             link: "/services/seeds"
         },
         {
-            title: "Modern Irrigation Systems",
-            desc: "Expert design and implementation of efficient water management systems. We specialize in drip and sprinkler irrigation technologies that conserve water while ensuring consistent crop growth.",
-            items: ["Drip Irrigation Kits", "Solar-Powered Pumps", "Water Storage Solutions", "System Design & Install"],
+            titleKey: "services.detailed.irrigationTitle",
+            descKey: "services.detailed.irrigationDesc",
+            itemKeys: ["services.detailed.irrigationItem1", "services.detailed.irrigationItem2", "services.detailed.irrigationItem3", "services.detailed.irrigationItem4"],
             image: "/images/project-1.png",
             link: "/services/irrigation"
         },
         {
-            title: "Agronomy & Advisory",
-            desc: "Bridging the knowledge gap with professional agronomic services. Our team provides on-field support, soil analysis, and crop management strategies to boost farm efficiency.",
-            items: ["Soil Health Analysis", "Pest & Disease Control", "Crop Rotation Planning", "Yield Optimization"],
+            titleKey: "services.detailed.advisoryTitle",
+            descKey: "services.detailed.advisoryDesc",
+            itemKeys: ["services.detailed.advisoryItem1", "services.detailed.advisoryItem2", "services.detailed.advisoryItem3", "services.detailed.advisoryItem4"],
             image: "/images/agri2.jpg",
             link: "/services/advisory"
         }
@@ -45,7 +47,7 @@ export function DetailedServicesSection() {
                                 transition={{ duration: 0.6 }}
                                 viewport={{ once: true }}
                             >
-                                <Image src={service.image} alt={service.title} fill className="object-cover" />
+                                <Image src={service.image} alt={t(service.titleKey)} fill className="object-cover" />
                                 <div className="absolute inset-0 bg-black/10 hover:bg-transparent transition-colors duration-500" />
                             </motion.div>
 
@@ -57,22 +59,22 @@ export function DetailedServicesSection() {
                                 viewport={{ once: true }}
                             >
                                 <h3 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-custom-primary leading-snug max-w-[22ch] break-words">
-                                    {service.title}
+                                    {t(service.titleKey)}
                                 </h3>
                                 <p className="text-sm sm:text-base md:text-lg text-custom-charcoal/70 leading-relaxed font-body max-w-prose break-words">
-                                    {service.desc}
+                                    {t(service.descKey)}
                                 </p>
                                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 md:gap-4">
-                                    {service.items.map((item, i) => (
+                                    {service.itemKeys.map((key, i) => (
                                         <li key={i} className="flex items-center text-custom-charcoal/80 text-sm break-words">
                                             <span className="w-1.5 h-1.5 rounded-full bg-custom-olive mr-3" />
-                                            {item}
+                                            {t(key)}
                                         </li>
                                     ))}
                                 </ul>
                                 <div className="pt-2 sm:pt-4">
                                     <Link href={service.link} className="inline-flex items-center text-custom-olive font-bold uppercase tracking-widest text-sm hover:text-custom-primary transition-colors group">
-                                        Explore Details
+                                        {t("common.exploreDetails")}
                                         <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                                     </Link>
                                 </div>

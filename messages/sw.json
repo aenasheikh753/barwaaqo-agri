@@ -1,0 +1,315 @@
+{
+  "nav": {
+    "home": "Nyumbani",
+    "about": "Kuhusu",
+    "services": "Huduma",
+    "seedInputs": "Mbegu na Vifaa",
+    "farmAdvisory": "Ushauri wa Shamba",
+    "irrigation": "Umwagiliaji",
+    "farmerPrograms": "Mipango ya Wakulima",
+    "projects": "Miradi",
+    "insights": "Maoni",
+    "partners": "Washirika",
+    "contact": "Wasiliana",
+    "partnerWithUs": "Shirikiana Nasi"
+  },
+  "footer": {
+    "services": "Huduma",
+    "agriculturalInputs": "Vifaa vya Kilimo",
+    "farmAdvisory": "Ushauri wa Shamba",
+    "irrigationDevelopment": "Maendeleo ya Umwagiliaji",
+    "farmerPrograms": "Mipango ya Wakulima",
+    "contact": "Wasiliana",
+    "location": "Mahali",
+    "email": "Barua pepe",
+    "mogadishu": "Mogadishu, Somalia",
+    "tagline": "Kuunga mkono mifumo ya kisasa ya kilimo katika Somalia na Afrika Mashariki kupitia vifaa thabiti na maendeleo ya kitaaluma.",
+    "allRightsReserved": "Haki zote zimehifadhiwa."
+  },
+  "hero": {
+    "headline": "Kujenga Kilimo cha Kisasa Somalia na Afrika Mashariki",
+    "subline": "Barwaaqo Agri Group inatoa mbegu za hali ya juu, vifaa vya kilimo, maendeleo ya umwagiliaji, na huduma za ushauri wa shamba kusaidia mifumo ya kilimo yenye tija.",
+    "exploreServices": "Gundua Huduma Zetu",
+    "partnerWithUs": "Shirikiana Nasi"
+  },
+  "language": "Lugha",
+  "common": {
+    "viewAllServices": "Tazama Huduma Zote",
+    "learnMore": "Jifunze Zaidi",
+    "readArticle": "Soma Makala",
+    "exploreDetails": "Gundua Maelezo",
+    "agronomyGuide": "Mwongozo wa Kilimo"
+  },
+  "home": {
+    "trustStrip": {
+      "badge": "Miaka 10+ ya Uzoefu Shambani",
+      "title": "Msingi wa Kilimo cha Kuaminika",
+      "subtitle": "Kutoka Mbegu Hadi Mavuno — Tunasaidia Kila Hatua",
+      "seedInputs": "Mbegu na Vifaa vya Kilimo",
+      "farmAdvisory": "Ushauri wa Shamba na Agronomy",
+      "irrigation": "Maendeleo ya Umwagiliaji",
+      "farmerPrograms": "Mipango ya Wakulima"
+    },
+    "aboutSection": {
+      "aboutUs": "Kuhusu Sisi",
+      "title": "Kuhusu Barwaaqo Agri Group",
+      "p1": "Barwaaqo Agri Group ni kampuni ya maendeleo ya kilimo inayosaidia mifumo ya kisasa ya kilimo Somalia na Afrika Mashariki.",
+      "p2": "Kazi yetu inazingatia kuboresha uzalishaji wa mazao, kuimarisha mipango ya msaada kwa wakulima, na kuanzisha vifaa vya kilimo na suluhu za umwagiliaji zinazolingana na hali za ndani.",
+      "yearsExperience": "Miaka ya Uzoefu",
+      "farmersSupported": "Wakulima Waliosaidiwa"
+    },
+    "coreServices": {
+      "label": "Tunachofanya",
+      "title": "Huduma Kuu",
+      "seedTitle": "Mbegu na Vifaa vya Kilimo",
+      "seedDesc": "Kusambaza mbegu za hali ya juu na vifaa vya kilimo kutoka kwa wazalishaji wenye sifa.",
+      "advisoryTitle": "Ushauri wa Shamba na Agronomy",
+      "advisoryDesc": "Kutoa mwongozo wa agronomy kuboresha uzalishaji wa mazao na usimamizi wa udongo.",
+      "irrigationTitle": "Umwagiliaji na Maendeleo ya Shamba",
+      "irrigationDesc": "Kubuni na utekelezaji wa mifumo ya umwagiliaji na miundombinu ya kisasa ya shamba.",
+      "programsTitle": "Mipango ya Wazalishaji na Wakulima",
+      "programsDesc": "Kusaidia wakulima kupitia mipango ya uzalishaji iliyoorganishwa na ufikiaji wa vifaa vya kilimo."
+    },
+    "projectsSection": {
+      "label": "Galeri Yetu",
+      "title": "Miradi Iliyochaguliwa",
+      "baidoaTitle": "Pilot ya Umwagiliaji Baidoa",
+      "baidoaCategory": "Umwagiliaji",
+      "baidoaDesc": "Mkakati wa umwagiliaji unaoboresha ufanisi wa maji kwa hekta 500, kuonyesha suluhu za kilimo cha Somalia.",
+      "seedTrialsTitle": "Majaribio ya Mbegu za Mboga",
+      "seedTrialsCategory": "Teknolojia ya Mbegu",
+      "seedTrialsDesc": "Kutathmini mimea ya aina zenye mavuno makubwa kwa udongo wa ndani, na matokeo mazuri kwa wakulima.",
+      "advisoryTitle": "Mpango wa Ushauri kwa Wakulima",
+      "advisoryCategory": "Ushauri",
+      "advisoryDesc": "Mafunzo ya agronomy na mipango ya mazao kwa wakulima wadogo."
+    },
+    "insightsSection": {
+      "title": "Uchambuzi wa Kilimo",
+      "subtitle": "Ujuzi vitendo na sasisho kutoka timu zetu za agronomy shambani.",
+      "tomatoTitle": "Msimu Bora wa Uzalishaji wa Nyanya Somalia",
+      "tomatoDesc": "Mwongozo kamili wa muda wa kupanda, hali ya hewa, na chaguzi za aina kwa mavuno ya juu.",
+      "dripTitle": "Faida za Umwagiliaji wa Drip kwa Kilimo cha Mboga",
+      "dripDesc": "Uchambuzi wa teknolojia za kuhifadhi maji na athari zake kwa uzalishaji wa mazao.",
+      "soilTitle": "Mbinu za Kuandaa Udongo kwa Mashamba Madogo",
+      "soilDesc": "Mbinu zenye uthibitisho wa kuboresha afya ya udongo na usimamizi wa virutubisho."
+    },
+    "partnershipsSection": {
+      "title": "Ushirika na Ushirikiano",
+      "subtitle": "Barwaaqo Agri Group inashirikiana na wazalishaji wa mbegu, wataalam wa agronomy, na washirika wa maendeleo Afrika Mashariki.",
+      "seedPro": "Seed Pro",
+      "aquaSystems": "Aqua Systems",
+      "agroTech": "Agro Tech",
+      "eastAfricaDev": "East Africa Dev"
+    },
+    "contactSection": {
+      "title": "Fanya Kazi Nasi",
+      "subtitle": "Tayari kushirikiana? Tutumie ujumbe au wasiliana nasi",
+      "name": "Jina",
+      "email": "Barua pepe",
+      "message": "Ujumbe",
+      "namePlaceholder": "John Doe",
+      "emailPlaceholder": "john@example.com",
+      "messagePlaceholder": "Tunaweza kukusaidia vipi?",
+      "sendMessage": "Tuma Ujumbe"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "Wasifu wa Kampuni",
+      "title": "Msingi Wetu",
+      "titleHighlight": "Msingi",
+      "subtitle": "Kubadilisha kilimo cha Somalia kwa ubunifu wa kimataifa na uzoefu wa ndani."
+    },
+    "visionMission": {
+      "label": "Kusudi la Kikabiliji",
+      "title": "Kuongeza Uwezo wa Chakula Mkoa",
+      "intro": "Barwaaqo Agri Group inasimama kwenye makutano ya ujuzi wa jadi na ubunifu wa kilimo wa kimataifa. Sio wauzaji tu; ni mpenzi wa miundombinu inayojenga uchumi wa kilimo Afrika Mashariki.",
+      "ourVision": "Maono Yetu",
+      "visionText": "Kuanzisha ukanda wa kilimo unaojitegemea Afrika Mashariki, ubunifu na uzalishaji, na kuhakikisha mustakabali wa kilimo.",
+      "ourMission": "Dhamira Yetu",
+      "missionText": "Kwa kuchanganya agronomia ya kisasa na vifaa vya kilimo vya kimataifa, tunawapa nguvu wazalishaji wakubwa na wadogo kufikia mavuno endelevu.",
+      "clientSuccessRate": "Kiwango cha Mafanikio ya Wateja",
+      "hectaresSupported": "Hektari Zinazosaidiwa"
+    },
+    "expertise": {
+      "label": "Uwezo Wetu",
+      "title": "Kuleta Viwango vya Kimataifa Ardhi ya Somalia",
+      "intro": "Barwaaqo Agri Group inaunganisha maendeleo ya kilimo na utekelezaji shambani. Ujuzi wetu unatuwezesha kupanua haraka huku tukidumisha uzalishaji wa hali ya juu.",
+      "globalSupply": "Mnyororo wa Usambazaji Kimataifa",
+      "globalSupplyDesc": "Ushirika na wazalishaji wa mbegu na viwanda Ulaya na Asia, wakulima wa Somalia kupata teknolojia ya kwanza.",
+      "technicalAdvisory": "Ushauri wa Kiufundi",
+      "technicalAdvisoryDesc": "Timu ya wataalam wa agronomia wanaotoa mipango ya mazao na udhibiti wa wadudu kwa ardhi ya Somalia.",
+      "irrigationSystems": "Mifumo ya Umwagiliaji",
+      "irrigationSystemsDesc": "Kubuni suluhu za usimamizi wa maji zinazogeuka ardhi kavu kuwa mashamba ya mazao na mboga."
+    },
+    "foundation": {
+      "label": "Thamani Zetu",
+      "title": "Msingi wa Barwaaqo",
+      "intro": "Ukuaji wetu unaongozwa na kanuni kuu zinazohakikisha kila uwekezaji na shirika unachangia utulivu wa mkoa.",
+      "techLeadership": "Uongozi wa Kiteknolojia",
+      "techLeadershipDesc": "Tunaprioritize ujumuishaji wa umwagiliaji wa AI na teknolojia ya mbegu inayostahimili hali ya hewa.",
+      "operationalIntegrity": "Uwajibikaji wa Uendeshaji",
+      "operationalIntegrityDesc": "Uwazi ni sifa yetu. Kutoka mnyororo hadi matokeo shambani, tunadumisha viwango vya juu vya maadili.",
+      "adaptiveResilience": "Uwezo wa Kukabiliana",
+      "adaptiveResilienceDesc": "Mifumo yetu imejengwa kustahimili changamoto za hali ya hewa na mbinu za Afrika Mashariki.",
+      "inclusiveGrowth": "Ukuaji Pamoja",
+      "inclusiveGrowthDesc": "Tunahakikisha mafanikio yetu yanafikia jamii za wakulima wadogo kupitia ushiriki wa ujuzi."
+    }
+  },
+  "services": {
+    "hero": {
+      "label": "Ujuzi Wetu",
+      "title": "Suluhu za Kilimo na Huduma",
+      "subtitle": "Kuwawezesha wakulima wa Somalia kwa vifaa vya kimataifa, teknolojia ya kisasa na mwongozo wa wataalam kwa uzalishaji endelevu."
+    },
+    "detailed": {
+      "seedTitle": "Mbegu na Vifaa vya Kilimo",
+      "seedDesc": "Tunatoa mbegu za hali ya juu, zinazostahimili hali ya hewa na vifaa muhimu vya kilimo kutoka washirika wa kimataifa.",
+      "seedItem1": "Mbegu za Mboga Zilizothibitishwa",
+      "seedItem2": "Mashadiria ya Uzalishaji wa Juu",
+      "seedItem3": "Ulinzi Salama wa Mazao",
+      "seedItem4": "Zana Maalum za Kilimo",
+      "irrigationTitle": "Mifumo ya Kisasa ya Umwagiliaji",
+      "irrigationDesc": "Ubunifu na utekelezaji wa mifumo bora ya usimamizi wa maji.",
+      "irrigationItem1": "Vifaa vya Umwagiliaji wa Tone",
+      "irrigationItem2": "Pampu za Nguvu ya Jua",
+      "irrigationItem3": "Suluhu za Uhifadhi wa Maji",
+      "irrigationItem4": "Kubuni na Usakinishaji wa Mfumo",
+      "advisoryTitle": "Agronomia na Ushauri",
+      "advisoryDesc": "Kuunganisha pengo la ujuzi na huduma za kitaalam za agronomia.",
+      "advisoryItem1": "Uchambuzi wa Afya ya Udongo",
+      "advisoryItem2": "Udhibiti wa Wadudu na Magonjwa",
+      "advisoryItem3": "Mpango wa Mzunguko wa Mazao",
+      "advisoryItem4": "Uboreshaji wa Mavuno"
+    },
+    "process": {
+      "label": "Njia Yetu",
+      "title": "Jinsi Tunavyofanya Kazi",
+      "step1Title": "Majadiliano",
+      "step1Desc": "Tunachambua hali ya shamba lako, ubora wa udongo na mahitaji maalum ya kilimo.",
+      "step2Title": "Kubuni Suluhu",
+      "step2Desc": "Mpango maalum wa umwagiliaji, uchaguzi wa mbegu na usimamizi wa agronomia.",
+      "step3Title": "Utekelezaji",
+      "step3Desc": "Usambazaji wa vifaa na usakinishaji wa kitaalam wa mifumo shambani.",
+      "step4Title": "Uboreshaji",
+      "step4Desc": "Ushauri wa shambani na ufuatiliaji ili kuhakikisha mavuno ya juu zaidi."
+    },
+    "seeds": {
+      "heroTitle": "Mbegu na Vifaa vya Kilimo",
+      "heroSubtitle": "Kutoa msingi wa mavuno makubwa Afrika Mashariki.",
+      "ourProducts": "Bidhaa Zetu",
+      "highPerfTitle": "Vifaa vya Uzalishaji wa Juu",
+      "intro": "Barwaaqo Agri Group inaelewa kuwa ubora wa vifaa unaamua mafanikio ya mavuno. Tunapata mbegu zilizothibitishwa na mashadiria kutoka viongozi wa kimataifa.",
+      "vegSeeds": "Mbegu za Mboga",
+      "vegSeedsDesc": "Nyanya, Vitunguu, Tikiti na aina nyingine zinazofaa udongo wa ndani.",
+      "fertilizers": "Mashadiria Maalum",
+      "fertilizersDesc": "Mchanganyiko maalum wa mazao kukuza unyonyaji wa virutubisho.",
+      "cropProtection": "Ulinzi wa Mazao",
+      "cropProtectionDesc": "Suluhu za udhibiti wa wadudu na magonjwa zinazofaa mazingira.",
+      "requestCatalog": "Omba Katalogi",
+      "catalogDesc": "Wasiliana na wataalam wetu kwa orodha kamili ya mbegu na vifaa kwa mkoa wako.",
+      "yourName": "Jina Lako",
+      "emailAddress": "Barua pepe",
+      "submitRequest": "Tuma Ombi"
+    },
+    "advisory": {
+      "heroTitle": "Ushauri wa Shamba na Agronomia",
+      "heroSubtitle": "Kuunganisha ujuzi wa kimataifa na ardhi na ujuzi wa ndani.",
+      "sectionTitle": "Mwongozo wa Kitaalam kwa Kilimo cha Faida",
+      "sectionIntro": "Timu yetu ya wataalam wa agronomia inatoa msaada wa vitendo kufikia matokeo bora zaidi. Tunatafsiri data ngumu kuwa mbinu zinazotekelezeka shambani.",
+      "soilAnalysis": "Uchambuzi wa Udongo",
+      "soilAnalysisDesc": "Jaribio la kina kuamua mahitaji ya virutubisho.",
+      "cropPlanning": "Mpango wa Mazao",
+      "cropPlanningDesc": "Kalenda za kikabiliji kwa uzalishaji mwaka mzima.",
+      "partnerTitle": "Shirikiana na Wataalam Wetu",
+      "partnerDesc": "Kuongeza uzalishaji na kupunguza hasara kwa huduma za ushauri zinazofaa hali ya hewa yako.",
+      "bookFieldVisit": "Reserve Ziara ya Shambani"
+    },
+    "irrigation": {
+      "heroTitle": "Umwagiliaji na Uwezo wa Shamba",
+      "heroSubtitle": "Mifumo ya uhakika ya usimamizi wa maji kwa uthabiti wa hali ya hewa.",
+      "dripSystems": "Mifumo ya Tone",
+      "dripSystemsDesc": "Umwagiliaji sahihi unaopunguza matumizi hadi 50%.",
+      "solarPumping": "Kupiga Pampu kwa Jua",
+      "solarPumpingDesc": "Suluhu endelevu za nguvu kwa maeneo ya kilimo yaliyo mbali.",
+      "irrigationDesign": "Kubuni Umwagiliaji",
+      "irrigationDesignDesc": "Mipango maalum ya maji kwa mashamba ya kiwango chochote.",
+      "transformingTitle": "Kubadilisha Mandhari Kavu",
+      "transformingDesc": "Suluhu zetu za umwagiliaji zimeundwa kufungua uwezo kamili wa ardhi yako. Kutoka uchunguzi hadi kuanza, tunahakikisha kila tone linatumika kwa ufanisi.",
+      "requestConsultation": "Omba Mashauriano"
+    },
+    "programs": {
+      "heroTitle": "Mipango ya Uwezo wa Wakulima",
+      "heroSubtitle": "Kujenga jamii za kilimo zenye nguvu kupitia ujuzi na ukuaji.",
+      "sectionTitle": "Kuwawezesha Mustakabali wa Kilimo",
+      "sectionIntro": "Barwaaqo Agri Group inaamini maendeleo endelevu yanajengwa kwa ushirikiano na wakulima wa ndani. Mipango yetu inalenga kutoa ufikiaji wa zana, mikopo na masoko.",
+      "outgrowerTitle": "Mipango ya Outgrower",
+      "outgrowerDesc": "Mifumo ya kilimo ya ushirikiano inayohakikisha ufikiaji wa soko na udhibiti wa ubora.",
+      "technicalTrainingTitle": "Mafunzo ya Kiufundi",
+      "technicalTrainingDesc": "Warsha za kawaida za agronomia ya kisasa na matengenezo ya umwagiliaji.",
+      "inputAccessTitle": "Mipango ya Ufikiaji wa Vifaa",
+      "inputAccessDesc": "Kuunganisha pengo kwa vifaa vya hali ya juu kwa jamii za wakulima wadogo.",
+      "readyToGrow": "Tayari kukua nasi?",
+      "registerWorkshop": "Jisajili Warsha Inayofuata"
+    }
+  },
+  "projects": {
+    "hero": {
+      "badge": "Portfolio Yetu",
+      "titlePrefix": "Kubadilisha mandhari kupitia ",
+      "titleHighlight": "Miradi ya Kikabiliji",
+      "subtitle": "Kutoka mifumo ya umwagiliaji wa majaribio hadi majaribio ya mbegu kati ya mikoa, ushuhudie juhudi zetu za kujenga mifumo ya kilimo yenye nguvu Afrika Mashariki."
+    },
+    "viewCaseStudy": "Tazama Utafiti wa Kesi",
+    "backToProjects": "Rudi kwa Miradi",
+    "caseStudyNotFound": "Utafiti wa Kesi Haupatikani",
+    "caseStudyNotFoundDesc": "Utafiti wa kesi unaoutafuta haupo."
+  },
+  "insights": {
+    "hero": {
+      "badge": "Ujuzi na Ukuaji",
+      "titlePrefix": "Akili ya ",
+      "titleHighlight": "Kilimo",
+      "subtitle": "Kuchunguza mustakabali wa kilimo Afrika Mashariki kupitia data, utafiti na mbinu zilizojaribiwa shambani."
+    },
+    "backToInsights": "Rudi kwa Maoni",
+    "articleNotFound": "Makala Haipatikani",
+    "articleNotFoundDesc": "Makala unaoutafuta haipo au imehamishwa."
+  },
+  "partners": {
+    "hero": {
+      "badge": "Ukuaji wa Ushirikiano",
+      "title": "Ushirika Wetu wa Kimataifa",
+      "subtitle": "Kuunganisha kilimo cha Afrika Mashariki na ubunifu wa kimataifa, teknolojia na minyororo ya usambazaji bora."
+    },
+    "benefits": {
+      "label": "Kwa nini ushirikiane nasi?",
+      "title": "Faida ya Kikabiliji",
+      "marketAccess": "Ufikiaji wa Soko",
+      "marketAccessDesc": "Kuingia moja kwa moja kwenye soko la kilimo la Afrika Mashariki linalokua kwa kasi.",
+      "localExpertise": "Ujuzi wa Ndani",
+      "localExpertiseDesc": "Uelewa wa kina wa ardhi ya mkoa, hali ya hewa na mazingira ya kisheria.",
+      "infrastructure": "Miundombinu",
+      "infrastructureDesc": "Mitandao ya usambazaji na uwezo wa mbinu wa mbinu.",
+      "sustainableImpact": "Athari Endelevu",
+      "sustainableImpactDesc": "Jiunge na miradi yenye athari kubwa inayobadilisha maisha na kuhakikisha usalama wa chakula."
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Wasiliana Nasi",
+      "title": "Tukue Pamoja",
+      "subtitle": "Iwe wewe ni mkulima anatafuta ushauri au mpenzi wa kimataifa anatafuta fursa, timu yetu iko tayari kuunganisha."
+    },
+    "info": {
+      "title": "Maelezo ya Mawasiliano",
+      "subtitle": "Wasiliana na ofisi zetu Afrika Mashariki kwa suluhu za kilimo na fursa za ushirikiano.",
+      "headOffice": "Ofisi Kuu",
+      "regionalOffice": "Ofisi ya Mkoa",
+      "fieldOperations": "Shughuli za Shambani",
+      "mogadishu": "Mogadishu, Somalia",
+      "nairobi": "Nairobi, Kenya",
+      "baidoa": "Baidoa, Somalia"
+    }
+  }
+}

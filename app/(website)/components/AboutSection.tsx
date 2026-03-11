@@ -4,8 +4,10 @@ import { Button } from "../../components/ui/Button";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguage } from "../../context/LanguageContext";
 
 export function AboutSection() {
+    const { t } = useLanguage();
     return (
         <section className="py-16 max-w-[1200px] mx-auto px-6 overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
@@ -50,36 +52,36 @@ export function AboutSection() {
                     viewport={{ once: true }}
                 >
                     <div className="space-y-4">
-                        <span className="text-custom-olive font-semibold tracking-wider text-sm uppercase">About Us</span>
+                        <span className="text-custom-olive font-semibold tracking-wider text-sm uppercase">{t("home.aboutSection.aboutUs")}</span>
                         <h2 className="text-4xl md:text-5xl font-heading font-bold text-custom-primary leading-tight">
-                            About Barwaaqo Agri Group
+                            {t("home.aboutSection.title")}
                         </h2>
                     </div>
 
                     <div className="space-y-6">
                         <p className="text-lg text-custom-charcoal/80 font-body leading-relaxed">
-                            Barwaaqo Agri Group is an agricultural development company supporting modern farming systems across Somalia and East Africa.
+                            {t("home.aboutSection.p1")}
                         </p>
                         <p className="text-lg text-custom-charcoal/80 font-body leading-relaxed">
-                            Our work focuses on improving crop productivity, strengthening farmer support programs, and introducing reliable agricultural inputs and irrigation solutions adapted to local conditions.
+                            {t("home.aboutSection.p2")}
                         </p>
                     </div>
 
                     <div className="grid grid-cols-2 gap-8 pt-4">
                         <div className="space-y-2">
                             <h4 className="text-3xl font-bold text-custom-primary">10+</h4>
-                            <p className="text-sm text-custom-charcoal/60 uppercase tracking-wide">Years Experience</p>
+                            <p className="text-sm text-custom-charcoal/60 uppercase tracking-wide">{t("home.aboutSection.yearsExperience")}</p>
                         </div>
                         <div className="space-y-2">
                             <h4 className="text-3xl font-bold text-custom-primary">500+</h4>
-                            <p className="text-sm text-custom-charcoal/60 uppercase tracking-wide">Farmers Supported</p>
+                            <p className="text-sm text-custom-charcoal/60 uppercase tracking-wide">{t("home.aboutSection.farmersSupported")}</p>
                         </div>
                     </div>
 
                     <div className="pt-4">
                         <Link href="/about">
                             <Button variant="outline" className="px-10 py-4 hover:bg-custom-primary hover:text-white transition-all">
-                                Learn More
+                                {t("common.learnMore")}
                             </Button>
                         </Link>
                     </div>

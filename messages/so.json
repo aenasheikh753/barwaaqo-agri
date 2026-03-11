@@ -1,0 +1,315 @@
+{
+  "nav": {
+    "home": "Guriga",
+    "about": "Naga Soo Bax",
+    "services": "Adeegyada",
+    "seedInputs": "Midho & Alaab",
+    "farmAdvisory": "La-Talin Beerta",
+    "irrigation": "Biyo-Mareen",
+    "farmerPrograms": "Barnaamijka Beeraha",
+    "projects": "Mashruucyada",
+    "insights": "Faahfaahin",
+    "partners": "Ka-Qaybqaatayaasha",
+    "contact": "Nala Soo Xiriir",
+    "partnerWithUs": "Nala Ka Qayb Qaato"
+  },
+  "footer": {
+    "services": "Adeegyada",
+    "agriculturalInputs": "Alaabta Beeraha",
+    "farmAdvisory": "La-Talin Beerta",
+    "irrigationDevelopment": "Horumarka Biyo-Mareenta",
+    "farmerPrograms": "Barnaamijka Beeraha",
+    "contact": "Xiriir",
+    "location": "Goobta",
+    "email": "Iimaylka",
+    "mogadishu": "Muqdisho, Soomaaliya",
+    "tagline": "Taageeraya nidaamka beeraha casri ah ee Soomaaliya iyo Bariga Afrika ee barwaaqo leh adeegyo suurtagal ah iyo horumar xirfadeed.",
+    "allRightsReserved": "Dhammaan xuquuqaha waa la ilaaliyay."
+  },
+  "hero": {
+    "headline": "Dhisida Beeraha Casri ah ee Soomaaliya & Bariga Afrika",
+    "subline": "Barwaaqo Agri Group waxay bixisaa midho tayo leh, alaab beer ah, horumar biyo-mareen, iyo adeegyada la-talin beerta si loo taageero nidaamyo beer ah wax soo saar leh.",
+    "exploreServices": "Baadh Adeegyadayada",
+    "partnerWithUs": "Nala Ka Qayb Qaato"
+  },
+  "language": "Luqadda",
+  "common": {
+    "viewAllServices": "Arag Adeegyada Oo Dhan",
+    "learnMore": "Wax Badan Ka Ogaado",
+    "readArticle": "Akhriso Maqaalka",
+    "exploreDetails": "Faahfaahin Dheeraad Ah",
+    "agronomyGuide": "Tilmaam Beeraha"
+  },
+  "home": {
+    "trustStrip": {
+      "badge": "10+ Sano Tayo Beer Ah",
+      "title": "Aasaaska Beeraha Loo Kalsoon Yahay",
+      "subtitle": "Laga Billabo Midho illaa Soo Saar — Waxaan Taageerno Tallaabbaad Kasta",
+      "seedInputs": "Midho & Alaabta Beeraha",
+      "farmAdvisory": "La-Talin Beerta & Agronomy",
+      "irrigation": "Horumarka Biyo-Mareenta",
+      "farmerPrograms": "Barnaamijka Beeraha"
+    },
+    "aboutSection": {
+      "aboutUs": "Naga Soo Bax",
+      "title": "Ku Saabsan Barwaaqo Agri Group",
+      "p1": "Barwaaqo Agri Group waa shirkat horumar beer ah oo taageerta nidaamyo beeraha casri ah ee Soomaaliya iyo Bariga Afrika.",
+      "p2": "Shaqadeenu waxay diiradda saartaa sidii loo wanaajin lahaa wax soo saarka beeraha, loo xoojin lahaa barnaamijyada taakulaynta beeraha, iyo sidii loo soo bandhigi lahaa alaab beer ah oo suurtagal ah iyo xalalka biyo-mareenta ee loo qalantay xaaladaha maxalli ah.",
+      "yearsExperience": "Sano Khibrad",
+      "farmersSupported": "Beeraha La Taageeray"
+    },
+    "coreServices": {
+      "label": "Waxa Aan Sameyno",
+      "title": "Adeegyada Muhiimka Ah",
+      "seedTitle": "Midho & Alaabta Beeraha",
+      "seedDesc": "Bixinta midho tayo leh iyo alaab beer ah oo laga helo soosaarayaal ammaan ah.",
+      "advisoryTitle": "La-Talin Beerta & Agronomy",
+      "advisoryDesc": "Bixinta tilmaam agronomy ah si loo wanaajiyo wax soo saarka beeraha iyo maareynta carada.",
+      "irrigationTitle": "Biyo-Mareen & Horumar Beerta",
+      "irrigationDesc": "Nakhshadeyn iyo fulinta nidaamyo biyo-mareen iyo infiraastabalka beerta casri ah.",
+      "programsTitle": "Soo Saaraha & Barnaamijyada Beeraha",
+      "programsDesc": "Taageerida beeraha barnaamijyo soo saar isku-xidhan iyo helitaanka alaab beer ah."
+    },
+    "projectsSection": {
+      "label": "Gallery-gadeena",
+      "title": "Mashruucyada La Doortay",
+      "baidoaTitle": "Barnaamijka Biyo-Mareenta Baidoa",
+      "baidoaCategory": "Biyo-Mareen",
+      "baidoaDesc": "Mashruuc biyo-mareen oo dhan 500 hektar u wanaajiya wax soo saarka biyaha, tusmaya xalallo Soomaaliya.",
+      "seedTrialsTitle": "Tijaabada Midhaha Khudaarta",
+      "seedTrialsCategory": "Tignoolajiyada Midho",
+      "seedTrialsDesc": "Qiimeyn xubnaha noocyada wax soo saarka sare leh ee loo qalantay carada maxalli ah, natiijo wanaajin beeraha bulshada.",
+      "advisoryTitle": "Barnaamijka La-Talin Beeraha",
+      "advisoryCategory": "La-Talin",
+      "advisoryDesc": "Tababar agronomy iyo qorsheynta beeraha beeraha yar, wanaajinta wax soo saarka."
+    },
+    "insightsSection": {
+      "title": "Faahfaahinta Beeraha",
+      "subtitle": "Aqoon firfircoon iyo cusboonaysiinta kooxdeena agronomy ee duurka.",
+      "tomatoTitle": "Habka Ugu Fiican ee Soo Saarka Tamarta Soomaaliya",
+      "tomatoDesc": "Tilmaam buuxda oo ku saabsan daaqadaha beerida, xaaladaha cimilada, iyo doorashada noocyada wax soo saarka ugu badan.",
+      "dripTitle": "Faaiidada Biyo-Mareenta Drip ee Beerida Khudaarta",
+      "dripDesc": "Falanqaynta tignoolajiyada biyaha badbaadinta iyo saameynta wax soo saarka beeraha.",
+      "soilTitle": "Hababka Diyaarinta Carada ee Beeraha Yar",
+      "soilDesc": "Habab lagu xaqiijiyay ee wanaajinta caafimaadka carada iyo maareynta naqshadaha."
+    },
+    "partnershipsSection": {
+      "title": "Isku-Shirka & Iskaashiga",
+      "subtitle": "Barwaaqo Agri Group waxay la shaqeysaa soosaarayaasha midho, xirfadlayaasha agronomy, iyo ka-qaybqaatayaasha horumarka beeraha Bariga Afrika.",
+      "seedPro": "Seed Pro",
+      "aquaSystems": "Aqua Systems",
+      "agroTech": "Agro Tech",
+      "eastAfricaDev": "East Africa Dev"
+    },
+    "contactSection": {
+      "title": "Nala Shaqee",
+      "subtitle": "Diyaar u tahay inaannu wada shaqeyno? Noo soo dir fariin ama nala soo xiriir",
+      "name": "Magac",
+      "email": "Iimaylka",
+      "message": "Fariin",
+      "namePlaceholder": "John Doe",
+      "emailPlaceholder": "john@example.com",
+      "messagePlaceholder": "Sidee aan kuu caawin karnaa?",
+      "sendMessage": "Dir Fariinta"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "Profile Shirkad",
+      "title": "Aasaaskeena",
+      "titleHighlight": "Aasaaska",
+      "subtitle": "Si nakhshad leh waxaanu u beddelaynaa beeraha Soomaaliya ee adduunka iyo waxqabadyada maxalli ah."
+    },
+    "visionMission": {
+      "label": "Ujeedada Nakhshadeed",
+      "title": "Xoojinta Awooda Cunnada Gobolka",
+      "intro": "Barwaaqo Agri Group waxay joogtaa isgoyska aqoonta dhaqameed ee maxalli ah iyo horumarka beeraha caalami ah. Ma ihi kaliya iibiyayaal; waxaan nahay ka-qaybqaatay infiraastabalka nakhshadeed ee loo dedegeliyay dhisida dhaqaale beer ah oo adkaysan Koonfurta Afrika.",
+      "ourVision": "Aragteena",
+      "visionText": "In la dhiso koridoor beer ah oo isku filan ee Bariga Afrika halkaas oo horumarku la kulmo wax soo saarka, adkeynta mustaqbalka beeraha.",
+      "ourMission": "Hawlgalkeena",
+      "missionText": "Markaan isku daranno agronomy horumarsan iyo alaab beer ah oo dunida ugu tayo leh, waxaanu awood u siinaynaa soosaarayaasha waaweyn iyo kuwa yar inay gaaraan wax soo saar joogto ah.",
+      "clientSuccessRate": "Heerka Guulaha Macaamiisha",
+      "hectaresSupported": "Hektar La Taageeray"
+    },
+    "expertise": {
+      "label": "Dhibcadeena Adduunka",
+      "title": "Keena Heerarka Adduunka Carrada Soomaaliya",
+      "intro": "Barwaaqo Agri Group waxay bridge-ga u dhexeysaa horumarka beeraha caalami ah iyo fulinta duurka maxalli ah. Xirfadeena waxay noo ogolaanaysaa inaan si degdeg ah u kordhino hawlaha iyadoo la ilaaliyo wax soo saar tayo leh.",
+      "globalSupply": "Silsiladda Adeegga Caalamiga Ah",
+      "globalSupplyDesc": "Isku-shir toos ah oo la socda soosaarayaasha midho iyo warshadaha alaabta Yurub iyo Aasiya, beeraha Soomaaliya heliya tignoolajiyada koowaad.",
+      "technicalAdvisory": "La-Talin Farsamada",
+      "technicalAdvisoryDesc": "Koox agronomists waaweyn oo bixiya qorsheynta beeraha iyo stratejiyada maareynta cayayaanka ee loo qalantay dhulka Soomaaliya.",
+      "irrigationSystems": "Nidaamyo Biyo-Mareen",
+      "irrigationSystemsDesc": "Injineeniya xalallo maareyn biyaha oo ka dhigaya dhul qalalan beer khudaar iyo mid ah alaabta sannadka oo dhan."
+    },
+    "foundation": {
+      "label": "Qiyamkeena",
+      "title": "Aasaaska Barwaaqo",
+      "intro": "Kororkeena waa la hanuuniyay mabda'aad dhexdooda ah oo hubinaya in maalgelin, isku-shir, iyo mashruuc kasta uga qayb qaato xasilloonida gobolka.",
+      "techLeadership": "Hoggaanka Tignoolajiyada",
+      "techLeadershipDesc": "Waxaanu prioritize galeynna biyo-mareen AI iyo tignoolajiyada midho ee cimilada adkeysata mashruuc kasta.",
+      "operationalIntegrity": "Ixtiraamka Hawlgal",
+      "operationalIntegrityDesc": "Muugashadu waa calaamadeena. Laga bilaabo silsiladda adeegga illaa natiijooyinka duurka, waxaanu ilaalinaynaa heerarka ugu sarreeya ee ah.",
+      "adaptiveResilience": "Adkaysiga La Qalmi Karo",
+      "adaptiveResilienceDesc": "Nidaamkeena waa la dhisay inuu adkaysto cabashooyinka cimilada iyo gaadiidka ee gobolka Bariga Afrika.",
+      "inclusiveGrowth": "Koritaanka Ku Darsan",
+      "inclusiveGrowthDesc": "Waxaanu hubinaynaa guulkeena waaweyn inuu ugu tago bulshooyinka beeraha yar ee aqoonti."
+    }
+  },
+  "services": {
+    "hero": {
+      "label": "Xirfadeena",
+      "title": "Xalalka Beeraha & Adeegyada",
+      "subtitle": "Beeraha Soomaaliya waxaanu ku xoojinaynaa alaabta adduunka, tignoolajiyada casri ah, iyo tilmaamaha agronomy ee wax soo saarka waara."
+    },
+    "detailed": {
+      "seedTitle": "Midho & Alaabta Beeraha",
+      "seedDesc": "Waxaanu bixinaa midho tayo leh, cimilada adkeysata iyo alaab beeraha muhiim ah oo laga helo ka-qaybqaatayaasha caalami ah.",
+      "seedItem1": "Midho Khudaar ah oo ansixiyay",
+      "seedItem2": "Kuudiyeyaasha Wax soo saarka Sare",
+      "seedItem3": "Ilaalinta Beeraha Ammaan ah",
+      "seedItem4": "Qalabka Beeraha Gaar ah",
+      "irrigationTitle": "Nidaamyo Biyo-Mareen Casri ah",
+      "irrigationDesc": "Qorsheyn farsameed iyo fulinta nidaamyo maareyn biyaha wax ku ool ah.",
+      "irrigationItem1": "Qalabka Biyo-Mareen Drip",
+      "irrigationItem2": "Dabqorayaasha Qorraxda",
+      "irrigationItem3": "Xalallo Kaydinta Biyaha",
+      "irrigationItem4": "Qorsheynta & Dhisida Nidaamka",
+      "advisoryTitle": "Agronomy & La-Talin",
+      "advisoryDesc": "Bridging-ga aqoonta ee adeegyada agronomy xirfadeed. Kooxdeena waxay bixisaa taageero duurka, falanqoon carro, iyo stratejiyada maareynta beeraha.",
+      "advisoryItem1": "Falanqoon Caafimaadka Carrada",
+      "advisoryItem2": "Maareynta Cayayaanka & Cudurrada",
+      "advisoryItem3": "Qorsheynta Wareegga Beeraha",
+      "advisoryItem4": "Hagaajinta Wax soo saarka"
+    },
+    "process": {
+      "label": "Habkeena",
+      "title": "Sida Aan U Hawlgalno",
+      "step1Title": "La-Talin",
+      "step1Desc": "Waxaanu falanqeeynaa xaaladda beertaada, tayada carrada, iyo u baahnaanta beeraha.",
+      "step2Title": "Qorsheynta Xalka",
+      "step2Desc": "Qorsheyn gaar ah ee biyo-mareen, doorashada midho, iyo maareynta agronomy.",
+      "step3Title": "Fulinta",
+      "step3Desc": "Bixinta alaabta iyo dhisida nidaamyo xirfadeed ee goobta.",
+      "step4Title": "Hagaajinta",
+      "step4Desc": "La-talin duurka joogto ah iyo iibsashada si loo hubiyo wax soo saar ugu sarreeya."
+    },
+    "seeds": {
+      "heroTitle": "Midho & Alaabta Beeraha",
+      "heroSubtitle": "Bixinta aasaaska guulaha wax soo saarka sare ee Bariga Afrika.",
+      "ourProducts": "Alaabteena",
+      "highPerfTitle": "Alaab Wax soo saar Sare",
+      "intro": "Barwaaqo Agri Group waxay fahamsan tahay in tayada alaabta ay go'aamiiso guulaha saxaraha. Kaliya midho ansixiyay, cimilada la qalmi karo iyo kuudiyeyaasha nafaqada leh ayaan ka soo qaadnaa hoggamiyayaasha caalami ah.",
+      "vegSeeds": "Midho Khudaar",
+      "vegSeedsDesc": "Tamaandoor, basal, qaraha, iyo noocyo kale oo carrada maxalli u qalma.",
+      "fertilizers": "Kuudiyeyaasha Gaar ah",
+      "fertilizersDesc": "Isku-darka beeraha gaar ah si loo kordhiyo qaadashada nafaqada.",
+      "cropProtection": "Ilaalinta Beeraha",
+      "cropProtectionDesc": "Xalallo maareyn cayayaanka iyo cudurrada deegaanka ilaaliya.",
+      "requestCatalog": "Weydii Buugga",
+      "catalogDesc": "Nala soo xiriir xirfadlayadeena liiska buuxa ee midho iyo alaabta ee gobolkaaga.",
+      "yourName": "Magacaaga",
+      "emailAddress": "Ciwaanka Iimaylka",
+      "submitRequest": "Gudbi Codsi"
+    },
+    "advisory": {
+      "heroTitle": "La-Talin Beerta & Agronomy",
+      "heroSubtitle": "Isku-darka xirfada caalami ah iyo dhulka iyo aqoonta maxalli ah.",
+      "sectionTitle": "Tilmaamaha Xirfadeed ee Beerta Fa'iido leh",
+      "sectionIntro": "Kooxdeena agronomists xirfadeed waxay bixisaa taageero gacanta ah si aad ugu gaarto natiijooyinka ugu fiican ee hawlaha beeraha. Xogta adag waxaanu ugu beddelnaa stratejiyada duurka.",
+      "soilAnalysis": "Falanqoon Carro",
+      "soilAnalysisDesc": "Tijaabo faahfaahin leh si loo go'aamiyo u baahnaanta nafaqada.",
+      "cropPlanning": "Qorsheynta Beeraha",
+      "cropPlanningDesc": "Jadwalka nakhshadeed ee wax soo saarka sannadka oo dhan.",
+      "partnerTitle": "Nala Ka Qayb Qaato Xirfadlayadeena",
+      "partnerDesc": "Kordhi wax soo saarkaaga oo yar ka dhig dhaawaca adoo adeegyo la-talin xogta leh ee loo qalantay cimiladaaga micro.",
+      "bookFieldVisit": "Buug Boosasho Duur"
+    },
+    "irrigation": {
+      "heroTitle": "Biyo-Mareen & Adkaysiga Beerta",
+      "heroSubtitle": "Nidaamyo maareyn biyaha aamin ah oo loo qorsheeyay adkaysiga cimilada.",
+      "dripSystems": "Nidaamyo Drip",
+      "dripSystemsDesc": "Biyo-mareen sax ah oo yaraynaya isticmaalka ilaa 50%.",
+      "solarPumping": "Dabqoritaanka Qorraxda",
+      "solarPumpingDesc": "Xalallo karti ah ee deegaanka beeraha fog.",
+      "irrigationDesign": "Qorsheynta Biyo-Mareen",
+      "irrigationDesignDesc": "Qorsheyn hydraulic gaar ah ee beeraha dhammaan heerarka.",
+      "transformingTitle": "Beddelka Dhulka Qalalan",
+      "transformingDesc": "Xalalladayada biyo-mareen waxaa loo qorsheeyay in la furiyo awooda buuxda ee dhulkaaga. Laga bilaabo sahaminta goobta illaa damaanadaha, waxaanu hubinaynaa in dhibic kasta si wax ku ool ah loo isticmaalo.",
+      "requestConsultation": "Weydii La-Talin"
+    },
+    "programs": {
+      "heroTitle": "Barnaamijyada Awooda Beeraha",
+      "heroSubtitle": "Dhisida bulshooyinka beeraha xooggan ee aqoon wadaag iyo koritaan.",
+      "sectionTitle": "Xoojinta Mustaqbalka Beeraha",
+      "sectionIntro": "Barwaaqo Agri Group waxay aaminsan tahay in horumarka waara ee la dhisayo ay ku xidhan yihiin iskaashiga xooggan ee beeraha maxalli ah. Barnaamijyadeena waxay diiradda saaraan helitaanka qalabka, amaahda, iyo suuqyada.",
+      "outgrowerTitle": "Qorsheynta Outgrower",
+      "outgrowerDesc": "Habab beer iskaashi ah oo hubinaya helitaanka suuqa iyo tayada.",
+      "technicalTrainingTitle": "Tababar Farsamada",
+      "technicalTrainingDesc": "Workshop-yo joogto ah ee agronomy casri ah iyo dayactirka biyo-mareen.",
+      "inputAccessTitle": "Barnaamijyada Helitaanka Alaabta",
+      "inputAccessDesc": "Bridging-ga ee alaabta tayo sare ee bulshooyinka beeraha yar.",
+      "readyToGrow": "Diyaar u tahay inaad nala kori?",
+      "registerWorkshop": "Diiwaangeli Workshop-ka Xiga"
+    }
+  },
+  "projects": {
+    "hero": {
+      "badge": "Portfoliokeena",
+      "titlePrefix": "Beddelka dhulka iyadoo loo marayo ",
+      "titleHighlight": "Mashruucyada Nakhshadeed",
+      "subtitle": "Laga bilaabo nidaamyo biyo-mareen pilot ilaa tijaabada midho ee gobolka, arag aragtideena dhisida nidaamyo beer ah oo adkaysan Bariga Afrika."
+    },
+    "viewCaseStudy": "Arag Daraasadda Kiisaska",
+    "backToProjects": "Dib ugu noqo Mashruucyada",
+    "caseStudyNotFound": "Daraasadda Kiisaska Lama Helin",
+    "caseStudyNotFoundDesc": "Daraasadda kiisaska aad raadinayso ma jirto."
+  },
+  "insights": {
+    "hero": {
+      "badge": "Aqoon & Koritaan",
+      "titlePrefix": "Macluumaadka ",
+      "titleHighlight": "Beeraha",
+      "subtitle": "Sahaminta mustaqbalka beeraha Bariga Afrika ee xogta, cilmi-baariska, iyo stratejiyada duurka la tijaabiyay."
+    },
+    "backToInsights": "Dib ugu noqo Faahfaahinta",
+    "articleNotFound": "Maqalka Lama Helin",
+    "articleNotFoundDesc": "Maqalka aad raadinayso ma jiro ama waa la wareegay."
+  },
+  "partners": {
+    "hero": {
+      "badge": "Koritaan Iskaashiga",
+      "title": "Isku-Shirkeena Caalami Ah",
+      "subtitle": "Ku xidhida beeraha Bariga Afrika ee horumarka caalami ah, tignoolajiyada, iyo silsiladaha adeegga tayo sare leh."
+    },
+    "benefits": {
+      "label": "Maxaad nala shaqeynaysaa?",
+      "title": "Faa'iidada Nakhshadeed",
+      "marketAccess": "Helitaanka Suuqa",
+      "marketAccessDesc": "Gelitaan toos ah suuqa beeraha Bariga Afrika ee si degdeg ah u kordhaya.",
+      "localExpertise": "Xirfad Maxalli",
+      "localExpertiseDesc": "Fahamka dheer ee carrada gobolka, cimilada, iyo xaaladaha sharci.",
+      "infrastructure": "Infiraastabalka",
+      "infrastructureDesc": "Shabakadaha qaybinta la dhisay iyo awood gaadiid nakhshadeed.",
+      "sustainableImpact": "Saameynta Waara",
+      "sustainableImpactDesc": "Ku biir mashruucyada saameyn weyn ee nolosha beddelaya ee xasilloonida cunnada hubinaya."
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Nala Soo Xiriir",
+      "title": "Aan Wada Korino",
+      "subtitle": "Ha ahaato beeraha raadinaya talo ama ka-qaybqaatay caalami ah raadinaya fursadaha, kooxdeena waxay diyaar u tahay inay la xiriirto."
+    },
+    "info": {
+      "title": "Macluumaadka Xiriirka",
+      "subtitle": "Nala soo xiriir xafiisyadayada Bariga Afrika ee xalalka beeraha iyo fursadaha iskaashiga.",
+      "headOffice": "Xafiiska Sare",
+      "regionalOffice": "Xafiiska Gobolka",
+      "fieldOperations": "Hawlgalka Duurka",
+      "mogadishu": "Muqdisho, Soomaaliya",
+      "nairobi": "Nairobi, Kiinya",
+      "baidoa": "Baydhabo, Soomaaliya"
+    }
+  }
+}

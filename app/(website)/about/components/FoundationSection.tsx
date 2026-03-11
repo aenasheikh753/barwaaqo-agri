@@ -1,29 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLanguage } from "../../../context/LanguageContext";
 
 export function FoundationSection() {
+    const { t } = useLanguage();
     const values = [
-        {
-            title: "Technological Leadership",
-            desc: "We prioritize the integration of AI-driven irrigation and climate-resilient seed technology into every project.",
-            icon: "🧬"
-        },
-        {
-            title: "Operational Integrity",
-            desc: "Transparency is our hallmark. From supply chain to field results, we maintain the highest ethical standards.",
-            icon: "🛡️"
-        },
-        {
-            title: "Adaptive Resilience",
-            desc: "Our systems are built to withstand the unique climatic and logistical challenges of the East African region.",
-            icon: "🏗️"
-        },
-        {
-            title: "Inclusive Growth",
-            desc: "We ensure our large-scale success trickles down to smallholder communities through knowledge transfer.",
-            icon: "📈"
-        }
+        { titleKey: "about.foundation.techLeadership", descKey: "about.foundation.techLeadershipDesc", icon: "🧬" },
+        { titleKey: "about.foundation.operationalIntegrity", descKey: "about.foundation.operationalIntegrityDesc", icon: "🛡️" },
+        { titleKey: "about.foundation.adaptiveResilience", descKey: "about.foundation.adaptiveResilienceDesc", icon: "🏗️" },
+        { titleKey: "about.foundation.inclusiveGrowth", descKey: "about.foundation.inclusiveGrowthDesc", icon: "📈" }
     ];
 
     return (
@@ -33,10 +19,10 @@ export function FoundationSection() {
 
             <div className="max-w-[1200px] mx-auto px-6 relative z-10">
                 <div className="max-w-3xl mb-16">
-                    <span className="text-custom-olive font-semibold tracking-wider text-sm uppercase block mb-4">Our Values</span>
-                    <h2 className="text-4xl md:text-5xl font-heading font-bold text-custom-primary mb-6">The Foundations of Barwaaqo</h2>
+                    <span className="text-custom-olive font-semibold tracking-wider text-sm uppercase block mb-4">{t("about.foundation.label")}</span>
+                    <h2 className="text-4xl md:text-5xl font-heading font-bold text-custom-primary mb-6">{t("about.foundation.title")}</h2>
                     <p className="text-custom-charcoal/60 text-lg leading-relaxed font-body">
-                        Our growth is guided by a set of core principles that ensure every investment, partnership, and project contributes to the long-term stability of the region.
+                        {t("about.foundation.intro")}
                     </p>
                 </div>
 
@@ -53,8 +39,8 @@ export function FoundationSection() {
                             <div className="w-16 h-16 rounded-2xl bg-custom-light-bg flex items-center justify-center text-3xl mb-8 group-hover:bg-custom-olive group-hover:text-white transition-all duration-500 transform group-hover:rotate-6">
                                 {v.icon}
                             </div>
-                            <h3 className="text-xl font-bold text-custom-primary mb-4 group-hover:text-custom-olive transition-colors">{v.title}</h3>
-                            <p className="text-custom-charcoal/60 leading-relaxed text-sm font-body">{v.desc}</p>
+                            <h3 className="text-xl font-bold text-custom-primary mb-4 group-hover:text-custom-olive transition-colors">{t(v.titleKey)}</h3>
+                            <p className="text-custom-charcoal/60 leading-relaxed text-sm font-body">{t(v.descKey)}</p>
                         </motion.div>
                     ))}
                 </div>

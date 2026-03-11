@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useLanguage } from "../../context/LanguageContext";
 
 export function InsightsSection() {
+    const { t } = useLanguage();
     return (
         <section className="py-16 max-w-[1200px] mx-auto px-6">
             <motion.div
@@ -14,11 +16,11 @@ export function InsightsSection() {
                 viewport={{ once: true }}
             >
                 <h2 className="text-4xl md:text-5xl font-heading font-bold text-custom-primary mb-6">
-                    Agricultural Insights
+                    {t("home.insightsSection.title")}
                 </h2>
                 <div className="w-24 h-1 bg-custom-olive rounded mx-auto mb-6"></div>
                 <p className="text-lg text-custom-charcoal/80 font-body max-w-2xl mx-auto">
-                    Practical knowledge and updates from our agronomy teams in the field.
+                    {t("home.insightsSection.subtitle")}
                 </p>
             </motion.div>
 
@@ -30,21 +32,9 @@ export function InsightsSection() {
                 viewport={{ once: true }}
             >
                 {[
-                    {
-                        title: "Best Seasons for Tomato Production in Somalia",
-                        description: "Comprehensive guide to optimal planting windows, climate considerations, and variety selection for maximum yield in Somali growing conditions.",
-                        slug: "tomato-production-somalia"
-                    },
-                    {
-                        title: "Benefits of Drip Irrigation for Vegetable Farming",
-                        description: "Analysis of water-saving technologies and their impact on crop productivity, with case studies from our irrigation pilot programs across East Africa.",
-                        slug: "benefits-drip-irrigation"
-                    },
-                    {
-                        title: "Soil Preparation Techniques for Smallholder Farms",
-                        description: "Evidence-based methods for soil health improvement, nutrient management, and sustainable practices adapted to local farming systems.",
-                        slug: "soil-preparation-techniques"
-                    }
+                    { titleKey: "home.insightsSection.tomatoTitle", descKey: "home.insightsSection.tomatoDesc", slug: "tomato-production-somalia" },
+                    { titleKey: "home.insightsSection.dripTitle", descKey: "home.insightsSection.dripDesc", slug: "benefits-drip-irrigation" },
+                    { titleKey: "home.insightsSection.soilTitle", descKey: "home.insightsSection.soilDesc", slug: "soil-preparation-techniques" }
                 ].map((insight, i) => (
                     <Link key={i} href={`/insights/${insight.slug}`}>
                         <motion.article
@@ -56,16 +46,16 @@ export function InsightsSection() {
                             whileHover={{ y: -5 }}
                         >
                             <span className="text-custom-olive font-body text-sm font-semibold tracking-wider uppercase mb-3 block">
-                                Agronomy Guide
+                                {t("common.agronomyGuide")}
                             </span>
                             <h3 className="text-2xl font-heading font-semibold text-custom-primary mb-3 group-hover:text-custom-olive transition-colors leading-snug">
-                                {insight.title}
+                                {t(insight.titleKey)}
                             </h3>
                             <p className="text-custom-charcoal/70 font-body leading-relaxed mb-6 flex-grow max-w-prose">
-                                {insight.description}
+                                {t(insight.descKey)}
                             </p>
                             <span className="text-custom-primary font-medium hover:text-custom-olive flex items-center space-x-2 transition-colors mt-auto">
-                                <span>Read Article</span>
+                                <span>{t("common.readArticle")}</span>
                                 <span className="group-hover:translate-x-1 transition-transform">→</span>
                             </span>
                         </motion.article>

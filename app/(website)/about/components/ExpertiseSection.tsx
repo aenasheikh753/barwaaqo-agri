@@ -1,21 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLanguage } from "../../../context/LanguageContext";
 
 export function ExpertiseSection() {
+    const { t } = useLanguage();
     const areas = [
-        {
-            title: "Global Supply Chain",
-            desc: "Direct partnerships with leading seed breeders and input manufacturers in Europe and Asia, ensuring Somali farmers get first-class technology."
-        },
-        {
-            title: "Technical Advisory",
-            desc: "A team of senior agronomists providing soil-specific crop planning and pest management strategies tailored for the diverse Somali landscape."
-        },
-        {
-            title: "Irrigation Systems",
-            desc: "Engineering scalable water management solutions that turn arid land into productive, year-round vegetable and commodity crop fields."
-        }
+        { titleKey: "about.expertise.globalSupply", descKey: "about.expertise.globalSupplyDesc" },
+        { titleKey: "about.expertise.technicalAdvisory", descKey: "about.expertise.technicalAdvisoryDesc" },
+        { titleKey: "about.expertise.irrigationSystems", descKey: "about.expertise.irrigationSystemsDesc" }
     ];
 
     return (
@@ -31,12 +24,12 @@ export function ExpertiseSection() {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
                     >
-                        <span className="text-custom-sand font-semibold tracking-wider text-sm uppercase block mb-4">Our Competitive Edge</span>
+                        <span className="text-custom-sand font-semibold tracking-wider text-sm uppercase block mb-4">{t("about.expertise.label")}</span>
                         <h2 className="text-4xl md:text-5xl font-heading font-bold mb-8 leading-tight text-white italic">
-                            Bringing <span className="text-custom-sand not-italic">World-Class</span> Standards to Somali Soil
+                            {t("about.expertise.title")}
                         </h2>
                         <p className="text-white/80 text-lg leading-relaxed mb-10 font-body">
-                            Barwaaqo Agri Group bridge the gap between global agricultural advancements and local field execution. Our expertise allows us to scale operations quickly while maintaining high-quality productivity across our projects.
+                            {t("about.expertise.intro")}
                         </p>
                     </motion.div>
 
@@ -51,10 +44,10 @@ export function ExpertiseSection() {
                                 viewport={{ once: true }}
                             >
                                 <div className="flex justify-between items-start mb-2.5">
-                                    <h3 className="text-lg font-bold text-custom-sand group-hover:text-white transition-colors">{a.title}</h3>
+                                    <h3 className="text-lg font-bold text-custom-sand group-hover:text-white transition-colors">{t(a.titleKey)}</h3>
                                     <div className="w-7 h-7 rounded-full border border-custom-sand/30 flex items-center justify-center text-custom-sand text-xs font-bold">0{i + 1}</div>
                                 </div>
-                                <p className="text-white/60 leading-relaxed text-sm font-body">{a.desc}</p>
+                                <p className="text-white/60 leading-relaxed text-sm font-body">{t(a.descKey)}</p>
                             </motion.div>
                         ))}
                     </div>

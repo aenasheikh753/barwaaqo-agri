@@ -1,0 +1,315 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "services": "Servizi",
+    "seedInputs": "Sementi e Input",
+    "farmAdvisory": "Consulenza Agricola",
+    "irrigation": "Irrigazione",
+    "farmerPrograms": "Programmi per Agricoltori",
+    "projects": "Progetti",
+    "insights": "Approfondimenti",
+    "partners": "Partner",
+    "contact": "Contatti",
+    "partnerWithUs": "Collabora con noi"
+  },
+  "footer": {
+    "services": "Servizi",
+    "agriculturalInputs": "Input Agricoli",
+    "farmAdvisory": "Consulenza Agricola",
+    "irrigationDevelopment": "Sviluppo Irrigazione",
+    "farmerPrograms": "Programmi per Agricoltori",
+    "contact": "Contatti",
+    "location": "Posizione",
+    "email": "Email",
+    "mogadishu": "Mogadiscio, Somalia",
+    "tagline": "Sosteniamo i sistemi agricoli moderni in Somalia e Africa orientale con input affidabili e sviluppo esperto.",
+    "allRightsReserved": "Tutti i diritti riservati."
+  },
+  "hero": {
+    "headline": "Costruire un'agricoltura moderna in Somalia e Africa orientale",
+    "subline": "Barwaaqo Agri Group fornisce sementi di alta qualità, input agricoli, sviluppo dell'irrigazione e servizi di consulenza per sistemi agricoli produttivi e resilienti.",
+    "exploreServices": "Scopri i nostri servizi",
+    "partnerWithUs": "Collabora con noi"
+  },
+  "language": "Lingua",
+  "common": {
+    "viewAllServices": "Vedi tutti i servizi",
+    "learnMore": "Scopri di più",
+    "readArticle": "Leggi l'articolo",
+    "exploreDetails": "Esplora i dettagli",
+    "agronomyGuide": "Guida agronomica"
+  },
+  "home": {
+    "trustStrip": {
+      "badge": "Oltre 10 anni di eccellenza sul campo",
+      "title": "Le fondamenta dell'agricoltura affidabile",
+      "subtitle": "Dal seme al raccolto — supportiamo ogni passo",
+      "seedInputs": "Sementi e input agricoli",
+      "farmAdvisory": "Consulenza agricola e agronomia",
+      "irrigation": "Sviluppo irrigazione",
+      "farmerPrograms": "Programmi per agricoltori"
+    },
+    "aboutSection": {
+      "aboutUs": "Chi siamo",
+      "title": "Su Barwaaqo Agri Group",
+      "p1": "Barwaaqo Agri Group è un'azienda di sviluppo agricolo che supporta sistemi agricoli moderni in Somalia e Africa orientale.",
+      "p2": "Il nostro lavoro si concentra sul miglioramento della produttività delle colture, sul rafforzamento dei programmi di supporto agli agricoltori e sull'introduzione di input e soluzioni di irrigazione adattati alle condizioni locali.",
+      "yearsExperience": "Anni di esperienza",
+      "farmersSupported": "Agricoltori supportati"
+    },
+    "coreServices": {
+      "label": "Cosa facciamo",
+      "title": "Servizi principali",
+      "seedTitle": "Sementi e input agricoli",
+      "seedDesc": "Fornitura di sementi e input agricoli di alta qualità da produttori affidabili.",
+      "advisoryTitle": "Consulenza agricola e agronomia",
+      "advisoryDesc": "Guidance agronomica per migliorare la produttività delle colture e la gestione del suolo.",
+      "irrigationTitle": "Irrigazione e sviluppo agricolo",
+      "irrigationDesc": "Progettazione e realizzazione di sistemi di irrigazione e infrastrutture agricole moderne.",
+      "programsTitle": "Programmi per agricoltori e produttori",
+      "programsDesc": "Supporto agli agricoltori attraverso programmi di produzione coordinati e accesso agli input."
+    },
+    "projectsSection": {
+      "label": "La nostra galleria",
+      "title": "Progetti selezionati",
+      "baidoaTitle": "Pilot irrigazione Baidoa",
+      "baidoaCategory": "Irrigazione",
+      "baidoaDesc": "Iniziativa di irrigazione per 500 ettari, con soluzioni scalabili per l'agricoltura somala.",
+      "seedTrialsTitle": "Prove varietali orticole",
+      "seedTrialsCategory": "Tecnologia sementiera",
+      "seedTrialsDesc": "Valutazione di varietà ad alto rendimento adattate al suolo locale.",
+      "advisoryTitle": "Programma di consulenza agricola",
+      "advisoryCategory": "Consulenza",
+      "advisoryDesc": "Formazione agronomica e pianificazione colturale per piccoli agricoltori."
+    },
+    "insightsSection": {
+      "title": "Approfondimenti agricoli",
+      "subtitle": "Conoscenza pratica e aggiornamenti dalle nostre squadre agronomiche sul campo.",
+      "tomatoTitle": "Migliori stagioni per la produzione di pomodoro in Somalia",
+      "tomatoDesc": "Guida alle finestre di semina, al clima e alla scelta varietale per massimizzare le rese.",
+      "dripTitle": "Vantaggi dell'irrigazione a goccia per l'orticoltura",
+      "dripDesc": "Analisi delle tecnologie di risparmio idrico e del loro impatto sulla produttività.",
+      "soilTitle": "Tecniche di preparazione del suolo per piccole aziende",
+      "soilDesc": "Metodi evidence-based per la salute del suolo e la gestione dei nutrienti."
+    },
+    "partnershipsSection": {
+      "title": "Partenariati e collaborazione",
+      "subtitle": "Barwaaqo Agri Group collabora con produttori di sementi, agronomi e partner di sviluppo in Africa orientale.",
+      "seedPro": "Seed Pro",
+      "aquaSystems": "Aqua Systems",
+      "agroTech": "Agro Tech",
+      "eastAfricaDev": "East Africa Dev"
+    },
+    "contactSection": {
+      "title": "Lavora con noi",
+      "subtitle": "Pronto a collaborare? Inviaci un messaggio o contattaci a",
+      "name": "Nome",
+      "email": "Email",
+      "message": "Messaggio",
+      "namePlaceholder": "John Doe",
+      "emailPlaceholder": "john@example.com",
+      "messagePlaceholder": "Come possiamo aiutarti?",
+      "sendMessage": "Invia messaggio"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "Profilo aziendale",
+      "title": "Le nostre fondamenta",
+      "titleHighlight": "Fondamenta",
+      "subtitle": "Trasformare strategicamente l'agricoltura somala attraverso innovazione globale e eccellenza locale."
+    },
+    "visionMission": {
+      "label": "Scopo strategico",
+      "title": "Potenziare la sovranità alimentare regionale",
+      "intro": "Barwaaqo Agri Group si colloca all'incrocio tra conoscenza tradizionale locale e innovazione agricola internazionale. Non siamo solo rivenditori; siamo un partner infrastrutturale strategico per un'economia agricola resiliente nel Corno d'Africa.",
+      "ourVision": "La nostra visione",
+      "visionText": "Stabilire un corridoio agricolo autosufficiente in Africa orientale dove l'innovazione incontra la produttività, garantendo il futuro dell'agricoltura.",
+      "ourMission": "La nostra missione",
+      "missionText": "Integrando agronomia avanzata e input agricoli di classe mondiale, permettiamo a grandi e piccoli produttori di ottenere rese sostenibili tutto l'anno.",
+      "clientSuccessRate": "Tasso di successo clienti",
+      "hectaresSupported": "Ettari supportati"
+    },
+    "expertise": {
+      "label": "Il nostro vantaggio competitivo",
+      "title": "Portare standard di classe mondiale al suolo somalo",
+      "intro": "Barwaaqo Agri Group colma il divario tra progressi agricoli globali e esecuzione locale. La nostra competenza ci permette di scalare rapidamente mantenendo alta produttività.",
+      "globalSupply": "Catena di approvvigionamento globale",
+      "globalSupplyDesc": "Partenariati diretti con selezionatori di sementi e produttori di input in Europa e Asia, per tecnologia di prima classe ai farmer somali.",
+      "technicalAdvisory": "Consulenza tecnica",
+      "technicalAdvisoryDesc": "Un team di agronomi senior per pianificazione colturale e gestione dei parassiti adattata al paesaggio somalo.",
+      "irrigationSystems": "Sistemi di irrigazione",
+      "irrigationSystemsDesc": "Ingegneria di soluzioni di gestione dell'acqua scalabili che trasformano terre aride in campi di ortaggi e colture produttivi."
+    },
+    "foundation": {
+      "label": "I nostri valori",
+      "title": "Le fondamenta di Barwaaqo",
+      "intro": "La nostra crescita è guidata da principi che assicurano che ogni investimento, partnership e progetto contribuisca alla stabilità a lungo termine della regione.",
+      "techLeadership": "Leadership tecnologica",
+      "techLeadershipDesc": "Diamo priorità all'integrazione di irrigazione guidata da IA e tecnologia sementiera resiliente al clima in ogni progetto.",
+      "operationalIntegrity": "Integrità operativa",
+      "operationalIntegrityDesc": "La trasparenza è il nostro marchio. Dalla supply chain ai risultati sul campo, manteniamo i più alti standard etici.",
+      "adaptiveResilience": "Resilienza adattiva",
+      "adaptiveResilienceDesc": "I nostri sistemi sono costruiti per resistere alle sfide climatiche e logistiche uniche della regione dell'Africa orientale.",
+      "inclusiveGrowth": "Crescita inclusiva",
+      "inclusiveGrowthDesc": "Assicuriamo che il nostro successo su larga scala raggiunga le comunità di piccoli agricoltori attraverso il trasferimento di conoscenze."
+    }
+  },
+  "services": {
+    "hero": {
+      "label": "La nostra competenza",
+      "title": "Soluzioni e servizi agricoli",
+      "subtitle": "Potenziamo gli agricoltori somali con input di classe mondiale, tecnologia moderna e supporto agronomico per una produttività sostenibile."
+    },
+    "detailed": {
+      "seedTitle": "Sementi e input agricoli",
+      "seedDesc": "Forniamo sementi di alta qualità, resilienti al clima e input essenziali da partner internazionali.",
+      "seedItem1": "Sementi orticole certificate",
+      "seedItem2": "Fertilizzanti ad alte prestazioni",
+      "seedItem3": "Protezione delle colture sicura",
+      "seedItem4": "Attrezzature agricole specializzate",
+      "irrigationTitle": "Sistemi di irrigazione moderni",
+      "irrigationDesc": "Progettazione e realizzazione esperta di sistemi efficienti di gestione dell'acqua.",
+      "irrigationItem1": "Kit irrigazione a goccia",
+      "irrigationItem2": "Pompe a energia solare",
+      "irrigationItem3": "Soluzioni di stoccaggio acqua",
+      "irrigationItem4": "Progettazione e installazione",
+      "advisoryTitle": "Agronomia e consulenza",
+      "advisoryDesc": "Colmare il divario di conoscenza con servizi agronomici professionali.",
+      "advisoryItem1": "Analisi salute del suolo",
+      "advisoryItem2": "Controllo parassiti e malattie",
+      "advisoryItem3": "Pianificazione rotazione colture",
+      "advisoryItem4": "Ottimizzazione rese"
+    },
+    "process": {
+      "label": "La nostra metodologia",
+      "title": "Come lavoriamo",
+      "step1Title": "Consultazione",
+      "step1Desc": "Analizziamo le condizioni dell'azienda, la qualità del suolo e le esigenze agricole.",
+      "step2Title": "Progettazione soluzione",
+      "step2Desc": "Pianificazione su misura per irrigazione, scelta sementi e gestione agronomica.",
+      "step3Title": "Implementazione",
+      "step3Desc": "Fornitura input e installazione professionale dei sistemi in campo.",
+      "step4Title": "Ottimizzazione",
+      "step4Desc": "Consulenza e monitoraggio in campo per massimizzare le rese."
+    },
+    "seeds": {
+      "heroTitle": "Sementi e input agricoli",
+      "heroSubtitle": "Fornire le basi per raccolti ad alto rendimento in Africa orientale.",
+      "ourProducts": "I nostri prodotti",
+      "highPerfTitle": "Input ad alte prestazioni",
+      "intro": "Barwaaqo Agri Group sa che la qualità degli input determina il successo del raccolto. Ci approvvigioniamo solo da leader globali per sementi certificate e fertilizzanti adattati al clima.",
+      "vegSeeds": "Sementi orticole",
+      "vegSeedsDesc": "Pomodoro, cipolla, anguria e altre varietà adattate al suolo locale.",
+      "fertilizers": "Fertilizzanti specializzati",
+      "fertilizersDesc": "Miscelazioni specifiche per coltura per massimizzare l'assorbimento dei nutrienti.",
+      "cropProtection": "Protezione delle colture",
+      "cropProtectionDesc": "Soluzioni ecocompatibili per parassiti e malattie.",
+      "requestCatalog": "Richiedi catalogo",
+      "catalogDesc": "Contatta i nostri specialisti per l'elenco completo di sementi e input per la tua regione.",
+      "yourName": "Il tuo nome",
+      "emailAddress": "Indirizzo email",
+      "submitRequest": "Invia richiesta"
+    },
+    "advisory": {
+      "heroTitle": "Consulenza agricola e agronomia",
+      "heroSubtitle": "Unire competenza internazionale e territorio locale.",
+      "sectionTitle": "Guida esperta per un'agricoltura redditizia",
+      "sectionIntro": "Il nostro team di agronomi professionisti offre supporto pratico per i migliori risultati. Trasformiamo i dati complessi in strategie di campo applicabili.",
+      "soilAnalysis": "Analisi del suolo",
+      "soilAnalysisDesc": "Test dettagliati per determinare le esigenze nutrizionali.",
+      "cropPlanning": "Pianificazione colture",
+      "cropPlanningDesc": "Calendari strategici per la produzione tutto l'anno.",
+      "partnerTitle": "Collabora con i nostri esperti",
+      "partnerDesc": "Aumenta la produzione e riduci le perdite con servizi di consulenza su misura per il tuo microclima.",
+      "bookFieldVisit": "Prenota visita in campo"
+    },
+    "irrigation": {
+      "heroTitle": "Irrigazione e resilienza aziendale",
+      "heroSubtitle": "Sistemi di gestione dell'acqua affidabili per la resilienza climatica.",
+      "dripSystems": "Sistemi a goccia",
+      "dripSystemsDesc": "Irrigazione di precisione che riduce i consumi fino al 50%.",
+      "solarPumping": "Pompaggio solare",
+      "solarPumpingDesc": "Soluzioni energetiche sostenibili per aree agricole remote.",
+      "irrigationDesign": "Progettazione irrigazione",
+      "irrigationDesignDesc": "Piani idraulici su misura per aziende di ogni dimensione.",
+      "transformingTitle": "Trasformare i paesaggi aridi",
+      "transformingDesc": "Le nostre soluzioni di irrigazione sono progettate per valorizzare al massimo il tuo terreno. Dal sopralluogo alla messa in servizio, ogni goccia è usata in modo efficiente.",
+      "requestConsultation": "Richiedi consulenza"
+    },
+    "programs": {
+      "heroTitle": "Programmi di capacity building per agricoltori",
+      "heroSubtitle": "Costruire comunità agricole più forti attraverso conoscenza condivisa e crescita.",
+      "sectionTitle": "Potenziare il futuro dell'agricoltura",
+      "sectionIntro": "Barwaaqo Agri Group crede che lo sviluppo sostenibile si basi su partnership solide con gli agricoltori locali. I nostri programmi puntano su accesso a strumenti, credito e mercati.",
+      "outgrowerTitle": "Schemi outgrower",
+      "outgrowerDesc": "Modelli di agricoltura collaborativa con accesso al mercato e controllo qualità.",
+      "technicalTrainingTitle": "Formazione tecnica",
+      "technicalTrainingDesc": "Workshop regolari su agronomia moderna e manutenzione irrigazione.",
+      "inputAccessTitle": "Programmi di accesso agli input",
+      "inputAccessDesc": "Colmare il divario verso input di qualità per le comunità di piccoli agricoltori.",
+      "readyToGrow": "Pronto a crescere con noi?",
+      "registerWorkshop": "Iscriviti al prossimo workshop"
+    }
+  },
+  "projects": {
+    "hero": {
+      "badge": "Il nostro portfolio",
+      "titlePrefix": "Trasformare i paesaggi attraverso ",
+      "titleHighlight": "progetti strategici",
+      "subtitle": "Dai sistemi di irrigazione pilota alle prove sementiere interregionali, scopri il nostro impegno per sistemi agricoli resilienti in Africa orientale."
+    },
+    "viewCaseStudy": "Vedi studio di caso",
+    "backToProjects": "Torna ai progetti",
+    "caseStudyNotFound": "Studio di caso non trovato",
+    "caseStudyNotFoundDesc": "Lo studio di caso che cerchi non esiste."
+  },
+  "insights": {
+    "hero": {
+      "badge": "Conoscenza e crescita",
+      "titlePrefix": "L'",
+      "titleHighlight": "intelligenza agricola",
+      "subtitle": "Esplorare il futuro dell'agricoltura in Africa orientale attraverso dati, ricerca e strategie testate sul campo."
+    },
+    "backToInsights": "Torna agli approfondimenti",
+    "articleNotFound": "Articolo non trovato",
+    "articleNotFoundDesc": "L'articolo che cerchi non esiste o è stato spostato."
+  },
+  "partners": {
+    "hero": {
+      "badge": "Crescita collaborativa",
+      "title": "Le nostre partnership globali",
+      "subtitle": "Connettere l'agricoltura dell'Africa orientale a innovazione, tecnologia e filiere internazionali di qualità."
+    },
+    "benefits": {
+      "label": "Perché diventare partner?",
+      "title": "Il vantaggio strategico",
+      "marketAccess": "Accesso al mercato",
+      "marketAccessDesc": "Ingresso diretto nel mercato agricolo in rapida crescita dell'Africa orientale.",
+      "localExpertise": "Competenza locale",
+      "localExpertiseDesc": "Profonda conoscenza di suoli, clima e quadro normativo regionale.",
+      "infrastructure": "Infrastruttura",
+      "infrastructureDesc": "Reti di distribuzione consolidate e capacità logistiche strategiche.",
+      "sustainableImpact": "Impatto sostenibile",
+      "sustainableImpactDesc": "Unisciti a progetti ad alto impatto che trasformano le vite e assicurano la sicurezza alimentare."
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Contattaci",
+      "title": "Cresciamo insieme",
+      "subtitle": "Che tu sia un agricoltore in cerca di consigli o un partner globale in cerca di opportunità, il nostro team è pronto a connettere."
+    },
+    "info": {
+      "title": "Informazioni di contatto",
+      "subtitle": "Contatta i nostri uffici in Africa orientale per soluzioni agricole e opportunità di partnership.",
+      "headOffice": "Sede centrale",
+      "regionalOffice": "Ufficio regionale",
+      "fieldOperations": "Operazioni sul campo",
+      "mogadishu": "Mogadiscio, Somalia",
+      "nairobi": "Nairobi, Kenya",
+      "baidoa": "Baidoa, Somalia"
+    }
+  }
+}

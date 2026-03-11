@@ -5,12 +5,30 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Button } from "../../../components/ui/Button";
+import { useLanguage } from "../../../context/LanguageContext";
+import { LanguageSwitcher } from "../LanguageSwitcher";
+
+const navLinkKeys: Record<string, string> = {
+    "Home": "nav.home",
+    "About": "nav.about",
+    "Services": "nav.services",
+    "Seed & Inputs": "nav.seedInputs",
+    "Farm Advisory": "nav.farmAdvisory",
+    "Irrigation": "nav.irrigation",
+    "Farmer Programs": "nav.farmerPrograms",
+    "Projects": "nav.projects",
+    "Insights": "nav.insights",
+    "Partners": "nav.partners",
+    "Contact": "nav.contact",
+};
 
 export function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
     const pathname = usePathname();
+    const { t, locale } = useLanguage();
+    const isSomali = locale === "so";
 
     useEffect(() => {
         const handleScroll = () => {
@@ -87,7 +105,9 @@ export function Navbar() {
                 </Link>
 
                 {/* Desktop Nav - Hidden on lg, shown on xl */}
-                <div className="hidden xl:flex items-center space-x-8 2xl:space-x-12">
+                <div
+                    className={`hidden xl:flex items-center ${isSomali ? "space-x-4 2xl:space-x-6" : "space-x-8 2xl:space-x-12"}`}
+                >
                     {navLinks.map((link) => {
                         const isActive = pathname === link.href || (link.dropdown && link.dropdown.some(sub => pathname === sub.href));
 
@@ -101,7 +121,7 @@ export function Navbar() {
                                             }`}
                                     >
                                         <span className="inline-flex items-center">
-                                            <span>{link.name}</span>
+                                            <span>{navLinkKeys[link.name] ? t(navLinkKeys[link.name]) : link.name}</span>
                                             <svg className={`ml-1 w-3.5 h-3.5 transition-transform ${isScrolled ? "text-custom-charcoal" : "text-white"} group-hover/nav:rotate-180`} viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                                 <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.25 8.29a.75.75 0 0 1-.02-1.08z" clipRule="evenodd" />
                                             </svg>
@@ -117,7 +137,7 @@ export function Navbar() {
                                                 : (isScrolled ? "text-custom-charcoal hover:text-custom-olive" : "text-white hover:text-custom-sand drop-shadow-md")
                                             }`}
                                     >
-                                        {link.name}
+                                        {navLinkKeys[link.name] ? t(navLinkKeys[link.name]) : link.name}
                                         <span className={`absolute bottom-0 left-0 h-0.5 transition-all duration-500 ${isActive ? "w-full" : "w-0 group-hover/nav:w-full"} ${isScrolled ? "bg-custom-olive" : "bg-custom-sand"
                                             }`} />
                                     </Link>
@@ -135,7 +155,7 @@ export function Navbar() {
                                                         }`}
                                                 >
                                                     <span className={`w-1.5 h-1.5 rounded-full bg-custom-sand mr-3 transition-opacity ${pathname === sublink.href ? "opacity-100" : "opacity-0 group-hover/sub:opacity-100"}`} />
-                                                    {sublink.name}
+                                                    {navLinkKeys[sublink.name] ? t(navLinkKeys[sublink.name]) : sublink.name}
                                                 </Link>
                                             ))}
                                         </div>
@@ -145,13 +165,14 @@ export function Navbar() {
                         );
                     })}
 
+                    <LanguageSwitcher variant="header" isScrolled={isScrolled} />
                     <Link href="/partners">
                         <Button
                             variant={isScrolled ? "primary" : "secondary"}
                             className={`rounded-full px-8 py-3.5 text-xs font-bold uppercase tracking-widest shadow-xl transform transition-all active:scale-95 ${!isScrolled && "bg-white text-custom-primary hover:bg-custom-sand"
                                 }`}
                         >
-                            Partner With Us
+                            {t("nav.partnerWithUs")}
                         </Button>
                     </Link>
                 </div>
@@ -207,7 +228,7 @@ export function Navbar() {
                                                             aria-expanded={expanded}
                                                             className={`flex items-center justify-between text-left w-full px-0 text-2xl font-bold transition-colors ${expanded ? "text-custom-olive" : "text-custom-primary hover:text-custom-olive"}`}
                                                         >
-                                                            <span>{link.name}</span>
+                                                            <span>{navLinkKeys[link.name] ? t(navLinkKeys[link.name]) : link.name}</span>
                                                             <svg className={`ml-2 w-4 h-4 transition-transform ${expanded ? "rotate-180" : ""}`} viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                                                 <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.25 8.29a.75.75 0 0 1-.02-1.08z" clipRule="evenodd" />
                                                             </svg>
@@ -220,7 +241,7 @@ export function Navbar() {
                                                                     className={`text-xl font-bold transition-colors ${pathname === sublink.href ? "text-custom-olive" : "text-custom-charcoal hover:text-custom-olive"}`}
                                                                     onClick={() => setIsMobileMenuOpen(false)}
                                                                 >
-                                                                    {sublink.name}
+                                                                    {navLinkKeys[sublink.name] ? t(navLinkKeys[sublink.name]) : sublink.name}
                                                                 </Link>
                                                             ))}
                                                         </div>
@@ -233,7 +254,7 @@ export function Navbar() {
                                                 className={`text-2xl font-bold transition-colors ${isActive ? "text-custom-olive" : "text-custom-primary hover:text-custom-olive"}`}
                                                 onClick={() => setIsMobileMenuOpen(false)}
                                             >
-                                                {link.name}
+                                                {navLinkKeys[link.name] ? t(navLinkKeys[link.name]) : link.name}
                                             </Link>
                                         )}
                                     </div>
@@ -242,9 +263,12 @@ export function Navbar() {
                         </div>
                     </div>
 
-                    <div className="pt-8 border-t border-custom-accent/10 px-6 md:px-12 pb-6">
+                    <div className="pt-8 border-t border-custom-accent/10 px-6 md:px-12 pb-6 flex flex-col gap-4">
+                        <div className="xl:hidden">
+                            <LanguageSwitcher variant="footer" />
+                        </div>
                         <Link href="/partners" className="w-full" onClick={() => setIsMobileMenuOpen(false)}>
-                            <Button className="w-full text-lg py-5 rounded-2xl shadow-xl shadow-custom-primary/10">Partner With Us</Button>
+                            <Button className="w-full text-lg py-5 rounded-2xl shadow-xl shadow-custom-primary/10">{t("nav.partnerWithUs")}</Button>
                         </Link>
                     </div>
                 </div>

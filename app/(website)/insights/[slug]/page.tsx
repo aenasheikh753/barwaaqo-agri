@@ -1,6 +1,5 @@
 import React from "react";
-import Link from "next/link";
-import { Button } from "../../../components/ui/Button";
+import { TranslatedNotFound } from "../../components/TranslatedNotFound";
 import { ArticleClient } from "./ArticleClient";
 
 const articles = {
@@ -127,17 +126,7 @@ export default async function ArticlePage({
     const article = articles[slug as keyof typeof articles];
 
     if (!article) {
-        return (
-            <div className="min-h-screen flex items-center justify-center p-6 bg-custom-light-bg">
-                <div className="text-center space-y-6">
-                    <h1 className="text-4xl font-heading font-bold text-custom-primary">Article Not Found</h1>
-                    <p className="text-custom-charcoal/60">The article you are looking for does not exist or has been moved.</p>
-                    <Link href="/insights">
-                        <Button variant="primary">Back to Insights</Button>
-                    </Link>
-                </div>
-            </div>
-        );
+        return <TranslatedNotFound type="article" />;
     }
 
     return <ArticleClient article={article} />;

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { Button } from "../../../../components/ui/Button";
+import { TranslatedNotFound } from "../../../components/TranslatedNotFound";
+import { BackToLink } from "../../../components/BackToLink";
 
 const caseStudies: Record<string, {
     title: string;
@@ -55,17 +55,7 @@ export default async function CaseStudyPage({
     const project = caseStudies[slug];
 
     if (!project) {
-        return (
-            <div className="min-h-screen flex items-center justify-center p-6 bg-custom-light-bg">
-                <div className="text-center space-y-6">
-                    <h1 className="text-4xl font-heading font-bold text-custom-primary">Case Study Not Found</h1>
-                    <p className="text-custom-charcoal/60">The case study you are looking for does not exist.</p>
-                    <Link href="/projects">
-                        <Button variant="primary">Back to Projects</Button>
-                    </Link>
-                </div>
-            </div>
-        );
+        return <TranslatedNotFound type="caseStudy" />;
     }
 
     return (
@@ -101,11 +91,7 @@ export default async function CaseStudyPage({
                 <p className="text-lg text-custom-charcoal/70 leading-relaxed font-body max-w-3xl mb-12">
                     {project.desc}
                 </p>
-                <Link href="/projects">
-                    <Button variant="outline" className="rounded-full border-2 hover:bg-custom-primary hover:text-white transition-all">
-                        Back to Projects
-                    </Button>
-                </Link>
+                <BackToLink href="/projects" labelKey="projects.backToProjects" />
             </section>
         </main>
     );

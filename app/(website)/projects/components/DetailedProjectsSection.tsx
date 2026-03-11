@@ -3,8 +3,10 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguage } from "../../../context/LanguageContext";
 
 export function DetailedProjectsSection() {
+    const { t } = useLanguage();
     const projects = [
         {
             slug: "baidoa-irrigation",
@@ -94,7 +96,7 @@ export function DetailedProjectsSection() {
 
                                 <div className="pt-4">
                                     <Link href={`/projects/case-study/${project.slug}`} className="inline-flex items-center group text-custom-primary font-bold uppercase tracking-widest text-sm">
-                                        <span className="border-b-2 border-custom-sand pb-1 group-hover:border-custom-olive transition-colors">View Case Study</span>
+                                        <span className="border-b-2 border-custom-sand pb-1 group-hover:border-custom-olive transition-colors">{t("projects.viewCaseStudy")}</span>
                                         <svg className="w-5 h-5 ml-3 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                                     </Link>
                                 </div>

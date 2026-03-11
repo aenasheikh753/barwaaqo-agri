@@ -1,8 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../../components/ui/Button";
+import { useLanguage } from "../../context/LanguageContext";
 
 export function HeroSection() {
+    const { t } = useLanguage();
     return (
         <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center pb-20 pt-24 md:pt-24 md:pb-20 lg:pt-24 lg:pb-10 overflow-hidden">
             {/* Background Image & Overlay */}
@@ -28,11 +32,11 @@ export function HeroSection() {
             {/* Content Container */}
             <div className="relative z-10 max-w-6xl mx-auto px-6 w-full text-center flex flex-col items-center lg:pt-10 md:pt-10 pt-24">
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-lg lg:mb-6 sm:mb-4 leading-tight max-w-4xl tracking-tight">
-                    Building Modern Agriculture in Somalia & East Africa
+                    {t("hero.headline")}
                 </h1>
 
                 <p className="text-lg md:text-xl text-slate-100/95 leading-9 md:leading-10 max-w-xl md:max-w-2xl lg:mb-8 mb-0drop-shadow-md font-normal">
-                    Barwaaqo Agri Group provides high-quality seeds, agricultural inputs, irrigation development, and farm advisory services to support productive and resilient farming systems.
+                    {t("hero.subline")}
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 lg:mt-4 mt-1 pb-10 md:pb-10 mb-4 md:mb-0">
@@ -41,7 +45,7 @@ export function HeroSection() {
                             variant="primary"
                             className="shadow-[0_10px_30px_rgba(0,0,0,0.3)] px-12 py-4.5 rounded-full text-lg hover:-translate-y-1 transition-all active:scale-95"
                         >
-                            Explore Our Services
+                            {t("hero.exploreServices")}
                         </Button>
                     </Link>
                     <Link href="/partners">
@@ -49,7 +53,7 @@ export function HeroSection() {
                             variant="outline"
                             className="shadow-[0_10px_30px_rgba(0,0,0,0.2)] px-12 py-4 rounded-full text-lg border-white/40 text-white hover:bg-white/10 hover:-translate-y-1 transition-all active:scale-95"
                         >
-                            Partner With Us
+                            {t("hero.partnerWithUs")}
                         </Button>
                     </Link>
                 </div>

@@ -1,0 +1,315 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Over ons",
+    "services": "Diensten",
+    "seedInputs": "Zaden & Inputs",
+    "farmAdvisory": "Agrarisch Advies",
+    "irrigation": "Irrigatie",
+    "farmerPrograms": "Programma's voor Boeren",
+    "projects": "Projecten",
+    "insights": "Inzichten",
+    "partners": "Partners",
+    "contact": "Contact",
+    "partnerWithUs": "Partner met ons"
+  },
+  "footer": {
+    "services": "Diensten",
+    "agriculturalInputs": "Agrarische Inputs",
+    "farmAdvisory": "Agrarisch Advies",
+    "irrigationDevelopment": "Irrigatie-ontwikkeling",
+    "farmerPrograms": "Programma's voor Boeren",
+    "contact": "Contact",
+    "location": "Locatie",
+    "email": "E-mail",
+    "mogadishu": "Mogadishu, Somalië",
+    "tagline": "Ondersteuning van moderne landbouwsystemen in Somalië en Oost-Afrika door betrouwbare inputs en deskundige ontwikkeling.",
+    "allRightsReserved": "Alle rechten voorbehouden."
+  },
+  "hero": {
+    "headline": "Bouwen aan moderne landbouw in Somalië en Oost-Afrika",
+    "subline": "Barwaaqo Agri Group levert hoogwaardige zaden, agrarische inputs, irrigatie-ontwikkeling en adviesdiensten voor productieve en veerkrachtige landbouwsystemen.",
+    "exploreServices": "Ontdek onze diensten",
+    "partnerWithUs": "Partner met ons"
+  },
+  "language": "Taal",
+  "common": {
+    "viewAllServices": "Bekijk alle diensten",
+    "learnMore": "Meer informatie",
+    "readArticle": "Lees het artikel",
+    "exploreDetails": "Ontdek details",
+    "agronomyGuide": "Agronomische gids"
+  },
+  "home": {
+    "trustStrip": {
+      "badge": "10+ jaar veldexcellentie",
+      "title": "De basis van betrouwbare landbouw",
+      "subtitle": "Van zaad tot oogst — we ondersteunen elke stap",
+      "seedInputs": "Zaden en agrarische inputs",
+      "farmAdvisory": "Agrarisch advies en agronomie",
+      "irrigation": "Irrigatie-ontwikkeling",
+      "farmerPrograms": "Programma's voor boeren"
+    },
+    "aboutSection": {
+      "aboutUs": "Over ons",
+      "title": "Over Barwaaqo Agri Group",
+      "p1": "Barwaaqo Agri Group is een landbouwontwikkelingsbedrijf dat moderne landbouwsystemen in Somalië en Oost-Afrika ondersteunt.",
+      "p2": "Ons werk richt zich op het verbeteren van de gewasproductiviteit, het versterken van programma's voor boeren en het introduceren van betrouwbare inputs en irrigatieoplossingen aangepast aan lokale omstandigheden.",
+      "yearsExperience": "Jaar ervaring",
+      "farmersSupported": "Boeren ondersteund"
+    },
+    "coreServices": {
+      "label": "Wat we doen",
+      "title": "Kern diensten",
+      "seedTitle": "Zaden en agrarische inputs",
+      "seedDesc": "Levering van hoogwaardige zaden en agrarische inputs van gerenommeerde producenten.",
+      "advisoryTitle": "Agrarisch advies en agronomie",
+      "advisoryDesc": "Agronomische begeleiding om gewasproductiviteit en bodembeheer te verbeteren.",
+      "irrigationTitle": "Irrigatie en landbouwontwikkeling",
+      "irrigationDesc": "Ontwerp en implementatie van irrigatiesystemen en moderne landbouwinfrastructuur.",
+      "programsTitle": "Programma's voor boeren en telers",
+      "programsDesc": "Ondersteuning van boeren via gecoördineerde productieprogramma's en toegang tot inputs."
+    },
+    "projectsSection": {
+      "label": "Onze galerij",
+      "title": "Geselecteerde projecten",
+      "baidoaTitle": "Baidoa irrigatiepiloot",
+      "baidoaCategory": "Irrigatie",
+      "baidoaDesc": "Een uitgebreid irrigatie-initiatief voor 500 hectare met schaalbare oplossingen voor de Somalische landbouw.",
+      "seedTrialsTitle": "Proeven groentezaden",
+      "seedTrialsCategory": "Zaadtechnologie",
+      "seedTrialsDesc": "Evaluatie van hoogrenderende rassen aangepast aan lokale bodem.",
+      "advisoryTitle": "Programma agrarisch advies",
+      "advisoryCategory": "Advies",
+      "advisoryDesc": "Agronomische training en gewasplanning voor kleine boeren."
+    },
+    "insightsSection": {
+      "title": "Agrarische inzichten",
+      "subtitle": "Praktische kennis en updates van onze agronomieteams in het veld.",
+      "tomatoTitle": "Beste seizoenen voor tomatenproductie in Somalië",
+      "tomatoDesc": "Uitgebreide gids voor plantvensters, klimaat en variëteitkeuze voor maximale opbrengst.",
+      "dripTitle": "Voordelen van druppelirrigatie voor groenteteelt",
+      "dripDesc": "Analyse van waterbesparende technologieën en hun impact op gewasproductiviteit.",
+      "soilTitle": "Bodemvoorbereidingstechnieken voor kleine bedrijven",
+      "soilDesc": "Evidence-based methoden voor bodemgezondheid en nutriëntenbeheer."
+    },
+    "partnershipsSection": {
+      "title": "Partnerschappen en samenwerking",
+      "subtitle": "Barwaaqo Agri Group werkt samen met zaadproducenten, agronomen en ontwikkelingspartners in Oost-Afrika.",
+      "seedPro": "Seed Pro",
+      "aquaSystems": "Aqua Systems",
+      "agroTech": "Agro Tech",
+      "eastAfricaDev": "East Africa Dev"
+    },
+    "contactSection": {
+      "title": "Werk met ons",
+      "subtitle": "Klaar om samen te werken? Stuur ons een bericht of neem contact op via",
+      "name": "Naam",
+      "email": "E-mail",
+      "message": "Bericht",
+      "namePlaceholder": "John Doe",
+      "emailPlaceholder": "john@example.com",
+      "messagePlaceholder": "Hoe kunnen we u helpen?",
+      "sendMessage": "Verstuur bericht"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "Bedrijfsprofiel",
+      "title": "Onze fundamenten",
+      "titleHighlight": "Fundamenten",
+      "subtitle": "Strategische transformatie van de Somalische landbouw door mondiale innovatie en lokale excellentie."
+    },
+    "visionMission": {
+      "label": "Strategisch doel",
+      "title": "Regionale voedselsoevereiniteit versterken",
+      "intro": "Barwaaqo Agri Group staat op het snijvlak van lokaal traditioneel weten en internationale landbouwinnovatie. We zijn niet alleen handelaren; we zijn een strategische infrastructuurpartner voor een veerkrachtige landbouweconomie in de Hoorn van Afrika.",
+      "ourVision": "Onze visie",
+      "visionText": "Een zelfvoorzienende landbouwcorridor in Oost-Afrika vestigen waar innovatie en productiviteit samenkomen, voor de toekomst van de landbouw.",
+      "ourMission": "Onze missie",
+      "missionText": "Door geavanceerde agronomie te combineren met eersteklas landbouwinputs empoweren we grootschalige en kleine producenten voor duurzame opbrengsten het hele jaar.",
+      "clientSuccessRate": "Slagingspercentage klanten",
+      "hectaresSupported": "Hectaren ondersteund"
+    },
+    "expertise": {
+      "label": "Ons concurrentievoordeel",
+      "title": "Wereldklasse standaarden naar Somalische bodem brengen",
+      "intro": "Barwaaqo Agri Group overbrugt de kloof tussen mondiale landbouwontwikkeling en lokale uitvoering. Onze expertise stelt ons in staat snel op te schalen met behoud van hoge productiviteit.",
+      "globalSupply": "Wereldwijde toeleveringsketen",
+      "globalSupplyDesc": "Directe partnerschappen met vooraanstaande zaadveredelaars en inputproducenten in Europa en Azië, zodat Somalische boeren eersteklas technologie krijgen.",
+      "technicalAdvisory": "Technisch advies",
+      "technicalAdvisoryDesc": "Een team van senior agronomen voor gewasplanning en plaagbeheer afgestemd op het Somalische landschap.",
+      "irrigationSystems": "Irrigatiesystemen",
+      "irrigationSystemsDesc": "Ontwerp van schaalbare waterbeheersoplossingen die droog land omzetten in productieve groente- en gewasvelden."
+    },
+    "foundation": {
+      "label": "Onze waarden",
+      "title": "De fundamenten van Barwaaqo",
+      "intro": "Onze groei wordt geleid door kernprincipes die ervoor zorgen dat elke investering, partnerschap en project bijdraagt aan de langetermijnstabiliteit van de regio.",
+      "techLeadership": "Technologisch leiderschap",
+      "techLeadershipDesc": "We geven prioriteit aan integratie van AI-gestuurde irrigatie en klimaatbestendige zaadtechnologie in elk project.",
+      "operationalIntegrity": "Operationele integriteit",
+      "operationalIntegrityDesc": "Transparantie is ons handelsmerk. Van toeleveringsketen tot veldresultaten handhaven we de hoogste ethische standaarden.",
+      "adaptiveResilience": "Adaptieve veerkracht",
+      "adaptiveResilienceDesc": "Onze systemen zijn gebouwd om de unieke klimatologische en logistieke uitdagingen van Oost-Afrika te weerstaan.",
+      "inclusiveGrowth": "Inclusieve groei",
+      "inclusiveGrowthDesc": "We zorgen ervoor dat ons grootschalig succes doordruppelt naar kleine boerengemeenschappen via kennisdeling."
+    }
+  },
+  "services": {
+    "hero": {
+      "label": "Onze expertise",
+      "title": "Landbouwoplossingen en -diensten",
+      "subtitle": "Somalese boeren versterken met eersteklas input, moderne technologie en deskundige agronomische begeleiding voor duurzame productiviteit."
+    },
+    "detailed": {
+      "seedTitle": "Zaden en landbouwinput",
+      "seedDesc": "We leveren hoogwaardige, klimaatbestendige zaden en essentiële landbouwinput van internationale partners.",
+      "seedItem1": "Gecertificeerde groentezaden",
+      "seedItem2": "Hoogwaardige meststoffen",
+      "seedItem3": "Veilige gewasbescherming",
+      "seedItem4": "Gespecialiseerde landbouwwerktuigen",
+      "irrigationTitle": "Moderne irrigatiesystemen",
+      "irrigationDesc": "Deskundig ontwerp en implementatie van efficiënte waterbeheersystemen.",
+      "irrigationItem1": "Druppelirrigatiesets",
+      "irrigationItem2": "Zonnepompen",
+      "irrigationItem3": "Wateropslagoplossingen",
+      "irrigationItem4": "Systeemontwerp en -installatie",
+      "advisoryTitle": "Agronomie en advies",
+      "advisoryDesc": "De kenniskloof overbruggen met professionele agronomische diensten.",
+      "advisoryItem1": "Bodemgezondheidsanalyse",
+      "advisoryItem2": "Plaag- en ziektebestrijding",
+      "advisoryItem3": "Gewasrotatieplanning",
+      "advisoryItem4": "Opbrengstoptimalisatie"
+    },
+    "process": {
+      "label": "Onze methodiek",
+      "title": "Hoe we werken",
+      "step1Title": "Consultatie",
+      "step1Desc": "We analyseren uw bedrijfsomstandigheden, bodemkwaliteit en specifieke landbouwbehoeften.",
+      "step2Title": "Oplossingsontwerp",
+      "step2Desc": "Op maat planning voor irrigatie, zaadkeuze en agronomisch beheer.",
+      "step3Title": "Implementatie",
+      "step3Desc": "Levering van input en professionele installatie van systemen ter plaatse.",
+      "step4Title": "Optimalisatie",
+      "step4Desc": "Doorlopend veldadvies en monitoring voor maximale oogstprestaties."
+    },
+    "seeds": {
+      "heroTitle": "Zaden en landbouwinput",
+      "heroSubtitle": "De basis leggen voor hoogrenderende oogsten in Oost-Afrika.",
+      "ourProducts": "Onze producten",
+      "highPerfTitle": "Hoogwaardige input",
+      "intro": "Barwaaqo Agri Group begrijpt dat de kwaliteit van input het succes van de oogst bepaalt. We betrekken alleen gecertificeerde, klimaatbestendige zaden en voedzame meststoffen van wereldleiders.",
+      "vegSeeds": "Groentezaden",
+      "vegSeedsDesc": "Tomaat, ui, watermeloen en meer rassen aangepast aan lokale bodem.",
+      "fertilizers": "Gespecialiseerde meststoffen",
+      "fertilizersDesc": "Gewasspecifieke mengsels voor maximale nutriëntopname.",
+      "cropProtection": "Gewasbescherming",
+      "cropProtectionDesc": "Milieuvriendelijke oplossingen voor plagen en ziekten.",
+      "requestCatalog": "Vraag een catalogus aan",
+      "catalogDesc": "Neem contact op met onze specialisten voor de volledige lijst beschikbare zaden en input voor uw regio.",
+      "yourName": "Uw naam",
+      "emailAddress": "E-mailadres",
+      "submitRequest": "Verstuur verzoek"
+    },
+    "advisory": {
+      "heroTitle": "Boerderijadvies en agronomie",
+      "heroSubtitle": "Internationale expertise verbinden met lokaal terrein en kennis.",
+      "sectionTitle": "Deskundige begeleiding voor winstgevende landbouw",
+      "sectionIntro": "Ons team van professionele agronomen biedt hands-on ondersteuning voor de beste resultaten. We vertalen complexe data naar uitvoerbare veldstrategieën.",
+      "soilAnalysis": "Bodemanalyse",
+      "soilAnalysisDesc": "Gedetailleerde tests om de nutriëntenbehoefte te bepalen.",
+      "cropPlanning": "Gewasplanning",
+      "cropPlanningDesc": "Strategische kalenders voor productie het hele jaar.",
+      "partnerTitle": "Samenwerken met onze experts",
+      "partnerDesc": "Schaal uw productie op en minimaliseer verliezen met datagedreven advies op maat van uw microklimaat.",
+      "bookFieldVisit": "Boek een veldbezoek"
+    },
+    "irrigation": {
+      "heroTitle": "Irrigatie en bedrijfsresilientie",
+      "heroSubtitle": "Betrouwbare waterbeheersystemen ontworpen voor klimaatresilientie.",
+      "dripSystems": "Druppelsystemen",
+      "dripSystemsDesc": "Precisiebewatering die het verbruik tot 50% vermindert.",
+      "solarPumping": "Zonnepompen",
+      "solarPumpingDesc": "Duurzame stroomoplossingen voor afgelegen landbouwlocaties.",
+      "irrigationDesign": "Irrigatieontwerp",
+      "irrigationDesignDesc": "Op maat gemaakte hydraulische plannen voor bedrijven van elke omvang.",
+      "transformingTitle": "Dorre landschappen transformeren",
+      "transformingDesc": "Onze irrigatieoplossingen zijn ontworpen om het volledige potentieel van uw land te benutten. Van terreinverkenning tot ingebruikname zorgen we voor efficiënt watergebruik.",
+      "requestConsultation": "Vraag een consultatie aan"
+    },
+    "programs": {
+      "heroTitle": "Programma's voor boerencapaciteit",
+      "heroSubtitle": "Sterkere landbouwgemeenschappen bouwen door gedeelde kennis en groei.",
+      "sectionTitle": "De toekomst van landbouw versterken",
+      "sectionIntro": "Barwaaqo Agri Group gelooft dat duurzame ontwikkeling gebouwd is op sterke partnerschappen met lokale boeren. Onze programma's richten zich op toegang tot gereedschap, krediet en markten.",
+      "outgrowerTitle": "Outgrower-regelingen",
+      "outgrowerDesc": "Samenwerkende landbouwmodellen die markttoegang en kwaliteitscontrole waarborgen.",
+      "technicalTrainingTitle": "Technische training",
+      "technicalTrainingDesc": "Regelmatige workshops over moderne agronomie en irrigatieonderhoud.",
+      "inputAccessTitle": "Programma's voor inputtoegang",
+      "inputAccessDesc": "De kloof overbruggen naar hoogwaardige input voor kleinschalige gemeenschappen.",
+      "readyToGrow": "Klaar om met ons te groeien?",
+      "registerWorkshop": "Registreer voor de volgende workshop"
+    }
+  },
+  "projects": {
+    "hero": {
+      "badge": "Ons portfolio",
+      "titlePrefix": "Landschappen transformeren door ",
+      "titleHighlight": "strategische projecten",
+      "subtitle": "Van pilot-irrigatiesystemen tot kruisregionale zaadproeven: zie ons engagement voor veerkrachtige landbouwsystemen in Oost-Afrika."
+    },
+    "viewCaseStudy": "Bekijk casestudy",
+    "backToProjects": "Terug naar projecten",
+    "caseStudyNotFound": "Casestudy niet gevonden",
+    "caseStudyNotFoundDesc": "De casestudy die u zoekt bestaat niet."
+  },
+  "insights": {
+    "hero": {
+      "badge": "Kennis en groei",
+      "titlePrefix": "Agrarische ",
+      "titleHighlight": "intelligentie",
+      "subtitle": "De toekomst van landbouw in Oost-Afrika verkennen via data, onderzoek en veldgeteste strategieën."
+    },
+    "backToInsights": "Terug naar inzichten",
+    "articleNotFound": "Artikel niet gevonden",
+    "articleNotFoundDesc": "Het artikel dat u zoekt bestaat niet of is verplaatst."
+  },
+  "partners": {
+    "hero": {
+      "badge": "Samenwerkingsgroei",
+      "title": "Onze mondiale partnerschappen",
+      "subtitle": "Oost-Afrikaanse landbouw verbinden met internationale innovatie, technologie en premium toeleveringsketens."
+    },
+    "benefits": {
+      "label": "Waarom met ons samenwerken?",
+      "title": "Het strategisch voordeel",
+      "marketAccess": "Markttoegang",
+      "marketAccessDesc": "Directe toegang tot de snel groeiende landbouwmarkt van Oost-Afrika.",
+      "localExpertise": "Lokale expertise",
+      "localExpertiseDesc": "Diepgaand begrip van regionale bodem, klimaat en regelgeving.",
+      "infrastructure": "Infrastructuur",
+      "infrastructureDesc": "Gevestigde distributienetwerken en strategische logistieke capaciteit.",
+      "sustainableImpact": "Duurzame impact",
+      "sustainableImpactDesc": "Doe mee met projecten met grote impact die levens veranderen en voedselzekerheid waarborgen."
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Neem contact op",
+      "title": "Laten we samen groeien",
+      "subtitle": "Of u nu boer bent die advies zoekt of internationale partner die kansen zoekt, ons team staat klaar om te verbinden."
+    },
+    "info": {
+      "title": "Contactgegevens",
+      "subtitle": "Bereik onze kantoren in Oost-Afrika voor landbouwoplossingen en partnerschapsmogelijkheden.",
+      "headOffice": "Hoofdkantoor",
+      "regionalOffice": "Regionaal kantoor",
+      "fieldOperations": "Veldoperaties",
+      "mogadishu": "Mogadishu, Somalië",
+      "nairobi": "Nairobi, Kenia",
+      "baidoa": "Baidoa, Somalië"
+    }
+  }
+}

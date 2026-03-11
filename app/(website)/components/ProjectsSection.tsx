@@ -1,30 +1,31 @@
 "use client";
 
-import { Button } from "../../components/ui/Button";
 import { ProjectCard } from "../../components/ui/ProjectCard";
 import { motion } from "framer-motion";
+import { useLanguage } from "../../context/LanguageContext";
 
 export function ProjectsSection() {
+    const { t } = useLanguage();
     const projects = [
         {
-            title: "Baidoa Irrigation Pilot",
-            category: "Irrigation",
+            title: t("home.projectsSection.baidoaTitle"),
+            category: t("home.projectsSection.baidoaCategory"),
             image: "/images/project-1.png",
-            description: "A comprehensive irrigation initiative improving water efficiency for 500 hectares, demonstrating scalable solutions for Somali agriculture.",
+            description: t("home.projectsSection.baidoaDesc"),
             href: "/services/irrigation"
         },
         {
-            title: "Vegetable Seed Trials",
-            category: "Seed Tech",
+            title: t("home.projectsSection.seedTrialsTitle"),
+            category: t("home.projectsSection.seedTrialsCategory"),
             image: "/images/agri1.jpg",
-            description: "Evaluating high-yielding variety seedlings adapted to local soil, resulting in significant yield improvements for community farmers.",
+            description: t("home.projectsSection.seedTrialsDesc"),
             href: "/services/seeds"
         },
         {
-            title: "Farmer Advisory Program",
-            category: "Advisory",
+            title: t("home.projectsSection.advisoryTitle"),
+            category: t("home.projectsSection.advisoryCategory"),
             image: "/images/agri2.jpg",
-            description: "Agronomic training and crop planning support for smallholder farmers, enhancing productivity through shared expertise.",
+            description: t("home.projectsSection.advisoryDesc"),
             href: "/services/advisory"
         }
     ];
@@ -44,9 +45,9 @@ export function ProjectsSection() {
                     viewport={{ once: true }}
                 >
                     <div className="max-w-2xl">
-                        <span className="text-custom-sand/60 font-semibold tracking-wider text-sm uppercase block mb-4">Our Gallery</span>
+                        <span className="text-custom-sand/60 font-semibold tracking-wider text-sm uppercase block mb-4">{t("home.projectsSection.label")}</span>
                         <h2 className="text-4xl md:text-5xl font-heading font-bold text-white leading-tight">
-                            Selected Projects
+                            {t("home.projectsSection.title")}
                         </h2>
                     </div>
                 </motion.div>

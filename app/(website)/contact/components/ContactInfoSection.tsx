@@ -1,30 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLanguage } from "../../../context/LanguageContext";
 
 export function ContactInfoSection() {
+    const { t } = useLanguage();
     const contactInfo = [
-        {
-            title: "Head Office",
-            location: "Mogadishu, Somalia",
-            address: "Villa Somalia Road, KM4\nMogadishu, Somalia",
-            phone: "+252 1 123 456",
-            email: "info@barwaaqoagri.com"
-        },
-        {
-            title: "Regional Office",
-            location: "Nairobi, Kenya",
-            address: "Westlands Business Park\nNairobi, Kenya",
-            phone: "+254 20 123 4567",
-            email: "kenya@barwaaqoagri.com"
-        },
-        {
-            title: "Field Operations",
-            location: "Baidoa, Somalia",
-            address: "Agricultural Development Zone\nBaidoa, Somalia",
-            phone: "+252 2 123 456",
-            email: "field@barwaaqoagri.com"
-        }
+        { titleKey: "contact.info.headOffice", locationKey: "contact.info.mogadishu", address: "Villa Somalia Road, KM4\nMogadishu, Somalia", phone: "+252 1 123 456", email: "info@barwaaqoagri.com" },
+        { titleKey: "contact.info.regionalOffice", locationKey: "contact.info.nairobi", address: "Westlands Business Park\nNairobi, Kenya", phone: "+254 20 123 4567", email: "kenya@barwaaqoagri.com" },
+        { titleKey: "contact.info.fieldOperations", locationKey: "contact.info.baidoa", address: "Agricultural Development Zone\nBaidoa, Somalia", phone: "+252 2 123 456", email: "field@barwaaqoagri.com" }
     ];
 
     return (
@@ -38,11 +22,11 @@ export function ContactInfoSection() {
                     viewport={{ once: true }}
                 >
                     <h2 className="text-4xl md:text-5xl font-heading font-bold text-custom-sand mb-6">
-                        Contact Information
+                        {t("contact.info.title")}
                     </h2>
                     <div className="w-24 h-1 bg-custom-olive rounded mx-auto mb-6"></div>
                     <p className="text-lg text-custom-light-bg/90 font-body max-w-2xl mx-auto">
-                        Reach out to our offices across East Africa for agricultural solutions and partnership opportunities.
+                        {t("contact.info.subtitle")}
                     </p>
                 </motion.div>
 
@@ -57,9 +41,9 @@ export function ContactInfoSection() {
                             viewport={{ once: true }}
                         >
                             <h3 className="text-2xl font-heading font-bold text-custom-sand mb-2">
-                                {info.title}
+                                {t(info.titleKey)}
                             </h3>
-                            <p className="text-custom-olive font-medium mb-4">{info.location}</p>
+                            <p className="text-custom-olive font-medium mb-4">{t(info.locationKey)}</p>
                             
                             <div className="space-y-3 text-custom-light-bg/90">
                                 <div className="flex items-start space-x-3">

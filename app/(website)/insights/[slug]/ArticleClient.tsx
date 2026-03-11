@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "../../../components/ui/Button";
+import { useLanguage } from "../../../context/LanguageContext";
 
 interface Article {
     title: string;
@@ -15,6 +16,7 @@ interface Article {
 }
 
 export function ArticleClient({ article }: { article: Article }) {
+    const { t } = useLanguage();
     return (
         <main className="bg-white min-h-screen">
             {/* Hero Section */}
@@ -69,7 +71,7 @@ export function ArticleClient({ article }: { article: Article }) {
 
                     <Link href="/insights">
                         <Button variant="outline" className="px-10">
-                            Back to Insights
+                            {t("insights.backToInsights")}
                         </Button>
                     </Link>
                 </div>
