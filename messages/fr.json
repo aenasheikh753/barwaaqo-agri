@@ -261,9 +261,52 @@
       "subtitle": "Des systèmes d'irrigation pilotes aux essais de semences interrégionaux, découvrez notre engagement pour des systèmes agricoles résilients en Afrique de l'Est."
     },
     "viewCaseStudy": "Voir l'étude de cas",
+    "impactLabel": "Impact",
     "backToProjects": "Retour aux projets",
     "caseStudyNotFound": "Étude de cas introuvable",
-    "caseStudyNotFoundDesc": "L'étude de cas que vous recherchez n'existe pas."
+    "caseStudyNotFoundDesc": "L'étude de cas que vous recherchez n'existe pas.",
+    "approach": {
+      "label": "Notre méthode",
+      "title": "L'approche Barwaaqo",
+      "step1Title": "Analyse",
+      "step1Desc": "Études de terrain et analyses de sol pour comprendre les besoins locaux.",
+      "step2Title": "Innovation",
+      "step2Desc": "Adapter variétés de semences et schémas d'irrigation internationaux aux sols somaliens.",
+      "step3Title": "Mise à l'échelle",
+      "step3Desc": "Collaborer avec des milliers d'agriculteurs pour déployer les solutions à grande échelle."
+    }
+  },
+  "caseStudies": {
+    "baidoaIrrigation": {
+      "title": "Programme pilote d'irrigation à Baidoa",
+      "category": "Conception de systèmes d'irrigation",
+      "location": "Baidoa, Somalie",
+      "impact": "Plus de 500 hectares irrigués",
+      "desc": "Ce projet a introduit l'irrigation goutte-à-goutte moderne chez les petits producteurs de légumes avec conception technique, installation et formation continue.",
+      "tag1": "Efficacité de l'eau",
+      "tag2": "Durabilité",
+      "tag3": "Renforcement des capacités"
+    },
+    "regionalSeedTrials": {
+      "title": "Essais régionaux de semences de légumes",
+      "category": "Agronomie & technologie des semences",
+      "location": "Districts d'Afgooye et de Jowhar",
+      "impact": "Augmentation de rendement de 40%",
+      "desc": "En partenariat avec des sélectionneurs internationaux, nous avons testé des variétés de tomates et d'oignons adaptées aux micro-climats locaux puis diffusé les variétés performantes auprès de milliers d'agriculteurs.",
+      "tag1": "Sélection variétale",
+      "tag2": "Sécurité alimentaire",
+      "tag3": "Optimisation des rendements"
+    },
+    "farmerToMarket": {
+      "title": "Intégration des producteurs aux marchés",
+      "category": "Développement de la chaîne de valeur",
+      "location": "Somalie & Afrique de l'Est",
+      "impact": "Plus de 2 000 agriculteurs intégrés",
+      "desc": "Nous comblons l'écart entre production et marché via des intrants de qualité à crédit et des programmes d'achat garantis, stabilisant les revenus des ménages agricoles.",
+      "tag1": "Accès au marché",
+      "tag2": "Croissance économique",
+      "tag3": "Partenariat stratégique"
+    }
   },
   "insights": {
     "hero": {

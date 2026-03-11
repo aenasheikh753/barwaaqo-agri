@@ -261,9 +261,52 @@
       "subtitle": "Van pilot-irrigatiesystemen tot kruisregionale zaadproeven: zie ons engagement voor veerkrachtige landbouwsystemen in Oost-Afrika."
     },
     "viewCaseStudy": "Bekijk casestudy",
+    "impactLabel": "Impact",
     "backToProjects": "Terug naar projecten",
     "caseStudyNotFound": "Casestudy niet gevonden",
-    "caseStudyNotFoundDesc": "De casestudy die u zoekt bestaat niet."
+    "caseStudyNotFoundDesc": "De casestudy die u zoekt bestaat niet.",
+    "approach": {
+      "label": "Onze aanpak",
+      "title": "De Barwaaqo-aanpak",
+      "step1Title": "Analyse",
+      "step1Desc": "Veldonderzoek en bodemanalyse om lokale behoeften te begrijpen.",
+      "step2Title": "Innovatie",
+      "step2Desc": "Internationale rassen en irrigatieontwerpen aanpassen aan Somalische bodems.",
+      "step3Title": "Opschalen",
+      "step3Desc": "Samenwerken met duizenden boeren om oplossingen op schaal toe te passen."
+    }
+  },
+  "caseStudies": {
+    "baidoaIrrigation": {
+      "title": "Baidoa irrigatiepilot",
+      "category": "Ontwerp van irrigatiesystemen",
+      "location": "Baidoa, Somalië",
+      "impact": "500+ hectare geïrrigeerd",
+      "desc": "Dit project introduceerde moderne druppelirrigatie bij kleinschalige groentetelers, inclusief technisch ontwerp, installatie en training voor onderhoud.",
+      "tag1": "Water-efficiëntie",
+      "tag2": "Duurzaamheid",
+      "tag3": "Capaciteitsopbouw"
+    },
+    "regionalSeedTrials": {
+      "title": "Regionale proeven met groentezaden",
+      "category": "Agronomie & zaadtechniek",
+      "location": "Afgooye- en Jowhar-districten",
+      "impact": "40% hogere opbrengst",
+      "desc": "Samen met internationale zaadbedrijven hebben we veldproeven uitgevoerd om tomaten- en uienrassen te vinden die het best presteren in lokale microklimaten, en succesvolle rassen opgeschaald naar duizenden boeren.",
+      "tag1": "Rassenkeuze",
+      "tag2": "Voedselzekerheid",
+      "tag3": "Opbrengstoptimalisatie"
+    },
+    "farmerToMarket": {
+      "title": "Koppeling boer-naar-markt",
+      "category": "Ontwikkeling waardeketen",
+      "location": "Somalië en Oost-Afrika",
+      "impact": "2.000+ boeren aangesloten",
+      "desc": "We overbruggen de kloof tussen productie en afzetmarkt via kwaliteitsinput op krediet en gegarandeerde afnameprogramma's, waardoor inkomens van boeren stabieler worden.",
+      "tag1": "Markttoegang",
+      "tag2": "Economische groei",
+      "tag3": "Strategisch partnerschap"
+    }
   },
   "insights": {
     "hero": {

@@ -264,7 +264,17 @@
     "impactLabel": "Impact",
     "backToProjects": "Back to Projects",
     "caseStudyNotFound": "Case Study Not Found",
-    "caseStudyNotFoundDesc": "The case study you are looking for does not exist."
+    "caseStudyNotFoundDesc": "The case study you are looking for does not exist.",
+    "approach": {
+      "label": "Our Methodology",
+      "title": "The Barwaaqo Approach",
+      "step1Title": "Assessment",
+      "step1Desc": "On-ground research and soil analysis to understand specific regional needs.",
+      "step2Title": "Innovation",
+      "step2Desc": "Customizing international seed varieties and irrigation designs for Somali soil.",
+      "step3Title": "Scaling",
+      "step3Desc": "Partnering with thousands of farmers to implement solutions at scale."
+    }
   },
   "insights": {
     "hero": {

@@ -261,9 +261,52 @@
       "subtitle": "Laga bilaabo nidaamyo biyo-mareen pilot ilaa tijaabada midho ee gobolka, arag aragtideena dhisida nidaamyo beer ah oo adkaysan Bariga Afrika."
     },
     "viewCaseStudy": "Arag Daraasadda Kiisaska",
+    "impactLabel": "Saameyn",
     "backToProjects": "Dib ugu noqo Mashruucyada",
     "caseStudyNotFound": "Daraasadda Kiisaska Lama Helin",
-    "caseStudyNotFoundDesc": "Daraasadda kiisaska aad raadinayso ma jirto."
+    "caseStudyNotFoundDesc": "Daraasadda kiisaska aad raadinayso ma jirto.",
+    "approach": {
+      "label": "Habkeena",
+      "title": "Habka Barwaaqo",
+      "step1Title": "Qiimayn",
+      "step1Desc": "Cilmi-baaris dhulka ah iyo falanqaynta carrada si loo fahmo baahiyaha gaarka ah ee gobol kasta.",
+      "step2Title": "Hal-abuurnimo",
+      "step2Desc": "La-qabsiinta noocyada caalamiga ah ee midhaha iyo naqshadaha biyo-mareenka ee carrada Soomaaliya.",
+      "step3Title": "Kobcin",
+      "step3Desc": "La shaqaynta kumannaan beeraley ah si xalalka looga hirgeliyo baaxad ballaaran."
+    }
+  },
+  "caseStudies": {
+    "baidoaIrrigation": {
+      "title": "Barnaamijka Tijaabada Biyo-Mareenka Baidoa",
+      "category": "Naqshadeynta Nidaamka Biyo-Mareenka",
+      "location": "Baidoa, Soomaaliya",
+      "impact": "500+ hektar la waraabiyay",
+      "desc": "Mashruucan waxaanu ku soo bandhignay tignoolajiyada drip-ka casriga ah ee beeraleyda khudaarta ee yaryar, anagoo bixinnay naqshad farsamo, rakibid qalab iyo tababar dayactir joogto ah.",
+      "tag1": "Badbaadinta Biyaha",
+      "tag2": "Waaraansho",
+      "tag3": "Kobcinta Awoodda"
+    },
+    "regionalSeedTrials": {
+      "title": "Tijaabooyinka Midhooyinka Khudaarta ee Gobolka",
+      "category": "Agronomy & Tignoolajiyada Midhooyinka",
+      "location": "Degmooyinka Afgooye & Jowhar",
+      "impact": "40% Koror Wax-soo-saar",
+      "desc": "Waxaan la shaqeynay soosaarayaasha midho caalami ah si aan u tijaabino noocyo tamaandho iyo basal ah oo ku habboon micro-cimilada maxalliga ah, kuwa guuleystayna waa la faafiyay.",
+      "tag1": "Xulashada Midhooyinka",
+      "tag2": "Amniga Cuntada",
+      "tag3": "Hagaajinta Wax-soo-saarka"
+    },
+    "farmerToMarket": {
+      "title": "Isku Xidhka Beeraleyda iyo Suuqa",
+      "category": "Horumarinta Silsiladda Qiimaha",
+      "location": "Soomaaliya & Bariga Afrika",
+      "impact": "2,000+ Beeraley La Diiwaangeliyay",
+      "desc": "Waxaanu buuxinnaa farqiga u dhexeeya soo saarista iyo suuqa annagoo bixinna alaab tayo leh oo deyn ah iyo barnaamijyo dib-u-iibsasho la hubo.",
+      "tag1": "Helitaanka Suuqa",
+      "tag2": "Kobaca Dhaqaalaha",
+      "tag3": "Iskaashi Istiraatiiji ah"
+    }
   },
   "insights": {
     "hero": {

@@ -261,9 +261,52 @@
       "subtitle": "Dai sistemi di irrigazione pilota alle prove sementiere interregionali, scopri il nostro impegno per sistemi agricoli resilienti in Africa orientale."
     },
     "viewCaseStudy": "Vedi studio di caso",
+    "impactLabel": "Impatto",
     "backToProjects": "Torna ai progetti",
     "caseStudyNotFound": "Studio di caso non trovato",
-    "caseStudyNotFoundDesc": "Lo studio di caso che cerchi non esiste."
+    "caseStudyNotFoundDesc": "Lo studio di caso che cerchi non esiste.",
+    "approach": {
+      "label": "La nostra metodologia",
+      "title": "L'approccio Barwaaqo",
+      "step1Title": "Valutazione",
+      "step1Desc": "Ricerca in campo e analisi del suolo per capire le esigenze di ciascuna area.",
+      "step2Title": "Innovazione",
+      "step2Desc": "Adattare varietà di semi e progetti di irrigazione internazionali ai suoli somali.",
+      "step3Title": "Scalabilità",
+      "step3Desc": "Collaborare con migliaia di agricoltori per applicare le soluzioni su larga scala."
+    }
+  },
+  "caseStudies": {
+    "baidoaIrrigation": {
+      "title": "Programma pilota di irrigazione a Baidoa",
+      "category": "Progettazione di sistemi di irrigazione",
+      "location": "Baidoa, Somalia",
+      "impact": "Oltre 500 ettari irrigati",
+      "desc": "Il progetto ha introdotto il drip moderno ai piccoli produttori di ortaggi, con progettazione tecnica, installazione e formazione continua sulla manutenzione.",
+      "tag1": "Efficienza idrica",
+      "tag2": "Sostenibilità",
+      "tag3": "Sviluppo delle capacità"
+    },
+    "regionalSeedTrials": {
+      "title": "Prove regionali di sementi orticole",
+      "category": "Agronomia e tecnologia delle sementi",
+      "location": "Distretti di Afgooye e Jowhar",
+      "impact": "Aumento della resa del 40%",
+      "desc": "In collaborazione con produttori di sementi internazionali abbiamo testato varietà di pomodoro e cipolla adatte ai diversi microclimi locali e diffuso le migliori presso migliaia di agricoltori.",
+      "tag1": "Selezione varietale",
+      "tag2": "Sicurezza alimentare",
+      "tag3": "Ottimizzazione delle rese"
+    },
+    "farmerToMarket": {
+      "title": "Integrazione tra agricoltori e mercato",
+      "category": "Sviluppo della catena del valore",
+      "location": "Somalia e Africa orientale",
+      "impact": "Oltre 2.000 agricoltori coinvolti",
+      "desc": "Colmiamo il divario tra produzione e mercato fornendo input di qualità a credito e programmi di acquisto garantito, stabilizzando i redditi delle famiglie agricole.",
+      "tag1": "Accesso al mercato",
+      "tag2": "Crescita economica",
+      "tag3": "Partenariato strategico"
+    }
   },
   "insights": {
     "hero": {

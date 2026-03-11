@@ -10,33 +10,18 @@ export function DetailedProjectsSection() {
     const projects = [
         {
             slug: "baidoa-irrigation",
-            title: "Baidoa Irrigation Pilot Program",
-            category: "Irrigation System Design",
-            location: "Baidoa, Somalia",
-            impact: "500+ Hectares irrigated",
-            desc: "This project introduced modern drip irrigation technologies to smallholder vegetable farmers. We provided the technical design, equipment installation, and ongoing maintenance training to ensure year-round production despite seasonal water scarcity.",
+            baseKey: "caseStudies.baidoaIrrigation",
             image: "/images/project-1.png",
-            tags: ["Water Efficiency", "Sustainability", "Capacity Building"]
         },
         {
             slug: "regional-seed-trials",
-            title: "Regional Vegetable Seed Trials",
-            category: "Agronomy & Seed Tech",
-            location: "Afgooye & Jowhar Districts",
-            impact: "40% Yield Increase",
-            desc: "In collaboration with international seed producers, we conducted rigorous field trials to identify tomato and onion varieties best suited for local micro-climates. The successful varieties are now being distributed to thousands of farmers across the region.",
+            baseKey: "caseStudies.regionalSeedTrials",
             image: "/images/agri1.jpg",
-            tags: ["Seed Selection", "Food Security", "Yield Optimization"]
         },
         {
             slug: "farmer-to-market",
-            title: "Farmer-to-Market Integration",
-            category: "Value Chain Development",
-            location: "Somalia & East Africa",
-            impact: "2,000+ Farmers Enrolled",
-            desc: "We bridge the gap between production and market. By providing high-quality inputs on credit and offering guaranteed buy-back programs, we have stabilized incomes for thousands of farming households while ensuring a steady supply of quality produce for urban markets.",
+            baseKey: "caseStudies.farmerToMarket",
             image: "/images/agri2.jpg",
-            tags: ["Market Access", "Economic Growth", "Strategic Partnership"]
         }
     ];
 
@@ -44,7 +29,10 @@ export function DetailedProjectsSection() {
         <section className="py-16 bg-white">
             <div className="max-w-[1200px] mx-auto px-6">
                 <div className="space-y-16 md:space-y-20">
-                    {projects.map((project, index) => (
+                    {projects.map((project, index) => {
+                        const base = project.baseKey;
+                        const tags = [t(`${base}.tag1`), t(`${base}.tag2`), t(`${base}.tag3`)].filter(Boolean);
+                        return (
                         <div key={index} className={`flex flex-col lg:flex-row gap-10 lg:gap-14 items-center ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
                             {/* Project Image */}
                             <motion.div
@@ -54,13 +42,13 @@ export function DetailedProjectsSection() {
                                 transition={{ duration: 0.8 }}
                                 viewport={{ once: true }}
                             >
-                                <Image src={project.image} alt={project.title} fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                                <Image src={project.image} alt={t(`${base}.title`)} fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-custom-primary/60 via-transparent to-transparent opacity-60 group-hover:opacity-30 transition-opacity" />
 
                                 <div className="absolute bottom-8 left-8 right-8 flex justify-between items-end">
                                     <div className="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-xl">
-                                        <p className="text-xs font-bold text-custom-olive uppercase tracking-widest mb-1">Impact</p>
-                                        <p className="text-xl font-bold text-custom-primary">{project.impact}</p>
+                                        <p className="text-xs font-bold text-custom-olive uppercase tracking-widest mb-1">{t("projects.impactLabel")}</p>
+                                        <p className="text-xl font-bold text-custom-primary">{t(`${base}.impact`)}</p>
                                     </div>
                                 </div>
                             </motion.div>
@@ -75,19 +63,19 @@ export function DetailedProjectsSection() {
                             >
                                 <div className="space-y-4">
                                     <div className="flex items-center gap-4 text-custom-olive text-sm font-bold uppercase tracking-widest">
-                                        <span>{project.category}</span>
+                                        <span>{t(`${base}.category`)}</span>
                                         <span className="w-1.5 h-1.5 rounded-full bg-custom-sand" />
-                                        <span>{project.location}</span>
+                                        <span>{t(`${base}.location`)}</span>
                                     </div>
-                                    <h3 className="text-4xl font-heading font-bold text-custom-primary leading-tight">{project.title}</h3>
+                                    <h3 className="text-4xl font-heading font-bold text-custom-primary leading-tight">{t(`${base}.title`)}</h3>
                                 </div>
 
                                 <p className="text-lg text-custom-charcoal/70 leading-relaxed font-body">
-                                    {project.desc}
+                                    {t(`${base}.desc`)}
                                 </p>
 
                                 <div className="flex flex-wrap gap-3">
-                                    {project.tags.map((tag, i) => (
+                                    {tags.map((tag, i) => (
                                         <span key={i} className="px-4 py-2 bg-custom-light-bg border border-custom-accent/30 rounded-full text-xs font-semibold text-custom-charcoal/60">
                                             {tag}
                                         </span>
@@ -102,7 +90,7 @@ export function DetailedProjectsSection() {
                                 </div>
                             </motion.div>
                         </div>
-                    ))}
+                    );})}
                 </div>
             </div>
         </section>

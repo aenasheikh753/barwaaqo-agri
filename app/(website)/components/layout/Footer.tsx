@@ -11,7 +11,7 @@ export function Footer() {
 
     return (
         <footer className="bg-custom-primary text-custom-light-bg py-12 md:py-20 border-t border-white/5">
-            <div className="max-w-[1400px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
+            <div className="max-w-[1400px] mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
 
                 {/* Column 1: Brand */}
                 <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-6">
@@ -29,6 +29,9 @@ export function Footer() {
                     <p className="text-custom-light-bg/60 text-sm leading-relaxed max-w-xs">
                         {t("footer.tagline")}
                     </p>
+                    <div className="w-full max-w-xs pt-4">
+                        <LanguageSwitcher variant="footer" />
+                    </div>
                 </div>
 
                 {/* Column 2: Services */}
@@ -57,11 +60,6 @@ export function Footer() {
                             </a>
                         </div>
                     </div>
-                </div>
-
-                {/* Column 4: Language */}
-                <div className="hidden md:flex justify-center md:justify-start">
-                    <LanguageSwitcher variant="footer" />
                 </div>
 
             </div>

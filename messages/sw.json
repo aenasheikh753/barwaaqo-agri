@@ -261,9 +261,52 @@
       "subtitle": "Kutoka mifumo ya umwagiliaji wa majaribio hadi majaribio ya mbegu kati ya mikoa, ushuhudie juhudi zetu za kujenga mifumo ya kilimo yenye nguvu Afrika Mashariki."
     },
     "viewCaseStudy": "Tazama Utafiti wa Kesi",
+    "impactLabel": "Athari",
     "backToProjects": "Rudi kwa Miradi",
     "caseStudyNotFound": "Utafiti wa Kesi Haupatikani",
-    "caseStudyNotFoundDesc": "Utafiti wa kesi unaoutafuta haupo."
+    "caseStudyNotFoundDesc": "Utafiti wa kesi unaoutafuta haupo.",
+    "approach": {
+      "label": "Mbinu Yetu",
+      "title": "Mtazamo wa Barwaaqo",
+      "step1Title": "Tathmini",
+      "step1Desc": "Utafiti shambani na uchambuzi wa udongo ili kuelewa mahitaji ya kila eneo.",
+      "step2Title": "Ubunifu",
+      "step2Desc": "Kubadilisha aina za mbegu na miundo ya umwagiliaji ya kimataifa kwa mazingira ya Somalia.",
+      "step3Title": "Kupima kwa Upana",
+      "step3Desc": "Kushirikiana na maelfu ya wakulima kutekeleza suluhu kwa kiwango kikubwa."
+    }
+  },
+  "caseStudies": {
+    "baidoaIrrigation": {
+      "title": "Mradi wa Majaribio ya Umwagiliaji Baidoa",
+      "category": "Ubunifu wa Mfumo wa Umwagiliaji",
+      "location": "Baidoa, Somalia",
+      "impact": "Hektari 500+ zimepewa maji",
+      "desc": "Mradi huu uliwaletea wakulima wadogo teknolojia ya umwagiliaji wa matone, pamoja na usanifu wa kitaalam, usakinishaji na mafunzo ya matengenezo.",
+      "tag1": "Ufanisi wa Maji",
+      "tag2": "Uendelevu",
+      "tag3": "Ujenzi wa Uwezo"
+    },
+    "regionalSeedTrials": {
+      "title": "Majaribio ya Mbegu za Mboga Kanda",
+      "category": "Agronomia na Teknolojia ya Mbegu",
+      "location": "Maeneo ya Afgooye & Jowhar",
+      "impact": "Ongezeko la 40% la Mavuno",
+      "desc": "Kwa kushirikiana na wazalishaji wa mbegu, tulifanya majaribio shambani ili kutambua aina za nyanya na vitunguu zinazofaa hali za maeneo tofauti.",
+      "tag1": "Uteuzi wa Mbegu",
+      "tag2": "Usalama wa Chakula",
+      "tag3": "Uboreshaji wa Mavuno"
+    },
+    "farmerToMarket": {
+      "title": "Kuunganisha Mkulima na Soko",
+      "category": "Maendeleo ya Mnyororo wa Thamani",
+      "location": "Somalia na Afrika Mashariki",
+      "impact": "Wakulima 2,000+ Wamejiunga",
+      "desc": "Tunajaza pengo kati ya uzalishaji na soko kwa kutoa pembejeo za ubora kwa mkopo na mipango ya ununuzi wa uhakika.",
+      "tag1": "Ufikiaji wa Soko",
+      "tag2": "Ukuaji wa Uchumi",
+      "tag3": "Ushirikiano wa Kistratejia"
+    }
   },
   "insights": {
     "hero": {

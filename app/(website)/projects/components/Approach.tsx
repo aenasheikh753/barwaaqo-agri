@@ -1,28 +1,30 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLanguage } from "../../../context/LanguageContext";
 
 export function Approach() {
+    const { t } = useLanguage();
     const steps = [
         {
-            title: "Assessment",
-            desc: "On-ground research and soil analysis to understand specific regional needs."
+            title: t("projects.approach.step1Title"),
+            desc: t("projects.approach.step1Desc")
         },
         {
-            title: "Innovation",
-            desc: "Customizing international seed varieties and irrigation designs for Somali soil."
+            title: t("projects.approach.step2Title"),
+            desc: t("projects.approach.step2Desc")
         },
         {
-            title: "Scaling",
-            desc: "Partnering with thousands of farmers to implement solutions at scale."
+            title: t("projects.approach.step3Title"),
+            desc: t("projects.approach.step3Desc")
         }
     ];
 
     return (
         <section className="py-16 bg-custom-light-bg">
             <div className="max-w-[1200px] mx-auto px-6 text-center">
-                <span className="text-custom-olive font-bold uppercase tracking-widest text-sm mb-4 block">Our Methodology</span>
-                <h2 className="text-4xl font-heading font-bold text-custom-primary mb-16">The Barwaaqo Approach</h2>
+                <span className="text-custom-olive font-bold uppercase tracking-widest text-sm mb-4 block">{t("projects.approach.label")}</span>
+                <h2 className="text-4xl font-heading font-bold text-custom-primary mb-16">{t("projects.approach.title")}</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                     {steps.map((step, i) => (
