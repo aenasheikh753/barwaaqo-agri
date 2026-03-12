@@ -1,5 +1,6 @@
 import React from "react";
 import { CaseStudyClient } from "./CaseStudyClient";
+import type { Metadata } from "next";
 
 const caseStudies: Record<string, {
     title: string;
@@ -42,6 +43,44 @@ const caseStudies: Record<string, {
 
 export async function generateStaticParams() {
     return Object.keys(caseStudies).map((slug) => ({ slug }));
+}
+
+export async function generateMetadata(
+    { params }: { params: Promise<{ slug: string }> }
+): Promise<Metadata> {
+    const siteUrl = "https://barwaaqoagri.com";
+    const { slug } = await params;
+
+    const cs = caseStudies[slug];
+    const titleBase = cs?.title ?? "Case Study";
+    const description =
+        cs?.desc ??
+        "Explore Barwaaqo Agri Group projects delivering impact across Somalia and East Africa.";
+
+    const title = `${titleBase} | Projects | Barwaaqo Agri Group`;
+    const url = `${siteUrl}/projects/case-study/${slug}`;
+    const imagePath = cs?.image ?? "/images/hero_agriculture.png";
+    const imageUrl = imagePath.startsWith("http") ? imagePath : `${siteUrl}${imagePath}`;
+
+    return {
+        title,
+        description,
+        alternates: { canonical: url },
+        openGraph: {
+            title,
+            description,
+            url,
+            type: "article",
+            images: [{ url: imageUrl }],
+            siteName: "Barwaaqo Agri Group"
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
+            images: [imageUrl]
+        }
+    };
 }
 
 export default async function CaseStudyPage({

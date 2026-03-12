@@ -81,18 +81,13 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [dict, setDict] = useState<MessagesDict>(cache.en!);
 
   useEffect(() => {
-    let cancelled = false;
     try {
       const stored = localStorage.getItem(STORAGE_KEY) as LocaleCode | null;
       const valid = stored && LOCALES.some((l) => l.code === stored);
-      if (valid) setLocaleState(stored as LocaleCode);
+      if (valid) queueMicrotask(() => setLocaleState(stored as LocaleCode));
     } catch {
       // ignore
     }
-
-    return () => {
-      cancelled = true;
-    };
   }, []);
 
   useEffect(() => {

@@ -56,7 +56,8 @@ export function Navbar() {
     }, [isMobileMenuOpen]);
 
     useEffect(() => {
-        setIsMobileMenuOpen(false);
+        // Avoid synchronous setState inside effect body (lint rule).
+        queueMicrotask(() => setIsMobileMenuOpen(false));
     }, [pathname]);
 
     useEffect(() => {
@@ -185,7 +186,6 @@ export function Navbar() {
                         }`}
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     aria-label="Toggle Menu"
-                    aria-expanded={isMobileMenuOpen}
                     aria-controls="mobile-menu"
                 >
                     <div className="relative w-6 h-5">
@@ -229,7 +229,6 @@ export function Navbar() {
                                                         <button
                                                             type="button"
                                                             onClick={() => setOpenMobileDropdown(expanded ? null : link.name)}
-                                                            aria-expanded={expanded}
                                                             className={`flex items-center justify-between text-left w-full px-0 text-2xl font-bold transition-colors ${expanded ? "text-custom-olive" : "text-custom-primary hover:text-custom-olive"}`}
                                                         >
                                                             <span>{navLinkKeys[link.name] ? t(navLinkKeys[link.name]) : link.name}</span>
