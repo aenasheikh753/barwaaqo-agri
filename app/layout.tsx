@@ -83,7 +83,7 @@ export default function RootLayout({
         />
         <meta
           name="google-site-verification"
-          content="vnhSVnJ8oFmLvoiEGQ1gw5iS-34dP2Jjxk4ZaYLL8Og"
+          content="mDkLQ8Q8OB3F8EhuTlhZtRsZS6YygmyAIrvR82CRFKM"
         />
       </head>
       <body className={`${playfair.variable} ${inter.variable} antialiased bg-custom-light-bg text-custom-charcoal font-sans`}>
