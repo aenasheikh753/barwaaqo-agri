@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = "https://barwaaqoagri.com";
+  const siteUrl = "https://barwaaqo-agri.vercel.app";
   const now = new Date();
 
   // Keep this list strictly frontend/static (no backend calls).
