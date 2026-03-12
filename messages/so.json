@@ -320,7 +320,17 @@
     "authorRole": "Khubarada Duurka",
     "backToInsights": "Dib ugu noqo Faahfaahinta",
     "articleNotFound": "Maqalka Lama Helin",
-    "articleNotFoundDesc": "Maqalka aad raadinayso ma jiro ama waa la wareegay."
+    "articleNotFoundDesc": "Maqalka aad raadinayso ma jiro ama waa la wareegay.",
+    "knowledgeHub": {
+      "title": "Xarunta Aqoonta",
+      "subtitle": "Ka bogow cilmi-baaris, daraasado kiis iyo xog ku saleysan go'aan qaadasho oo taageera beeraha casriga ah ee Bariga Afrika.",
+      "bullet1": "Cilmi-baaris agronomy oo cusub",
+      "bullet2": "Daraasado kiisyo duur ah",
+      "bullet3": "Qalabka falanqaynta xogta",
+      "bullet4": "Webinars iyo workshops khubaro ah",
+      "cta": "Weydii Xog Cilmi-baaris",
+      "imageAlt": "Beer cilmi-baaris oo Bariga Afrika ah oo matalaysa Xarunta Aqoonta Barwaaqo"
+    }
   },
   "articles": {
     "tomatoProductionSomalia": {

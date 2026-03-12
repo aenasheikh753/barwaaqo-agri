@@ -320,7 +320,17 @@
     "authorRole": "Wataalamu wa Shambani",
     "backToInsights": "Rudi kwa Maoni",
     "articleNotFound": "Makala Haipatikani",
-    "articleNotFoundDesc": "Makala unaoutafuta haipo au imehamishwa."
+    "articleNotFoundDesc": "Makala unaoutafuta haipo au imehamishwa.",
+    "knowledgeHub": {
+      "title": "Kitovu cha Maarifa",
+      "subtitle": "Jipatie utafiti, tafiti za shamba na maarifa yanayotokana na data kwa ajili ya kilimo cha kisasa Afrika Mashariki.",
+      "bullet1": "Utafiti wa kisasa wa agronomia",
+      "bullet2": "Tafiti za shamba",
+      "bullet3": "Zana za uchambuzi wa data",
+      "bullet4": "Webinars na warsha za wataalam",
+      "cta": "Omba Data ya Utafiti",
+      "imageAlt": "Shamba la utafiti Afrika Mashariki linaloonyesha Kitovu cha Maarifa cha Barwaaqo"
+    }
   },
   "articles": {
     "tomatoProductionSomalia": {

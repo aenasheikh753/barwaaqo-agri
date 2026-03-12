@@ -320,7 +320,17 @@
     "authorRole": "Spécialistes terrain",
     "backToInsights": "Retour aux analyses",
     "articleNotFound": "Article introuvable",
-    "articleNotFoundDesc": "L'article que vous recherchez n'existe pas ou a été déplacé."
+    "articleNotFoundDesc": "L'article que vous recherchez n'existe pas ou a été déplacé.",
+    "knowledgeHub": {
+      "title": "Centre de connaissances",
+      "subtitle": "Explorez recherches, études de cas et analyses de données qui soutiennent l'agriculture moderne en Afrique de l'Est.",
+      "bullet1": "Dernières recherches en agronomie",
+      "bullet2": "Études de cas sur le terrain",
+      "bullet3": "Outils d'analyse de données",
+      "bullet4": "Webinaires et ateliers d'experts",
+      "cta": "Demander des données de recherche",
+      "imageAlt": "Champ agricole d'Afrique de l'Est représentant le centre de connaissances Barwaaqo"
+    }
   },
   "articles": {
     "tomatoProductionSomalia": {

@@ -288,7 +288,17 @@
     "authorRole": "Field Specialists",
     "backToInsights": "Back to Insights",
     "articleNotFound": "Article Not Found",
-    "articleNotFoundDesc": "The article you are looking for does not exist or has been moved."
+    "articleNotFoundDesc": "The article you are looking for does not exist or has been moved.",
+    "knowledgeHub": {
+      "title": "Knowledge Hub",
+      "subtitle": "Dive into research, case studies, and data‑driven insights that empower modern farming across East Africa.",
+      "bullet1": "Latest agronomy research",
+      "bullet2": "Field case studies",
+      "bullet3": "Data analytics tools",
+      "bullet4": "Expert webinars & workshops",
+      "cta": "Request Research Data",
+      "imageAlt": "East African agricultural research field representing Barwaaqo Knowledge Hub"
+    }
   },
   "caseStudies": {
     "baidoaIrrigation": {

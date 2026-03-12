@@ -320,7 +320,17 @@
     "authorRole": "Veldspecialisten",
     "backToInsights": "Terug naar inzichten",
     "articleNotFound": "Artikel niet gevonden",
-    "articleNotFoundDesc": "Het artikel dat u zoekt bestaat niet of is verplaatst."
+    "articleNotFoundDesc": "Het artikel dat u zoekt bestaat niet of is verplaatst.",
+    "knowledgeHub": {
+      "title": "Kenniscentrum",
+      "subtitle": "Verdiep je in onderzoek, casestudy's en datagedreven inzichten die moderne landbouw in Oost-Afrika versterken.",
+      "bullet1": "Nieuwste agronomisch onderzoek",
+      "bullet2": "Praktijkcasussen uit het veld",
+      "bullet3": "Data-analyse tools",
+      "bullet4": "Expertsessies en workshops",
+      "cta": "Vraag onderzoeksdata aan",
+      "imageAlt": "Landbouwonderzoeksveld in Oost-Afrika als weergave van het Barwaaqo Kenniscentrum"
+    }
   },
   "articles": {
     "tomatoProductionSomalia": {

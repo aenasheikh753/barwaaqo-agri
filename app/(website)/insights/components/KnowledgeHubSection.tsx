@@ -4,8 +4,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../../../components/ui/Button";
+import { useLanguage } from "../../../context/LanguageContext";
 
 export function KnowledgeHubSection() {
+    const { t } = useLanguage();
     return (
         <section className="relative py-16 bg-gradient-to-b from-custom-light-bg to-white overflow-hidden">
             {/* Decorative Background */}
@@ -24,32 +26,34 @@ export function KnowledgeHubSection() {
                     className="space-y-6"
                 >
                     <h2 className="text-4xl md:text-5xl font-bold text-custom-primary">
-                        Knowledge Hub
+                        {t("insights.knowledgeHub.title")}
                     </h2>
                     <p className="text-lg text-custom-charcoal/80 leading-relaxed">
-                        Dive into research, case studies, and data‑driven insights that empower modern farming across East Africa.
+                        {t("insights.knowledgeHub.subtitle")}
                     </p>
                     <ul className="grid sm:grid-cols-2 gap-4 text-custom-charcoal/70 !mb-8">
                         <li className="flex items-start space-x-2">
                             <span className="text-custom-olive font-bold">•</span>
-                            <span>Latest agronomy research</span>
+                            <span>{t("insights.knowledgeHub.bullet1")}</span>
                         </li>
                         <li className="flex items-start space-x-2">
                             <span className="text-custom-olive font-bold">•</span>
-                            <span>Field case studies</span>
+                            <span>{t("insights.knowledgeHub.bullet2")}</span>
                         </li>
                         <li className="flex items-start space-x-2">
                             <span className="text-custom-olive font-bold">•</span>
-                            <span>Data analytics tools</span>
+                            <span>{t("insights.knowledgeHub.bullet3")}</span>
                         </li>
                         <li className="flex items-start space-x-2">
                             <span className="text-custom-olive font-bold">•</span>
-                            <span>Expert webinars & workshops</span>
+                            <span>{t("insights.knowledgeHub.bullet4")}</span>
                         </li>
                     </ul>
                     <div className="pt-4">
                         <Link href="/contact">
-                            <Button variant="primary" className="px-10 rounded-full">Request Research Data</Button>
+                            <Button variant="primary" className="px-10 rounded-full">
+                                {t("insights.knowledgeHub.cta")}
+                            </Button>
                         </Link>
                     </div>
                 </motion.div>
@@ -64,7 +68,7 @@ export function KnowledgeHubSection() {
                 >
                     <Image
                         src="/images/agri1.jpg"
-                        alt="East African agricultural research field representing Barwaaqo Knowledge Hub"
+                        alt={t("insights.knowledgeHub.imageAlt")}
                         fill
                         className="object-cover"
                         priority

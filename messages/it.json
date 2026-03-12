@@ -320,7 +320,17 @@
     "authorRole": "Specialisti sul campo",
     "backToInsights": "Torna agli approfondimenti",
     "articleNotFound": "Articolo non trovato",
-    "articleNotFoundDesc": "L'articolo che cerchi non esiste o è stato spostato."
+    "articleNotFoundDesc": "L'articolo che cerchi non esiste o è stato spostato.",
+    "knowledgeHub": {
+      "title": "Knowledge Hub",
+      "subtitle": "Esplora ricerche, casi studio e analisi dei dati che supportano l'agricoltura moderna in Africa orientale.",
+      "bullet1": "Ultime ricerche agronomiche",
+      "bullet2": "Casi studio sul campo",
+      "bullet3": "Strumenti di analisi dei dati",
+      "bullet4": "Webinar e workshop con esperti",
+      "cta": "Richiedi dati di ricerca",
+      "imageAlt": "Campo di ricerca agricola in Africa orientale che rappresenta il Knowledge Hub di Barwaaqo"
+    }
   },
   "articles": {
     "tomatoProductionSomalia": {
